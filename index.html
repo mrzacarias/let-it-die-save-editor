@@ -88,6 +88,7 @@
   .tier-type { width: 56px; font-size: 11px; flex-shrink: 0; }
   .uncap { color: var(--accent2); font-size: 10px; font-weight: 700; letter-spacing: 0.5px; }
   .plus { font-variant-numeric: tabular-nums; min-width: 40px; text-align: right; font-weight: 600; }
+  .level-value { font-size: 20px; font-weight: 700; color: var(--accent); padding: 5px 0; line-height: 1.2; }
   .toast {
     position: fixed; bottom: 20px; right: 20px; background: var(--green); color: #0a1a0a;
     padding: 10px 16px; border-radius: 6px; font-weight: 600; opacity: 0; transition: opacity .3s;
@@ -212,25 +213,21 @@ function renderCurrencies() {
     ['Recycle Points', 'recycle_point'],
     ['Bloodnium', 'bloodnium_point'],
     ['TDM Points', 'tdm_point'],
-    ['Rank Points', 'rank_point'],
-    ['Rank', 'rank'],
-  ];
-  const med = [
-    ['Death Metals (paid)', 'user', 'paid_medal'],
-    ['Death Metals (free)', 'user', 'free_medal'],
   ];
   let html = '<div class="panel"><h2>Currencies</h2><div class="grid">';
   rows.forEach(([label, key]) => {
     html += '<div class="field"><label>' + label + '</label>' +
       '<input class="num" data-path="soul.' + key + '" value="' + num(s[key]) + '"></div>';
   });
-  med.forEach(([label, obj, key]) => {
-    html += '<div class="field"><label>' + label + '</label>' +
-      '<input class="num" data-path="' + obj + '.' + key + '" value="' + num(save[obj][key]) + '"></div>';
-  });
   html += '</div></div>';
   return html;
 }
+
+const FIGHTER_CLASSES = {
+  BAL: 'All-rounder', BRE: 'Striker', COL: 'Collector', DEF: 'Defender',
+  LUK: 'Lucky Star', SHT: 'Shooter', SKI: 'Skill Master', TEC: 'Attacker',
+};
+const STAT_MAX = 50;
 
 function renderFighters(u) {
   const chrs = (save.soul.chr.chrs[u]) || [];
@@ -239,29 +236,40 @@ function renderFighters(u) {
   let html = '<div class="panel"><h2>Fighters <span class="count">(' + chrs.length + ')</span></h2>';
   chrs.forEach(f => {
     const b = byCid[f.cid] || {};
+    const cls = FIGHTER_CLASSES[f.type] || f.type;
+    const lvl = num(b.lvl);
     html += '<div class="fighter">';
     html += '<div class="fighter-head">' +
-      '<span class="badge">' + (f.name || '?') + '</span>' +
-      '<span class="badge">' + f.type + '</span>' +
-      '<span class="badge">Grade ' + f.grade + '</span>' +
-      '<span class="badge">' + f.body + '</span>' +
+      '<span class="badge">' + escapeHtml(f.name || '?') + '</span>' +
+      '<span class="badge">' + escapeHtml(cls) + '</span>' +
+      '<span class="badge">' + escapeHtml(f.body || '') + '</span>' +
       '</div>';
     html += '<div class="grid">';
+    html += '<div class="field"><label>Level <span class="muted">(auto)</span></label>' +
+      '<div class="level-value" data-lvl-of="' + f.cid + '">' + lvl + '</div></div>';
+    html += '<div class="field"><label>Class</label>' +
+      '<select data-fighter="' + f.cid + '" data-fclass>' +
+      Object.entries(FIGHTER_CLASSES).map(([k, n]) => '<option value="' + k + '"' + (f.type === k ? ' selected' : '') + '>' + n + '</option>').join('') +
+      '</select></div>';
+    html += '<div class="field"><label>Grade</label>' +
+      '<select data-fighter="' + f.cid + '" data-fgrade>' +
+      [1, 2, 3, 4, 5, 6].map(g => '<option value="' + g + '"' + (f.grade === g ? ' selected' : '') + '>' + g + '</option>').join('') +
+      '</select></div>';
+    html += '<div class="field"><label>Limit Break</label>' +
+      '<select data-fighter="' + f.cid + '" data-flb>' +
+      [0, 1, 2, 3, 4].map(l => '<option value="' + l + '"' + (f.limit_break === l ? ' selected' : '') + '>' + l + '</option>').join('') +
+      '</select></div>';
+    html += '<div class="field"><label>Name</label>' +
+      '<input data-fighter="' + f.cid + '" data-fprop="name" value="' + escapeHtml(f.name || '') + '"></div>';
     const statFields = [
-      ['Level', 'b.lvl'], ['HP', 'b.hp'], ['STR', 'b.str'], ['DEX', 'b.dex'],
-      ['VIT', 'b.vit'], ['STM', 'b.stm'], ['LUK', 'b.luk'], ['Skill', 'b.skill'],
-      ['Bag', 'b.bag'], ['Rage', 'b.rage'],
+      ['HP', 'hp'], ['STR', 'str'], ['DEX', 'dex'],
+      ['VIT', 'vit'], ['STM', 'stm'], ['LUK', 'luk'],
+      ['Skill slots', 'skill'], ['Bag slots', 'bag'],
     ];
     statFields.forEach(([label, key]) => {
       html += '<div class="field"><label>' + label + '</label>' +
-        '<input class="num" type="number" min="0" step="1" data-fighter="' + f.cid + '" data-stat="' + key + '" value="' + num(b[key.replace('b.', '')]) + '"></div>';
+        '<input class="num" type="number" min="0" step="1" data-fighter="' + f.cid + '" data-stat="' + key + '" value="' + num(b[key]) + '"></div>';
     });
-    html += '<div class="field"><label>Name</label>' +
-      '<input data-fighter="' + f.cid + '" data-fprop="name" value="' + (f.name || '') + '"></div>';
-    html += '<div class="field"><label>Grade</label>' +
-      '<input class="num" type="number" min="0" step="1" data-fighter="' + f.cid + '" data-fprop="grade" value="' + num(f.grade) + '"></div>';
-    html += '<div class="field"><label>Limit Break</label>' +
-      '<input class="num" type="number" min="0" step="1" data-fighter="' + f.cid + '" data-fprop="limit_break" value="' + num(f.limit_break) + '"></div>';
     html += '</div></div>';
   });
   html += '</div>';
@@ -385,9 +393,16 @@ function setTierLevel(ptid, disp, uncapped) {
   let fin = mine.find(r => r.research_type === 'FINISHED' && r.lvl === raw);
   if (!fin) { fin = { ptid, research_type: 'FINISHED' }; arr.push(fin); }
   fin.lvl = raw; fin.receive_type = 'CHARGE'; fin.before_ptid = ptid; fin.before_lvl = raw - 1; fin.is_announced = 1; fin.is_checked = 1;
-  let lu = mine.find(r => r.research_type === 'LEVELUP');
-  if (!lu) { lu = { ptid, research_type: 'LEVELUP' }; arr.push(lu); }
-  lu.lvl = raw + 1; lu.receive_type = 'UNKNOWN'; lu.before_ptid = ptid; lu.before_lvl = raw; lu.is_announced = 0; lu.is_checked = 1;
+  const maxDisp = tierMaxDisp(uncapped);
+  if (disp < maxDisp) {
+    let lu = mine.find(r => r.research_type === 'LEVELUP');
+    if (!lu) { lu = { ptid, research_type: 'LEVELUP' }; arr.push(lu); }
+    lu.lvl = raw + 1; lu.receive_type = 'UNKNOWN'; lu.before_ptid = ptid; lu.before_lvl = raw; lu.is_announced = 0; lu.is_checked = 1;
+  } else {
+    for (let i = arr.length - 1; i >= 0; i--) {
+      if (arr[i].ptid === ptid && arr[i].research_type === 'LEVELUP') arr.splice(i, 1);
+    }
+  }
   if (!uncapped && disp === tierMaxDisp(false)) {
     const next = window.PARTS_CATALOG[ptid] && window.PARTS_CATALOG[ptid].next;
     if (next && !arr.some(r => r.ptid === next)) {
@@ -456,19 +471,25 @@ document.addEventListener('input', e => {
     const id = el.dataset.cnt;
     const rec = save.soul.skl.psskl.find(r => r.sklid === id);
     if (rec) rec.cnt = Math.max(0, Math.floor(parseFloat(el.value) || 0));
-  } else if (el.matches('input[data-fighter]')) {
+  } else if (el.matches('input[data-fighter][data-stat]')) {
     const cid = el.dataset.fighter;
     const chrs = save.soul.chr.chrs[uid()] || [];
     const f = chrs.find(x => x.cid === cid);
-    if (!f) return;
     const body = save.bodyuser[uid()] || [];
     const b = body.find(x => x.cid === cid);
-    if (el.dataset.fprop) {
-      f[el.dataset.fprop] = el.dataset.fprop === 'name' ? el.value : parseFloat(el.value) || 0;
-    } else if (el.dataset.stat) {
-      const key = el.dataset.stat.replace('b.', '');
-      if (b) b[key] = parseFloat(el.value) || 0;
-    }
+    if (!f || !b) return;
+    const key = el.dataset.stat;
+    const old = b[key] || 0;
+    const v = Math.max(0, Math.min(STAT_MAX, Math.floor(parseFloat(el.value) || 0)));
+    b[key] = v;
+    b.lvl = Math.max(1, (b.lvl || 1) + (v - old));
+    const lvlEl = document.querySelector('[data-lvl-of="' + cid + '"]');
+    if (lvlEl) lvlEl.textContent = b.lvl;
+  } else if (el.matches('input[data-fighter][data-fprop="name"]')) {
+    const cid = el.dataset.fighter;
+    const chrs = save.soul.chr.chrs[uid()] || [];
+    const f = chrs.find(x => x.cid === cid);
+    if (f) f.name = el.value;
   }
 });
 
@@ -502,6 +523,24 @@ document.addEventListener('change', e => {
     const disp = Math.floor(parseFloat(e.target.value) || 0);
     setTierLevel(ptid, disp, uncapped);
     render();
+  }
+  else if (e.target.matches('select[data-fighter][data-fclass]')) {
+    const cid = e.target.dataset.fighter;
+    const chrs = save.soul.chr.chrs[uid()] || [];
+    const f = chrs.find(x => x.cid === cid);
+    if (f) { f.type = e.target.value; render(); }
+  }
+  else if (e.target.matches('select[data-fighter][data-fgrade]')) {
+    const cid = e.target.dataset.fighter;
+    const chrs = save.soul.chr.chrs[uid()] || [];
+    const f = chrs.find(x => x.cid === cid);
+    if (f) { f.grade = parseInt(e.target.value, 10); render(); }
+  }
+  else if (e.target.matches('select[data-fighter][data-flb]')) {
+    const cid = e.target.dataset.fighter;
+    const chrs = save.soul.chr.chrs[uid()] || [];
+    const f = chrs.find(x => x.cid === cid);
+    if (f) { f.limit_break = parseInt(e.target.value, 10); render(); }
   }
 });
 
