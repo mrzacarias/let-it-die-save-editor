@@ -9,6 +9,7 @@
 <script src="equipment-catalog.js"></script>
 <script src="base-blueprints.js"></script>
 <script src="parts-catalog.js"></script>
+<script src="all-decals.js"></script>
 <style>
   :root {
     --bg: #14100d; --panel: #1e1814; --panel2: #2a211b;
@@ -37,6 +38,8 @@
   button.primary { background: var(--accent); color: #1a1200; border-color: var(--accent); font-weight: 600; }
   button.primary:hover { filter: brightness(1.1); }
   button.danger { color: var(--red); }
+  button.bulk { background: var(--accent2); color: #fff; border-color: var(--accent2); font-weight: 700; }
+  button.bulk:hover { filter: brightness(1.15); border-color: var(--accent2); }
   button:disabled { opacity: 0.4; cursor: not-allowed; }
   main { padding: 16px 20px; max-width: 1100px; margin: 0 auto; }
   .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 6px; margin-bottom: 16px; overflow: hidden; }
@@ -88,6 +91,9 @@
   .tier-type { width: 56px; font-size: 11px; flex-shrink: 0; }
   .uncap { color: var(--accent2); font-size: 10px; font-weight: 700; letter-spacing: 0.5px; }
   .plus { font-variant-numeric: tabular-nums; min-width: 40px; text-align: right; font-weight: 600; }
+  .pager { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid var(--border); background: var(--panel2); }
+  .pager .pageinfo { color: var(--muted); font-size: 12px; }
+  .pager select { background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 4px 6px; font-size: 12px; }
   .level-value { font-size: 20px; font-weight: 700; color: var(--accent); padding: 5px 0; line-height: 1.2; }
   .toast {
     position: fixed; bottom: 20px; right: 20px; background: var(--green); color: #0a1a0a;
@@ -123,6 +129,10 @@ let fileName = 'save.sav';
 let decalSort = 'stars';
 let researchFilter = '';
 let researchStatus = 'all';
+let researchPage = 0;
+let researchPageSize = 5;
+let decalPage = 0;
+let decalPageSize = 15;
 
 /* ---------- BRG v2 codec ---------- */
 function readU32(u8, off) {
@@ -293,10 +303,16 @@ function renderDecals(u) {
       '<option value="copies">Copies</option>' +
       '<option value="premium">Premium</option>' +
     '</select>' +
+    '<button class="bulk" data-bulk="decals">100% Decals</button>' +
     '</div><div class="search-results" id="decalResults"></div>';
   html += '<table><thead><tr><th>Decal</th><th>ID</th><th>Copies</th><th>Equipped</th><th></th></tr></thead><tbody>';
   const sorted = sortDecals(psskl, decalSort);
-  sorted.forEach(r => {
+  const total = sorted.length;
+  const pages = Math.max(1, Math.ceil(total / decalPageSize));
+  decalPage = Math.min(decalPage, pages - 1);
+  const pageRows = sorted.slice(decalPage * decalPageSize, decalPage * decalPageSize + decalPageSize);
+  html += '<table><thead><tr><th>Decal</th><th>ID</th><th>Copies</th><th>Equipped</th><th></th></tr></thead><tbody>';
+  pageRows.forEach(r => {
     const d = decalName(r.sklid);
     const slot = equippedBySkl[r.sklid];
     html += '<tr>' +
@@ -308,7 +324,9 @@ function renderDecals(u) {
       '<td style="text-align:right"><button class="danger" data-remove="' + escapeHtml(r.sklid) + '">Remove</button></td>' +
       '</tr>';
   });
-  html += '</tbody></table></div>';
+  html += '</tbody></table>';
+  html += pagerFooter(total, decalPage, decalPageSize, 'decals');
+  html += '</div>';
   return html;
 }
 function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
@@ -411,6 +429,19 @@ function setTierLevel(ptid, disp, uncapped) {
     }
   }
 }
+function pagerFooter(total, page, pageSize, kind) {
+  const pages = Math.max(1, Math.ceil(total / pageSize));
+  return '<div class="pager">' +
+    '<button data-page="' + kind + '" data-dir="-1"' + (page <= 0 ? ' disabled' : '') + '>‹ Prev</button>' +
+    '<span class="pageinfo">Page ' + (page + 1) + ' / ' + pages + ' · ' + total + ' total</span>' +
+    '<button data-page="' + kind + '" data-dir="1"' + (page >= pages - 1 ? ' disabled' : '') + '>Next ›</button>' +
+    '<label class="muted" style="font-size:11px">Per page</label>' +
+    '<select data-pagesize="' + kind + '">' +
+      [5, 10, 15, 25, 50].map(s => '<option value="' + s + '"' + (pageSize === s ? ' selected' : '') + '>' + s + '</option>').join('') +
+    '</select>' +
+    '</div>';
+}
+
 function renderResearch() {
   const q = researchFilter.trim().toLowerCase();
   const arr = (save.soul.partresearch && save.soul.partresearch.user) || [];
@@ -421,7 +452,11 @@ function renderResearch() {
   else if (researchStatus === 'missing') fams = fams.filter(f => tierState(f.root, byPt).state !== 'owned');
   if (q) fams = fams.filter(f => f.rootName.toLowerCase().includes(q) || f.root.toLowerCase().includes(q) || f.tiers.some(t => t.name.toLowerCase().includes(q) || t.ptid.toLowerCase().includes(q)));
   fams.sort((a, b) => a.rootName.localeCompare(b.rootName));
-  let html = '<div class="panel"><h2>Research <span class="count">(' + fams.length + ' families)</span></h2>';
+  const total = fams.length;
+  const pages = Math.max(1, Math.ceil(total / researchPageSize));
+  researchPage = Math.min(researchPage, pages - 1);
+  const pageFams = fams.slice(researchPage * researchPageSize, researchPage * researchPageSize + researchPageSize);
+  let html = '<div class="panel"><h2>Research <span class="count">(' + total + ' families)</span></h2>';
   html += '<div class="decals-tools">' +
     '<input id="researchSearch" placeholder="Search by name or ptid..." value="' + escapeHtml(researchFilter) + '">' +
     '<label class="muted" for="researchStatus" style="font-size:11px">Show</label>' +
@@ -430,8 +465,10 @@ function renderResearch() {
       '<option value="owned"' + (researchStatus === 'owned' ? ' selected' : '') + '>Owned</option>' +
       '<option value="missing"' + (researchStatus === 'missing' ? ' selected' : '') + '>Missing</option>' +
     '</select>' +
+    '<span style="flex:1"></span>' +
+    '<button class="bulk" data-bulk="research">100% Research</button>' +
     '</div>';
-  fams.forEach(f => {
+  pageFams.forEach(f => {
     html += '<div class="fam"><div class="fam-head"><b>' + escapeHtml(f.rootName) + '</b>' +
       ' <span class="muted" style="font-family:monospace;font-size:10px">' + escapeHtml(f.root) + '</span></div>';
     f.tiers.forEach((t, i) => {
@@ -455,8 +492,54 @@ function renderResearch() {
     });
     html += '</div>';
   });
+  html += pagerFooter(total, researchPage, researchPageSize, 'research');
   html += '</div>';
   return html;
+}
+
+/* ---------- bulk actions ---------- */
+function researchAll() {
+  if (!save) return;
+  const roots = Object.keys(window.BASE_BLUEPRINTS || {});
+  if (!confirm('Fully research and upgrade ALL ' + roots.length + ' equipment blueprints?')) return;
+  const newRecords = [];
+  roots.forEach(root => {
+    const tiers = chain(root);
+    tiers.forEach((tier, i) => {
+      const max = tier.uncapped ? 16 : 5;
+      const prev = i > 0 ? tiers[i - 1] : null;
+      for (let lvl = 1; lvl <= max; lvl++) {
+        newRecords.push({
+          ptid: tier.ptid,
+          lvl,
+          research_type: 'FINISHED',
+          receive_type: lvl === max ? 'CHARGE' : 'FINISHED',
+          is_announced: 1,
+          is_checked: 1,
+          before_ptid: lvl === 1 ? (prev ? prev.ptid : '') : tier.ptid,
+          before_lvl: lvl === 1 ? (prev ? 5 : 0) : lvl - 1,
+        });
+      }
+    });
+  });
+  save.soul.partresearch.user = newRecords;
+  render();
+  toast('Researched all ' + roots.length + ' blueprints to max');
+}
+function giveAllDecals() {
+  if (!save) return;
+  const all = window.ALL_DECALS || [];
+  if (!confirm('Give 5 copies of every decal (' + all.length + ')?')) return;
+  const psskl = save.soul.skl.psskl;
+  const bySkl = {};
+  psskl.forEach(r => bySkl[r.sklid] = r);
+  const now = Math.floor(Date.now() / 1000);
+  all.forEach(id => {
+    if (bySkl[id]) { bySkl[id].cnt = 5; }
+    else { const rec = { sklid: id, cnt: 5, updated: now, is_checked: 0 }; psskl.push(rec); bySkl[id] = rec; }
+  });
+  render();
+  toast('Gave 5 of each of ' + all.length + ' decals');
 }
 
 /* ---------- event wiring (delegation) ---------- */
@@ -515,8 +598,15 @@ document.addEventListener('click', e => {
 
 document.addEventListener('change', e => {
   if (!save) return;
-  if (e.target.id === 'decalSort') { decalSort = e.target.value; render(); }
-  else if (e.target.id === 'researchStatus') { researchStatus = e.target.value; render(); }
+  if (e.target.id === 'decalSort') { decalSort = e.target.value; decalPage = 0; render(); }
+  else if (e.target.id === 'researchStatus') { researchStatus = e.target.value; researchPage = 0; render(); }
+  else if (e.target.matches('select[data-pagesize]')) {
+    const kind = e.target.dataset.pagesize;
+    const v = parseInt(e.target.value, 10) || 5;
+    if (kind === 'research') { researchPageSize = v; researchPage = 0; }
+    else if (kind === 'decals') { decalPageSize = v; decalPage = 0; }
+    render();
+  }
   else if (e.target.matches('input[data-tier]')) {
     const ptid = e.target.dataset.tier;
     const uncapped = e.target.dataset.uncap === '1';
@@ -547,6 +637,7 @@ document.addEventListener('change', e => {
 document.addEventListener('input', e => {
   if (e.target.id !== 'researchSearch') return;
   researchFilter = e.target.value;
+  researchPage = 0;
   render();
   const el = document.getElementById('researchSearch');
   if (el) { el.focus(); el.setSelectionRange(el.value.length, el.value.length); }
@@ -598,6 +689,21 @@ document.addEventListener('click', e => {
 
 /* load / save */
 document.getElementById('loadBtn').addEventListener('click', () => document.getElementById('fileInput').click());
+document.addEventListener('click', e => {
+  const btn = e.target.closest('button[data-bulk]');
+  if (!btn) return;
+  if (btn.dataset.bulk === 'research') researchAll();
+  else if (btn.dataset.bulk === 'decals') giveAllDecals();
+});
+document.addEventListener('click', e => {
+  const btn = e.target.closest('button[data-page]');
+  if (!btn || !save) return;
+  const kind = btn.dataset.page;
+  const dir = parseInt(btn.dataset.dir, 10);
+  if (kind === 'research') researchPage += dir;
+  else if (kind === 'decals') decalPage += dir;
+  render();
+});
 document.getElementById('fileInput').addEventListener('change', e => {
   const file = e.target.files[0]; if (!file) return;
   fileName = file.name;
