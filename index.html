@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LET IT DIE — Save Editor</title>
+<script src="pako.min.js"></script>
+<script src="decals-catalog.js"></script>
+<script src="equipment-catalog.js"></script>
+<script src="base-blueprints.js"></script>
+<script src="parts-catalog.js"></script>
+<style>
+  :root {
+    --bg: #14100d; --panel: #1e1814; --panel2: #2a211b;
+    --border: #3a2f27; --text: #e8dcc8; --muted: #9a8a72;
+    --accent: #d4a017; --accent2: #e8442e; --green: #4caf50; --red: #e8442e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+  }
+  header {
+    display: flex; align-items: center; gap: 16px; padding: 12px 20px;
+    background: var(--panel); border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 10;
+  }
+  header h1 { font-size: 18px; margin: 0; letter-spacing: 2px; color: var(--accent); }
+  header .status { color: var(--muted); font-size: 12px; }
+  header .actions { margin-left: auto; display: flex; gap: 8px; }
+  button {
+    background: var(--panel2); color: var(--text); border: 1px solid var(--border);
+    padding: 7px 14px; border-radius: 4px; cursor: pointer; font-size: 13px;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); color: #1a1200; border-color: var(--accent); font-weight: 600; }
+  button.primary:hover { filter: brightness(1.1); }
+  button.danger { color: var(--red); }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+  main { padding: 16px 20px; max-width: 1100px; margin: 0 auto; }
+  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 6px; margin-bottom: 16px; overflow: hidden; }
+  .panel > h2 {
+    margin: 0; padding: 10px 16px; font-size: 14px; letter-spacing: 1px;
+    background: var(--panel2); border-bottom: 1px solid var(--border);
+    color: var(--accent); display: flex; align-items: center; gap: 8px;
+  }
+  .panel > h2 .count { color: var(--muted); font-size: 12px; font-weight: normal; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; padding: 16px; }
+  .field label { display: block; color: var(--muted); font-size: 11px; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .field input, .field select {
+    width: 100%; background: var(--bg); color: var(--text);
+    border: 1px solid var(--border); border-radius: 4px; padding: 7px 9px; font-size: 14px;
+  }
+  .field input:focus, .field select:focus { outline: none; border-color: var(--accent); }
+  .field input.num { font-variant-numeric: tabular-nums; }
+  .cnt-input { width: 70px; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 4px 6px; font-variant-numeric: tabular-nums; }
+  .cnt-input:focus { outline: none; border-color: var(--accent); }
+  .spin-narrow { width: 74px; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 4px 6px; font-variant-numeric: tabular-nums; }
+  .spin-narrow:focus { outline: none; border-color: var(--accent); }
+  .fighter { padding: 16px; border-bottom: 1px solid var(--border); }
+  .fighter:last-child { border-bottom: none; }
+  .fighter-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
+  .fighter-head .badge { background: var(--panel2); border: 1px solid var(--border); border-radius: 3px; padding: 2px 8px; font-size: 11px; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+  tr:hover td { background: rgba(255,255,255,0.02); }
+  .decals-tools { display: flex; gap: 10px; padding: 12px 16px; border-bottom: 1px solid var(--border); flex-wrap: wrap; align-items: center; }
+  .decals-tools input { flex: 1; min-width: 200px; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 7px 9px; }
+  .decals-tools select { background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 7px 9px; font-size: 13px; }
+  .decals-tools select:focus { outline: none; border-color: var(--accent); }
+  .search-results { padding: 8px 16px; border-bottom: 1px solid var(--border); background: var(--bg); }
+  .search-results .hit { display: flex; align-items: center; gap: 10px; padding: 6px 8px; border-radius: 4px; cursor: pointer; }
+  .search-results .hit:hover { background: var(--panel2); }
+  .search-results .hit .nm { font-weight: 600; }
+  .search-results .hit .id { color: var(--muted); font-size: 11px; font-family: monospace; }
+  .star { color: var(--accent); }
+  .prem { color: #ffb84d; font-size: 11px; }
+  .pill { display: inline-block; background: var(--panel2); border: 1px solid var(--border); border-radius: 10px; padding: 1px 8px; font-size: 11px; }
+  .equipped { color: var(--green); font-weight: 600; }
+  .muted { color: var(--muted); }
+  .fam { border: 1px solid var(--border); border-radius: 4px; margin: 8px 16px; overflow: hidden; }
+  .fam-head { background: var(--panel2); padding: 8px 12px; font-size: 13px; border-bottom: 1px solid var(--border); }
+  .tier-row { display: flex; align-items: center; gap: 12px; padding: 6px 12px; border-bottom: 1px solid var(--border); }
+  .tier-row:last-child { border-bottom: none; }
+  .tier-name { flex: 1; min-width: 160px; }
+  .tier-type { width: 56px; font-size: 11px; flex-shrink: 0; }
+  .uncap { color: var(--accent2); font-size: 10px; font-weight: 700; letter-spacing: 0.5px; }
+  .plus { font-variant-numeric: tabular-nums; min-width: 40px; text-align: right; font-weight: 600; }
+  .toast {
+    position: fixed; bottom: 20px; right: 20px; background: var(--green); color: #0a1a0a;
+    padding: 10px 16px; border-radius: 6px; font-weight: 600; opacity: 0; transition: opacity .3s;
+    pointer-events: none;
+  }
+  .toast.show { opacity: 1; }
+  .toast.err { background: var(--red); color: #fff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>LET IT DIE — SAVE EDITOR</h1>
+  <span class="status" id="status">no file loaded</span>
+  <div class="actions">
+    <button id="loadBtn">Open .sav</button>
+    <button id="saveBtn" class="primary" disabled>Save .sav</button>
+  </div>
+  <input type="file" id="fileInput" accept=".sav" hidden>
+</header>
+<main id="main">
+  <div class="panel" style="padding:40px;text-align:center;color:var(--muted)">
+    Open a <b>.sav</b> file to begin. No data is uploaded anywhere — everything runs locally in your browser.
+  </div>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+"use strict";
+const CHUNK = 1296894;
+let save = null;         // parsed JSON object
+let fileName = 'save.sav';
+let decalSort = 'stars';
+let researchFilter = '';
+let researchStatus = 'all';
+
+/* ---------- BRG v2 codec ---------- */
+function readU32(u8, off) {
+  return u8[off] | (u8[off+1] << 8) | (u8[off+2] << 16) | (u8[off+3] << 24) >>> 0;
+}
+function writeU32(u8, off, v) {
+  u8[off] = v & 0xff; u8[off+1] = (v >>> 8) & 0xff; u8[off+2] = (v >>> 16) & 0xff; u8[off+3] = (v >>> 24) & 0xff;
+}
+function concatBytes(parts) {
+  let len = 0; parts.forEach(p => len += p.length);
+  const out = new Uint8Array(len); let o = 0;
+  parts.forEach(p => { out.set(p, o); o += p.length; });
+  return out;
+}
+function decodeSave(buf) {
+  const u8 = new Uint8Array(buf);
+  if (String.fromCharCode(...u8.slice(0, 4)) !== 'BRG\0') throw new Error('Not a BRG save (bad header)');
+  const ver = readU32(u8, 4);
+  if (ver !== 2) throw new Error('Unsupported BRG version: ' + ver);
+  if (String.fromCharCode(...u8.slice(12, 16)) !== 'ZLIB') throw new Error('Missing ZLIB codec marker');
+  let off = 16; const parts = [];
+  while (off < u8.length - 4) {
+    const u = readU32(u8, off), c = readU32(u8, off + 4);
+    off += 8;
+    parts.push(pako.inflate(u8.subarray(off, off + c)));
+    off += c;
+  }
+  return JSON.parse(new TextDecoder().decode(concatBytes(parts)));
+}
+function encodeSave(obj) {
+  const json = JSON.stringify(obj);
+  const jsonBuf = new TextEncoder().encode(json);
+  const header = new Uint8Array(16);
+  for (let i = 0; i < 4; i++) header[i] = 'BRG\0'.charCodeAt(i);
+  writeU32(header, 4, 2);
+  writeU32(header, 8, jsonBuf.length);
+  for (let i = 0; i < 4; i++) header[12 + i] = 'ZLIB'.charCodeAt(i);
+  const parts = [header];
+  for (let i = 0; i < jsonBuf.length; i += CHUNK) {
+    const raw = jsonBuf.subarray(i, Math.min(i + CHUNK, jsonBuf.length));
+    const comp = pako.deflate(raw);
+    const h = new Uint8Array(8);
+    writeU32(h, 0, raw.length); writeU32(h, 4, comp.length);
+    parts.push(h, comp);
+  }
+  parts.push(new Uint8Array([0, 0, 0, 0]));
+  return concatBytes(parts);
+}
+function downloadBytes(bytes, name) {
+  const blob = new Blob([bytes], { type: 'application/octet-stream' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+/* ---------- helpers ---------- */
+function toast(msg, isErr) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.className = 'toast show' + (isErr ? ' err' : '');
+  clearTimeout(t._t); t._t = setTimeout(() => t.className = 'toast', 2500);
+}
+function uid() {
+  return (save.soul && save.soul.uid) || (save.user && save.user.uid) || 0;
+}
+function decalName(id) {
+  const c = window.DECAL_CATALOG && window.DECAL_CATALOG[id];
+  if (c && c.name) return { name: c.name, stars: c.stars, premium: c.premium };
+  return { name: id, stars: null, premium: id.endsWith('_P') };
+}
+function num(v) { return (typeof v === 'number') ? v : 0; }
+
+/* ---------- render ---------- */
+function render() {
+  const main = document.getElementById('main');
+  if (!save) { main.innerHTML = ''; return; }
+  const u = uid();
+  main.innerHTML = renderCurrencies() + renderFighters(u) + renderResearch() + renderDecals(u);
+  document.getElementById('saveBtn').disabled = false;
+}
+
+function renderCurrencies() {
+  const s = save.soul;
+  const rows = [
+    ['Kill Coins', 'free_money'],
+    ['SPLithium', 'spirit'],
+    ['Recycle Points', 'recycle_point'],
+    ['Bloodnium', 'bloodnium_point'],
+    ['TDM Points', 'tdm_point'],
+    ['Rank Points', 'rank_point'],
+    ['Rank', 'rank'],
+  ];
+  const med = [
+    ['Death Metals (paid)', 'user', 'paid_medal'],
+    ['Death Metals (free)', 'user', 'free_medal'],
+  ];
+  let html = '<div class="panel"><h2>Currencies</h2><div class="grid">';
+  rows.forEach(([label, key]) => {
+    html += '<div class="field"><label>' + label + '</label>' +
+      '<input class="num" data-path="soul.' + key + '" value="' + num(s[key]) + '"></div>';
+  });
+  med.forEach(([label, obj, key]) => {
+    html += '<div class="field"><label>' + label + '</label>' +
+      '<input class="num" data-path="' + obj + '.' + key + '" value="' + num(save[obj][key]) + '"></div>';
+  });
+  html += '</div></div>';
+  return html;
+}
+
+function renderFighters(u) {
+  const chrs = (save.soul.chr.chrs[u]) || [];
+  const body = (save.bodyuser[u]) || [];
+  const byCid = {}; body.forEach(b => byCid[b.cid] = b);
+  let html = '<div class="panel"><h2>Fighters <span class="count">(' + chrs.length + ')</span></h2>';
+  chrs.forEach(f => {
+    const b = byCid[f.cid] || {};
+    html += '<div class="fighter">';
+    html += '<div class="fighter-head">' +
+      '<span class="badge">' + (f.name || '?') + '</span>' +
+      '<span class="badge">' + f.type + '</span>' +
+      '<span class="badge">Grade ' + f.grade + '</span>' +
+      '<span class="badge">' + f.body + '</span>' +
+      '</div>';
+    html += '<div class="grid">';
+    const statFields = [
+      ['Level', 'b.lvl'], ['HP', 'b.hp'], ['STR', 'b.str'], ['DEX', 'b.dex'],
+      ['VIT', 'b.vit'], ['STM', 'b.stm'], ['LUK', 'b.luk'], ['Skill', 'b.skill'],
+      ['Bag', 'b.bag'], ['Rage', 'b.rage'],
+    ];
+    statFields.forEach(([label, key]) => {
+      html += '<div class="field"><label>' + label + '</label>' +
+        '<input class="num" type="number" min="0" step="1" data-fighter="' + f.cid + '" data-stat="' + key + '" value="' + num(b[key.replace('b.', '')]) + '"></div>';
+    });
+    html += '<div class="field"><label>Name</label>' +
+      '<input data-fighter="' + f.cid + '" data-fprop="name" value="' + (f.name || '') + '"></div>';
+    html += '<div class="field"><label>Grade</label>' +
+      '<input class="num" type="number" min="0" step="1" data-fighter="' + f.cid + '" data-fprop="grade" value="' + num(f.grade) + '"></div>';
+    html += '<div class="field"><label>Limit Break</label>' +
+      '<input class="num" type="number" min="0" step="1" data-fighter="' + f.cid + '" data-fprop="limit_break" value="' + num(f.limit_break) + '"></div>';
+    html += '</div></div>';
+  });
+  html += '</div>';
+  return html;
+}
+
+function renderDecals(u) {
+  const psskl = save.soul.skl.psskl || [];
+  const eqskl = (save.soul.skl.eqskl[u]) || [];
+  const equippedBySkl = {};
+  eqskl.forEach(e => { if (e.sklid) equippedBySkl[e.sklid] = e.slot; });
+  let html = '<div class="panel"><h2>Decals <span class="count">(' + psskl.length + ')</span></h2>';
+  html += '<div class="decals-tools">' +
+    '<input id="decalSearch" placeholder="Search decal by name or SKL id to add...">' +
+    '<button id="decalAddBtn">Add selected</button>' +
+    '<span style="flex:1"></span>' +
+    '<label class="muted" for="decalSort" style="font-size:11px">Sort by</label>' +
+    '<select id="decalSort">' +
+      '<option value="stars">Stars</option>' +
+      '<option value="name">Name</option>' +
+      '<option value="copies">Copies</option>' +
+      '<option value="premium">Premium</option>' +
+    '</select>' +
+    '</div><div class="search-results" id="decalResults"></div>';
+  html += '<table><thead><tr><th>Decal</th><th>ID</th><th>Copies</th><th>Equipped</th><th></th></tr></thead><tbody>';
+  const sorted = sortDecals(psskl, decalSort);
+  sorted.forEach(r => {
+    const d = decalName(r.sklid);
+    const slot = equippedBySkl[r.sklid];
+    html += '<tr>' +
+      '<td><b>' + escapeHtml(d.name) + '</b>' + (d.premium ? ' <span class="prem">★P</span>' : '') +
+        (d.stars ? ' <span class="star">' + '★'.repeat(d.stars) + '</span>' : '') + '</td>' +
+      '<td class="muted" style="font-family:monospace">' + escapeHtml(r.sklid) + '</td>' +
+      '<td><input class="num cnt-input" type="number" min="0" step="1" data-cnt="' + escapeHtml(r.sklid) + '" value="' + r.cnt + '"></td>' +
+      '<td>' + (slot !== undefined ? '<span class="equipped">slot ' + slot + '</span>' : '<span class="muted">—</span>') + '</td>' +
+      '<td style="text-align:right"><button class="danger" data-remove="' + escapeHtml(r.sklid) + '">Remove</button></td>' +
+      '</tr>';
+  });
+  html += '</tbody></table></div>';
+  return html;
+}
+function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function sortDecals(arr, mode) {
+  return arr.slice().sort((a, b) => {
+    const da = decalName(a.sklid), db = decalName(b.sklid);
+    if (mode === 'name') return da.name.localeCompare(db.name);
+    if (mode === 'copies') return (b.cnt || 0) - (a.cnt || 0);
+    if (mode === 'premium') return ((db.premium ? 1 : 0) - (da.premium ? 1 : 0)) || ((db.stars || 0) - (da.stars || 0));
+    return ((db.stars || 0) - (da.stars || 0)) || da.name.localeCompare(db.name);
+  });
+}
+
+/* ---------- equipment ---------- */
+function ptName(ptid) {
+  const c = window.PT_CATALOG && window.PT_CATALOG[ptid];
+  if (c && c.name) return c.name;
+  if (ptid.endsWith('_G')) {
+    const bc = window.PT_CATALOG && window.PT_CATALOG[ptid.slice(0, -2)];
+    if (bc && bc.name) return bc.name + ' G';
+  }
+  return ptid;
+}
+function ptType(ptid) {
+  const c = window.PT_CATALOG && window.PT_CATALOG[ptid];
+  if (!c || !c.type) return '';
+  const m = { PTTP_ARM: 'Weapon', PTTP_HEAD: 'Head', PTTP_BODY: 'Body', PTTP_LEGS: 'Legs' };
+  return m[c.type] || c.type.replace('PTTP_', '');
+}
+
+/* ---------- research ---------- */
+function rawToDisplay(raw, uncapped) { return uncapped ? raw + 4 : raw - 1; }
+function displayToRaw(disp, uncapped) { return uncapped ? disp - 4 : disp + 1; }
+function tierMinDisp(uncapped) { return uncapped ? 5 : 0; }
+function tierMaxDisp(uncapped) { return uncapped ? 20 : 4; }
+
+function chain(ptid) {
+  const out = [];
+  let cur = ptid;
+  const seen = new Set();
+  while (cur && !seen.has(cur)) {
+    seen.add(cur);
+    const c = window.PARTS_CATALOG[cur] || {};
+    out.push({ ptid: cur, name: c.name || ptName(cur), type: c.type || ptType(cur) || '—', uncapped: !!c.uncapped });
+    cur = c.next;
+  }
+  return out;
+}
+function families() {
+  const roots = Object.keys(window.BASE_BLUEPRINTS || {});
+  return roots.map(root => ({
+    root,
+    rootName: (window.BASE_BLUEPRINTS[root] && window.BASE_BLUEPRINTS[root].name) || ptName(root),
+    tiers: chain(root),
+  }));
+}
+function tierState(ptid, byPt) {
+  const recs = byPt[ptid] || [];
+  if (recs.length === 0) return { state: 'none', raw: 0 };
+  if (recs.every(r => r.research_type === 'MAP')) return { state: 'map', raw: 0 };
+  const lu = recs.find(r => r.research_type === 'LEVELUP');
+  const fin = recs.filter(r => r.research_type === 'FINISHED');
+  const maxFin = fin.reduce((m, r) => Math.max(m, r.lvl || 0), 0);
+  const raw = lu ? (lu.before_lvl || 0) : maxFin;
+  return { state: 'owned', raw };
+}
+function addBlueprint(ptid) {
+  const arr = save.soul.partresearch.user;
+  if (arr.some(r => r.ptid === ptid)) { toast('Already owned: ' + ptid, true); return; }
+  arr.push({ ptid, lvl: 1, research_type: 'MAP', receive_type: 'UNKNOWN', is_announced: 0, is_checked: 1, before_ptid: '', before_lvl: 0 });
+  render(); toast('Added blueprint ' + ptid);
+}
+function setTierLevel(ptid, disp, uncapped) {
+  disp = Math.max(tierMinDisp(uncapped), Math.min(tierMaxDisp(uncapped), Math.floor(disp || 0)));
+  const raw = displayToRaw(disp, uncapped);
+  const arr = save.soul.partresearch.user;
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (arr[i].ptid === ptid && arr[i].research_type === 'MAP') arr.splice(i, 1);
+  }
+  const mine = arr.filter(r => r.ptid === ptid);
+  mine.forEach(r => { if (r.research_type === 'FINISHED' && r.receive_type === 'CHARGE') r.receive_type = 'FINISHED'; });
+  let fin = mine.find(r => r.research_type === 'FINISHED' && r.lvl === raw);
+  if (!fin) { fin = { ptid, research_type: 'FINISHED' }; arr.push(fin); }
+  fin.lvl = raw; fin.receive_type = 'CHARGE'; fin.before_ptid = ptid; fin.before_lvl = raw - 1; fin.is_announced = 1; fin.is_checked = 1;
+  let lu = mine.find(r => r.research_type === 'LEVELUP');
+  if (!lu) { lu = { ptid, research_type: 'LEVELUP' }; arr.push(lu); }
+  lu.lvl = raw + 1; lu.receive_type = 'UNKNOWN'; lu.before_ptid = ptid; lu.before_lvl = raw; lu.is_announced = 0; lu.is_checked = 1;
+  if (!uncapped && disp === tierMaxDisp(false)) {
+    const next = window.PARTS_CATALOG[ptid] && window.PARTS_CATALOG[ptid].next;
+    if (next && !arr.some(r => r.ptid === next)) {
+      arr.push({ ptid: next, lvl: 1, research_type: 'MAP', receive_type: 'UNKNOWN', is_announced: 0, is_checked: 1, before_ptid: '', before_lvl: 0 });
+      toast('Unlocked next tier: ' + (window.PARTS_CATALOG[next] && window.PARTS_CATALOG[next].name || next));
+    }
+  }
+}
+function renderResearch() {
+  const q = researchFilter.trim().toLowerCase();
+  const arr = (save.soul.partresearch && save.soul.partresearch.user) || [];
+  const byPt = {};
+  arr.forEach(x => { (byPt[x.ptid] = byPt[x.ptid] || []).push(x); });
+  let fams = families();
+  if (researchStatus === 'owned') fams = fams.filter(f => tierState(f.root, byPt).state === 'owned');
+  else if (researchStatus === 'missing') fams = fams.filter(f => tierState(f.root, byPt).state !== 'owned');
+  if (q) fams = fams.filter(f => f.rootName.toLowerCase().includes(q) || f.root.toLowerCase().includes(q) || f.tiers.some(t => t.name.toLowerCase().includes(q) || t.ptid.toLowerCase().includes(q)));
+  fams.sort((a, b) => a.rootName.localeCompare(b.rootName));
+  let html = '<div class="panel"><h2>Research <span class="count">(' + fams.length + ' families)</span></h2>';
+  html += '<div class="decals-tools">' +
+    '<input id="researchSearch" placeholder="Search by name or ptid..." value="' + escapeHtml(researchFilter) + '">' +
+    '<label class="muted" for="researchStatus" style="font-size:11px">Show</label>' +
+    '<select id="researchStatus">' +
+      '<option value="all"' + (researchStatus === 'all' ? ' selected' : '') + '>All</option>' +
+      '<option value="owned"' + (researchStatus === 'owned' ? ' selected' : '') + '>Owned</option>' +
+      '<option value="missing"' + (researchStatus === 'missing' ? ' selected' : '') + '>Missing</option>' +
+    '</select>' +
+    '</div>';
+  fams.forEach(f => {
+    html += '<div class="fam"><div class="fam-head"><b>' + escapeHtml(f.rootName) + '</b>' +
+      ' <span class="muted" style="font-family:monospace;font-size:10px">' + escapeHtml(f.root) + '</span></div>';
+    f.tiers.forEach((t, i) => {
+      const st = tierState(t.ptid, byPt);
+      const uncap = t.uncapped ? 1 : 0;
+      html += '<div class="tier-row">' +
+        '<span class="tier-name">' + escapeHtml(t.name) + (t.uncapped ? ' <span class="uncap">UNCAP</span>' : '') + '</span>' +
+        '<span class="tier-type muted">' + escapeHtml(t.type) + '</span>';
+      if (st.state === 'owned') {
+        const disp = rawToDisplay(st.raw, t.uncapped);
+        html += '<input class="spin-narrow" type="number" min="' + tierMinDisp(t.uncapped) + '" max="' + tierMaxDisp(t.uncapped) + '" step="1" data-tier="' + escapeHtml(t.ptid) + '" data-uncap="' + uncap + '" value="' + disp + '">' +
+          '<span class="plus muted">+' + disp + '</span>';
+      } else if (st.state === 'map') {
+        html += '<span class="muted">blueprint acquired</span>' +
+          '<button data-research="' + escapeHtml(t.ptid) + '" data-uncap="' + uncap + '">Research +' + tierMinDisp(t.uncapped) + '</button>';
+      } else {
+        html += '<span class="muted">not owned</span>' +
+          '<button data-add-bp="' + escapeHtml(t.ptid) + '">Add blueprint</button>';
+      }
+      html += '</div>';
+    });
+    html += '</div>';
+  });
+  html += '</div>';
+  return html;
+}
+
+/* ---------- event wiring (delegation) ---------- */
+document.addEventListener('input', e => {
+  if (!save) return;
+  const el = e.target;
+  if (el.matches('input[data-path]')) {
+    const path = el.dataset.path.split('.');
+    let obj = save; for (let i = 0; i < path.length - 1; i++) obj = obj[path[i]];
+    obj[path[path.length - 1]] = parseFloat(el.value) || 0;
+  } else if (el.matches('input[data-cnt]')) {
+    const id = el.dataset.cnt;
+    const rec = save.soul.skl.psskl.find(r => r.sklid === id);
+    if (rec) rec.cnt = Math.max(0, Math.floor(parseFloat(el.value) || 0));
+  } else if (el.matches('input[data-fighter]')) {
+    const cid = el.dataset.fighter;
+    const chrs = save.soul.chr.chrs[uid()] || [];
+    const f = chrs.find(x => x.cid === cid);
+    if (!f) return;
+    const body = save.bodyuser[uid()] || [];
+    const b = body.find(x => x.cid === cid);
+    if (el.dataset.fprop) {
+      f[el.dataset.fprop] = el.dataset.fprop === 'name' ? el.value : parseFloat(el.value) || 0;
+    } else if (el.dataset.stat) {
+      const key = el.dataset.stat.replace('b.', '');
+      if (b) b[key] = parseFloat(el.value) || 0;
+    }
+  }
+});
+
+document.addEventListener('click', e => {
+  if (e.target.matches('button[data-remove]')) {
+    if (!save) return;
+    const id = e.target.dataset.remove;
+    save.soul.skl.psskl = save.soul.skl.psskl.filter(r => r.sklid !== id);
+    const u = uid();
+    if (save.soul.skl.eqskl[u]) save.soul.skl.eqskl[u] = save.soul.skl.eqskl[u].filter(r => r.sklid !== id);
+    render(); toast('Removed ' + id);
+  } else if (e.target.matches('button[data-add-bp]')) {
+    if (!save) return;
+    addBlueprint(e.target.dataset.addBp);
+  } else if (e.target.matches('button[data-research]')) {
+    if (!save) return;
+    const ptid = e.target.dataset.research;
+    const uncapped = e.target.dataset.uncap === '1';
+    setTierLevel(ptid, tierMinDisp(uncapped), uncapped);
+    render();
+  }
+});
+
+document.addEventListener('change', e => {
+  if (!save) return;
+  if (e.target.id === 'decalSort') { decalSort = e.target.value; render(); }
+  else if (e.target.id === 'researchStatus') { researchStatus = e.target.value; render(); }
+  else if (e.target.matches('input[data-tier]')) {
+    const ptid = e.target.dataset.tier;
+    const uncapped = e.target.dataset.uncap === '1';
+    const disp = Math.floor(parseFloat(e.target.value) || 0);
+    setTierLevel(ptid, disp, uncapped);
+    render();
+  }
+});
+
+document.addEventListener('input', e => {
+  if (e.target.id !== 'researchSearch') return;
+  researchFilter = e.target.value;
+  render();
+  const el = document.getElementById('researchSearch');
+  if (el) { el.focus(); el.setSelectionRange(el.value.length, el.value.length); }
+});
+
+/* decal search */
+document.addEventListener('input', e => {
+  if (e.target.id !== 'decalSearch') return;
+  const q = e.target.value.trim().toLowerCase();
+  const box = document.getElementById('decalResults');
+  if (!q) { box.innerHTML = ''; return; }
+  const matches = [];
+  for (const [id, info] of Object.entries(window.DECAL_CATALOG || {})) {
+    const nm = (info.name || '').toLowerCase();
+    if (nm.includes(q) || id.toLowerCase().includes(q)) matches.push({ id, name: info.name || id, stars: info.stars, premium: info.premium });
+  }
+  if (!matches.length) { box.innerHTML = '<span class="muted">no matches</span>'; return; }
+  box.innerHTML = matches.slice(0, 30).map(m =>
+    '<div class="hit" data-addid="' + escapeHtml(m.id) + '">' +
+    '<span class="nm">' + escapeHtml(m.name) + '</span>' +
+    (m.stars ? '<span class="star">' + '★'.repeat(m.stars) + '</span>' : '') +
+    (m.premium ? '<span class="prem">P</span>' : '') +
+    '<span class="id">' + escapeHtml(m.id) + '</span>' +
+    '</div>').join('');
+});
+
+document.addEventListener('click', e => {
+  const hit = e.target.closest('.hit[data-addid]');
+  if (hit) addDecal(hit.dataset.addid);
+});
+
+function addDecal(id) {
+  if (!save) return;
+  const psskl = save.soul.skl.psskl;
+  if (psskl.some(r => r.sklid === id)) { toast('Already owned: ' + id, true); return; }
+  psskl.push({ sklid: id, cnt: 1, updated: Math.floor(Date.now() / 1000), is_checked: 0 });
+  render(); toast('Added ' + id);
+}
+
+document.addEventListener('click', e => {
+  if (e.target.id !== 'decalAddBtn') return;
+  const q = document.getElementById('decalSearch').value.trim();
+  if (!q) return;
+  // exact id match wins, else first result
+  if (window.DECAL_CATALOG && window.DECAL_CATALOG[q]) { addDecal(q); return; }
+  const hits = document.querySelectorAll('.hit[data-addid]');
+  if (hits.length) addDecal(hits[0].dataset.addid);
+});
+
+/* load / save */
+document.getElementById('loadBtn').addEventListener('click', () => document.getElementById('fileInput').click());
+document.getElementById('fileInput').addEventListener('change', e => {
+  const file = e.target.files[0]; if (!file) return;
+  fileName = file.name;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      save = decodeSave(reader.result);
+      document.getElementById('status').textContent = file.name + ' — loaded';
+      render(); toast('Loaded ' + file.name);
+    } catch (err) {
+      toast('Load failed: ' + err.message, true);
+    }
+  };
+  reader.readAsArrayBuffer(file);
+});
+document.getElementById('saveBtn').addEventListener('click', () => {
+  if (!save) return;
+  try {
+    const bytes = encodeSave(save);
+    downloadBytes(bytes, fileName);
+    toast('Saved ' + fileName);
+  } catch (err) {
+    toast('Save failed: ' + err.message, true);
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Save files — contain Steam ID + session keys, never commit these
+*.sav
+*.sav.bak
+*.sav.pre-*
+
+# Editor artifacts
+*.bak

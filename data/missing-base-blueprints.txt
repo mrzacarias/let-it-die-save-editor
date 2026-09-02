@@ -1,0 +1,212 @@
+TYPE	NAME	ACQUIRED_VIA	ID
+Body	Assault Force Body G1	collab/shop/RE	PT_MIL_TOPS_0G1
+Body	Clay Figurine Armor RE	collab/shop/RE	PT_REC_TOPS_001
+Body	Combat Diver Body	tower drop	PT_MIL_TOPS_017
+Body	DIY Attack Coat EL	collab/shop/RE	PT_SPE_TOPS_009
+Body	Exo-armor Body	tower drop	PT_MIL_TOPS_031
+Body	Fencing Armor	tower drop	PT_FAN_TOPS_005
+Body	Hard Target Body	tower drop	PT_SPO_TOPS_031
+Body	Hell Napalm Body	collab/shop/RE	PT_MIL_TOPS_022
+Body	Hell Steel Body	collab/shop/RE	PT_DIY_TOPS_022
+Body	Hell Thunder Armor	collab/shop/RE	PT_FAN_TOPS_022
+Body	Iron Eagle Body RE	collab/shop/RE	PT_REC_TOPS_003
+Body	Jackal X Body	tower drop	PT_JAC_TOPS_001
+Body	Jackal X Body D	collab/shop/RE	PT_JAC_TOPS_201
+Body	Jackal Y Body	tower drop	PT_JAC_TOPS_002
+Body	Jackal Y Body D	collab/shop/RE	PT_JAC_TOPS_202
+Body	Jackal Z Body	tower drop	PT_JAC_TOPS_003
+Body	Jackal Z Body D	collab/shop/RE	PT_JAC_TOPS_203
+Body	Kat Body 1	collab/shop/RE	PT_SPE_TOPS_003
+Body	Kendo Body	tower drop	PT_SPO_TOPS_007
+Body	Knight's Armor ZX	tower drop	PT_FAN_TOPS_0A1
+Body	Night Raider Body WoT01	tower drop	PT_MIL_TOPS_1007
+Body	Paladin Armor EW	collab/shop/RE	PT_SPE_TOPS_005
+Body	Pale Wind Body	collab/shop/RE	PT_SPO_TOPS_021
+Body	Phantom Soldier Body WoT01	tower drop	PT_MIL_TOPS_1005
+Body	PT_SPE_TOPS_021	collab/shop/RE	PT_SPE_TOPS_021
+Body	PT_SPE_TOPS_027	collab/shop/RE	PT_SPE_TOPS_027
+Body	PT_SPE_TOPS_029	collab/shop/RE	PT_SPE_TOPS_029
+Body	PT_SPO_TOPS_022	collab/shop/RE	PT_SPO_TOPS_022
+Body	Red Napalm Body	collab/shop/RE	PT_MIL_TOPS_021
+Body	Sengoku Armor BT	collab/shop/RE	PT_SPE_TOPS_007
+Body	Tank Commander Armor Ver.1	collab/shop/RE	PT_SPE_TOPS_011
+Body	Travis' Jacket 1	collab/shop/RE	PT_SPE_TOPS_015
+Body	Violent Grinder Body	tower drop	PT_DIY_TOPS_031
+Body	White Steel Body	collab/shop/RE	PT_DIY_TOPS_021
+Head	4M Gas Mask N	final/uncap	PT_GAS_HEAD_0N1
+Head	Assault Force Head G1	collab/shop/RE	PT_MIL_HEAD_0G1
+Head	Barrett Punisher Head	tower drop	PT_MIL_HEAD_015
+Head	Black Thunder Helmet	collab/shop/RE	PT_FAN_HEAD_021
+Head	Clay Figurine Helmet RE	collab/shop/RE	PT_REC_HEAD_001
+Head	Combat Diver Head	tower drop	PT_MIL_HEAD_017
+Head	Desert Scarf N	final/uncap	PT_GAS_HEAD_0N8
+Head	Exo-armor Head	tower drop	PT_MIL_HEAD_031
+Head	Fencer's Mask N	final/uncap	PT_GAS_HEAD_0N7
+Head	Fencing Helmet	tower drop	PT_FAN_HEAD_005
+Head	Happy Yuppie Glasses	collab/shop/RE	PT_SPE_HEAD_024
+Head	Hard Target Head	tower drop	PT_SPO_HEAD_031
+Head	Hell Napalm Head	collab/shop/RE	PT_MIL_HEAD_022
+Head	Hell Steel Head	collab/shop/RE	PT_DIY_HEAD_022
+Head	Hell Thunder Helmet	collab/shop/RE	PT_FAN_HEAD_022
+Head	Iron Eagle Head RE	collab/shop/RE	PT_REC_HEAD_003
+Head	Iron Mask N	final/uncap	PT_GAS_HEAD_0N5
+Head	Jackal X Head	tower drop	PT_JAC_HEAD_001
+Head	Jackal X Head D	collab/shop/RE	PT_JAC_HEAD_201
+Head	Jackal Y Head	tower drop	PT_JAC_HEAD_002
+Head	Jackal Y Head D	collab/shop/RE	PT_JAC_HEAD_202
+Head	Jackal Z Head	tower drop	PT_JAC_HEAD_003
+Head	Jackal Z Head D	collab/shop/RE	PT_JAC_HEAD_203
+Head	Kat Head 1	collab/shop/RE	PT_SPE_HEAD_003
+Head	Kendo Mask	tower drop	PT_SPO_HEAD_007
+Head	Knight's Helm ZX	tower drop	PT_FAN_HEAD_0A1
+Head	M42 Gas Mask N	final/uncap	PT_GAS_HEAD_0N2
+Head	Meijin Head 1	collab/shop/RE	PT_SPE_HEAD_021
+Head	Momoko Yamada Head 1	collab/shop/RE	PT_SPE_HEAD_027
+Head	Night Raider Head WoT01	tower drop	PT_MIL_HEAD_1007
+Head	Pale Wind Head	collab/shop/RE	PT_SPO_HEAD_021
+Head	Phantom Soldier Head WoT01	tower drop	PT_MIL_HEAD_1005
+Head	Pilot’s Mask N	final/uncap	PT_GAS_HEAD_0N4
+Head	PT_SPE_HEAD_029	collab/shop/RE	PT_SPE_HEAD_029
+Head	PT_SPO_HEAD_022	collab/shop/RE	PT_SPO_HEAD_022
+Head	Red Napalm Head	collab/shop/RE	PT_MIL_HEAD_021
+Head	Space Funglasses	collab/shop/RE	PT_SPE_HEAD_013
+Head	Surgical Mask N	final/uncap	PT_GAS_HEAD_0N3
+Head	Tank Commander Helmet Ver.1	collab/shop/RE	PT_SPE_HEAD_011
+Head	Travis' Sunglasses 1	collab/shop/RE	PT_SPE_HEAD_015
+Head	Tuscan Mask N	final/uncap	PT_GAS_HEAD_0N6
+Head	Ultra 3D Glasses	collab/shop/RE	PT_SPE_HEAD_017
+Head	Ultra 3D Glasses W1	collab/shop/RE	PT_SPE_HEAD_019
+Head	Uncle-D2 Head 1	collab/shop/RE	PT_SPE_HEAD_025
+Head	Violent Grinder Head	tower drop	PT_DIY_HEAD_031
+Head	X-Rated Glasses	collab/shop/RE	PT_SPE_HEAD_018
+Head	X-Ray Glasses	collab/shop/RE	PT_SPE_HEAD_001
+Head	X-Ray Glasses	collab/shop/RE	PT_SPE_HEAD_002
+Legs	Assault Force Pants G1	collab/shop/RE	PT_MIL_BTM_0G1
+Legs	Black Thunder Leggings	collab/shop/RE	PT_FAN_BTM_021
+Legs	Clay Figurine Leggings RE	collab/shop/RE	PT_REC_BTM_001
+Legs	Combat Diver Pants	tower drop	PT_MIL_BTM_017
+Legs	Cycle Madness Pants	tower drop	PT_SPO_BTM_015
+Legs	Exo-armor Pants	tower drop	PT_MIL_BTM_031
+Legs	Fencing Leggings	tower drop	PT_FAN_BTM_005
+Legs	Hard Target Pants	tower drop	PT_SPO_BTM_031
+Legs	Hell Napalm Pants	collab/shop/RE	PT_MIL_BTM_022
+Legs	Hell Steel Leggings	collab/shop/RE	PT_DIY_BTM_022
+Legs	Hell Thunder Leggings	collab/shop/RE	PT_FAN_BTM_022
+Legs	Iron Eagle Pants RE	collab/shop/RE	PT_REC_BTM_003
+Legs	Jackal X Pants	tower drop	PT_JAC_BTM_001
+Legs	Jackal X Pants D	collab/shop/RE	PT_JAC_BTM_201
+Legs	Jackal Y Pants	tower drop	PT_JAC_BTM_002
+Legs	Jackal Y Pants D	collab/shop/RE	PT_JAC_BTM_202
+Legs	Jackal Z Pants	tower drop	PT_JAC_BTM_003
+Legs	Jackal Z Pants D	collab/shop/RE	PT_JAC_BTM_203
+Legs	Kat Boots 1	collab/shop/RE	PT_SPE_BTM_003
+Legs	Kendo Pants	tower drop	PT_SPO_BTM_007
+Legs	Knight's Leggings ZX	tower drop	PT_FAN_BTM_0A1
+Legs	Night Raider Pants WoT01	tower drop	PT_MIL_BTM_1007
+Legs	Pale Wind Pants	collab/shop/RE	PT_SPO_BTM_021
+Legs	Phantom Soldier Pants WoT01	tower drop	PT_MIL_BTM_1005
+Legs	PT_SPE_BTM_021	collab/shop/RE	PT_SPE_BTM_021
+Legs	PT_SPE_BTM_027	collab/shop/RE	PT_SPE_BTM_027
+Legs	PT_SPE_BTM_029	collab/shop/RE	PT_SPE_BTM_029
+Legs	PT_SPO_BTM_022	collab/shop/RE	PT_SPO_BTM_022
+Legs	Reaper's Pants	collab/shop/RE	PT_SPE_BTM_001
+Legs	Red Napalm Pants	collab/shop/RE	PT_MIL_BTM_021
+Legs	Tank Commander Pants Ver.1	collab/shop/RE	PT_SPE_BTM_011
+Legs	Travis' Pants 1	collab/shop/RE	PT_SPE_BTM_015
+Legs	Violent Grinder Pants	tower drop	PT_DIY_BTM_031
+Weapon	Astaroth	final/uncap	PT_ARM_WP003_0H4
+Weapon	Backdraft	final/uncap	PT_ARM_WP038_0H4
+Weapon	Beam Katana 1	collab/shop/RE	PT_ARM_WP001_0N1
+Weapon	Belphegor	final/uncap	PT_ARM_WP013_0H4
+Weapon	Bloody Pitching Machine A TDM	collab/shop/RE	PT_ARM_WP028_0A3
+Weapon	Bloody Pitching Machine TDM	collab/shop/RE	PT_ARM_WP028_0A1
+Weapon	Bowling Crusher A TDM	collab/shop/RE	PT_ARM_WP035_0A4
+Weapon	Bowling Crusher TDM	collab/shop/RE	PT_ARM_WP035_0A2
+Weapon	Bowling Stomper A TDM	collab/shop/RE	PT_ARM_WP035_0A3
+Weapon	Bowling Stomper TDM	collab/shop/RE	PT_ARM_WP035_0A1
+Weapon	Brutal Yo-Yo	tower drop	PT_ARM_WP033_001
+Weapon	Cleaver Saber A TDM	collab/shop/RE	PT_ARM_WP026_0A3
+Weapon	Cleaver Saber TDM	collab/shop/RE	PT_ARM_WP026_0A1
+Weapon	Cyclone Shuriken	tower drop	PT_ARM_WP039_001
+Weapon	Death Stalker	final/uncap	PT_ARM_WP012_0H4
+Weapon	Demon Gun 1	collab/shop/RE	PT_ARM_WP017_0A1
+Weapon	Dominion	final/uncap	PT_ARM_WP046_0H4
+Weapon	Dragon	final/uncap	PT_ARM_WP044_0H4
+Weapon	Drill Arm + TDM	collab/shop/RE	PT_ARM_WP036_0A3
+Weapon	Drill Arm TDM	collab/shop/RE	PT_ARM_WP036_0A1
+Weapon	Drill Buster + TDM	collab/shop/RE	PT_ARM_WP036_0A4
+Weapon	Drill Buster TDM	collab/shop/RE	PT_ARM_WP036_0A2
+Weapon	Electro Trigger	final/uncap	PT_ARM_WP006_0H4
+Weapon	Emperor	final/uncap	PT_ARM_WP041_0H4
+Weapon	Executioner’s Ride A TDM	collab/shop/RE	PT_ARM_WP041_0B4
+Weapon	Executioner’s Ride TDM	collab/shop/RE	PT_ARM_WP041_0B2
+Weapon	Executioner’s Ride ZX	tower drop	PT_ARM_WP041_0A1
+Weapon	Fenrir	final/uncap	PT_ARM_WP001_0H4
+Weapon	FFWF-103 Flamethrower E TDM	collab/shop/RE	PT_ARM_WP007_0A3
+Weapon	FFWF-103 Flamethrower TDM	collab/shop/RE	PT_ARM_WP007_0A1
+Weapon	FFWF-285 Flamethrower E TDM	collab/shop/RE	PT_ARM_WP007_0A4
+Weapon	FFWF-285 Flamethrower TDM	collab/shop/RE	PT_ARM_WP007_0A2
+Weapon	Ghastly Pitching Machine A TDM	collab/shop/RE	PT_ARM_WP028_0A4
+Weapon	Ghastly Pitching Machine TDM	collab/shop/RE	PT_ARM_WP028_0A2
+Weapon	GLIDER 1	collab/shop/RE	PT_ARM_WP025_0K1
+Weapon	Grim Reaper’s Scythe	tower drop	PT_ARM_WP050_001
+Weapon	Grim Reaper’s Scythe	tower drop	PT_ARM_WP050_003
+Weapon	Grim Reaper’s Scythe R1	collab/shop/RE	PT_ARM_WP050_0R1
+Weapon	Hatatagami	final/uncap	PT_ARM_WP039_0H4
+Weapon	Head of Euryale	collab/shop/RE	PT_ARM_WP058_0H1
+Weapon	Head of Medusa	collab/shop/RE	PT_ARM_WP058_001
+Weapon	Hell Spike Crusher	collab/shop/RE	PT_ARM_WP054_0H1
+Weapon	Hornet Saber A TDM	collab/shop/RE	PT_ARM_WP026_0A4
+Weapon	Hornet Saber TDM	collab/shop/RE	PT_ARM_WP026_0A2
+Weapon	Hunting Bow	tower drop	PT_ARM_WP046_001
+Weapon	Iron Hammer RG	tower drop	PT_ARM_WP011_0B1
+Weapon	Jackal Blaster	tower drop	PT_ARM_WP053_001
+Weapon	Jackal Blaster D	collab/shop/RE	PT_ARM_WP053_002
+Weapon	Jackal Sword	tower drop	PT_ARM_WP051_001
+Weapon	Jackal Sword D	collab/shop/RE	PT_ARM_WP051_002
+Weapon	Jackal Yo-Yo	tower drop	PT_ARM_WP052_001
+Weapon	Jackal Yo-Yo D	collab/shop/RE	PT_ARM_WP052_002
+Weapon	Judgement Day	final/uncap	PT_ARM_WP043_0H4
+Weapon	Jungle Machete E RG	tower drop	PT_ARM_WP001_0B1
+Weapon	KAMAS-WoT Assault Rifle01	tower drop	PT_ARM_WP031_0A1
+Weapon	King Baboon	final/uncap	PT_ARM_WP037_0H4
+Weapon	Lethal Weapon	final/uncap	PT_ARM_WP017_0H4
+Weapon	Lightning Wand S TDM	collab/shop/RE	PT_ARM_WP047_0A3
+Weapon	Lightning Wand TDM	collab/shop/RE	PT_ARM_WP047_0A1
+Weapon	Loaded Glove	tower drop	PT_ARM_WP030_001
+Weapon	Longsword RE	collab/shop/RE	PT_ARM_WP060_001
+Weapon	M-404 Rocket Launcher E TDM	collab/shop/RE	PT_ARM_WP045_0A3
+Weapon	M-404 Rocket Launcher TDM	collab/shop/RE	PT_ARM_WP045_0A1
+Weapon	M-844 Rocket Launcher E TDM	collab/shop/RE	PT_ARM_WP045_0A4
+Weapon	M-844 Rocket Launcher TDM	collab/shop/RE	PT_ARM_WP045_0A2
+Weapon	M2G-87	collab/shop/RE	PT_ARM_WP056_001
+Weapon	M2G-87 Mod.1 FireFly	collab/shop/RE	PT_ARM_WP056_0H1
+Weapon	Masamune Blade S TDM	collab/shop/RE	PT_ARM_WP061_003
+Weapon	Masamune Blade TDM	collab/shop/RE	PT_ARM_WP061_001
+Weapon	Mortal Bobslayer	collab/shop/RE	PT_ARM_WP059_001
+Weapon	Motor Psycho A TDM	collab/shop/RE	PT_ARM_WP041_0B3
+Weapon	Motor Psycho TDM	collab/shop/RE	PT_ARM_WP041_0B1
+Weapon	Muramasa Blade S TDM	collab/shop/RE	PT_ARM_WP061_004
+Weapon	Muramasa Blade TDM	collab/shop/RE	PT_ARM_WP061_002
+Weapon	Muspelheim	final/uncap	PT_ARM_WP004_0H4
+Weapon	No Knife 1	collab/shop/RE	PT_ARM_WP002_0N1
+Weapon	Nosferatu	final/uncap	PT_ARM_WP002_0H4
+Weapon	Ouroboros	final/uncap	PT_ARM_WP024_0H4
+Weapon	Pandemic	final/uncap	PT_ARM_WP045_0H4
+Weapon	PT_ARM_WP011_0H4	final/uncap	PT_ARM_WP011_0H4
+Weapon	PT_ARM_WP019_0H4	final/uncap	PT_ARM_WP019_0H4
+Weapon	PT_ARM_WP026_0H4	final/uncap	PT_ARM_WP026_0H4
+Weapon	PT_ARM_WP030_0H4	final/uncap	PT_ARM_WP030_0H4
+Weapon	PT_ARM_WP031_0H4	final/uncap	PT_ARM_WP031_0H4
+Weapon	PT_ARM_WP040_0H4	final/uncap	PT_ARM_WP040_0H4
+Weapon	PT_ARM_WP059_0H1	collab/shop/RE	PT_ARM_WP059_0H1
+Weapon	Pulse Stun Gun	tower drop	PT_ARM_WP063_001
+Weapon	Tactical Shovel	tower drop	PT_ARM_WP038_001
+Weapon	Takama-ga-hara	final/uncap	PT_ARM_WP016_0H4
+Weapon	Thor’s Wand S TDM	collab/shop/RE	PT_ARM_WP047_0A4
+Weapon	Thor’s Wand TDM	collab/shop/RE	PT_ARM_WP047_0A2
+Weapon	Timber Rebellion	tower drop	PT_ARM_WP064_001
+Weapon	Vajra of God	collab/shop/RE	PT_ARM_WP057_0H1
+Weapon	Vajra of Light	collab/shop/RE	PT_ARM_WP057_001
+Weapon	Viral Massager	collab/shop/RE	PT_ARM_WP055_0H1
+Weapon	Yes Knife 1	collab/shop/RE	PT_ARM_WP002_0Y1
