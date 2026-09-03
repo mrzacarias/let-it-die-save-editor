@@ -494,10 +494,10 @@ function ptType(ptid) {
 }
 
 /* ---------- research ---------- */
-function rawToDisplay(raw, uncapped) { return uncapped ? raw + 4 : raw - 1; }
-function displayToRaw(disp, uncapped) { return uncapped ? disp - 4 : disp + 1; }
-function tierMinDisp(uncapped) { return uncapped ? 5 : 0; }
-function tierMaxDisp(uncapped) { return uncapped ? 24 : 4; }
+function rawToDisplay(raw, kind) { return kind === 'uncap' ? raw + 4 : raw - 1; }
+function displayToRaw(disp, kind) { return kind === 'uncap' ? disp - 4 : disp + 1; }
+function tierMinDisp(kind) { return kind === 'uncap' ? 5 : 0; }
+function tierMaxDisp(kind) { return kind === 'normal' ? 4 : 24; }
 
 function chain(ptid) {
   const out = [];
@@ -506,7 +506,7 @@ function chain(ptid) {
   while (cur && !seen.has(cur)) {
     seen.add(cur);
     const c = window.PARTS_CATALOG[cur] || {};
-    out.push({ ptid: cur, name: c.name || ptName(cur), type: c.type || ptType(cur) || '—', uncapped: !!c.uncapped });
+    out.push({ ptid: cur, name: c.name || ptName(cur), type: c.type || ptType(cur) || '—', kind: c.kind || 'normal' });
     cur = c.next;
   }
   return out;
@@ -535,9 +535,9 @@ function addBlueprint(ptid) {
   arr.push({ ptid, lvl: 1, research_type: 'MAP', receive_type: 'UNKNOWN', is_announced: 0, is_checked: 1, before_ptid: '', before_lvl: 0 });
   render(); toast('Added blueprint ' + ptid);
 }
-function setTierLevel(ptid, disp, uncapped) {
-  disp = Math.max(tierMinDisp(uncapped), Math.min(tierMaxDisp(uncapped), Math.floor(disp || 0)));
-  const raw = displayToRaw(disp, uncapped);
+function setTierLevel(ptid, disp, kind) {
+  disp = Math.max(tierMinDisp(kind), Math.min(tierMaxDisp(kind), Math.floor(disp || 0)));
+  const raw = displayToRaw(disp, kind);
   const arr = save.soul.partresearch.user;
   for (let i = arr.length - 1; i >= 0; i--) {
     if (arr[i].ptid === ptid && arr[i].research_type === 'MAP') arr.splice(i, 1);
@@ -547,7 +547,7 @@ function setTierLevel(ptid, disp, uncapped) {
   let fin = mine.find(r => r.research_type === 'FINISHED' && r.lvl === raw);
   if (!fin) { fin = { ptid, research_type: 'FINISHED' }; arr.push(fin); }
   fin.lvl = raw; fin.receive_type = 'CHARGE'; fin.before_ptid = ptid; fin.before_lvl = raw - 1; fin.is_announced = 1; fin.is_checked = 1;
-  const maxDisp = tierMaxDisp(uncapped);
+  const maxDisp = tierMaxDisp(kind);
   if (disp < maxDisp) {
     let lu = mine.find(r => r.research_type === 'LEVELUP');
     if (!lu) { lu = { ptid, research_type: 'LEVELUP' }; arr.push(lu); }
@@ -557,7 +557,7 @@ function setTierLevel(ptid, disp, uncapped) {
       if (arr[i].ptid === ptid && arr[i].research_type === 'LEVELUP') arr.splice(i, 1);
     }
   }
-  if (!uncapped && disp === tierMaxDisp(false)) {
+  if (kind === 'normal' && disp === tierMaxDisp('normal')) {
     const next = window.PARTS_CATALOG[ptid] && window.PARTS_CATALOG[ptid].next;
     if (next && !arr.some(r => r.ptid === next)) {
       arr.push({ ptid: next, lvl: 1, research_type: 'MAP', receive_type: 'UNKNOWN', is_announced: 0, is_checked: 1, before_ptid: '', before_lvl: 0 });
@@ -610,17 +610,18 @@ function renderResearch() {
       ' <span class="muted" style="font-family:monospace;font-size:10px">' + escapeHtml(f.root) + '</span></div>';
     f.tiers.forEach((t, i) => {
       const st = tierState(t.ptid, byPt);
-      const uncap = t.uncapped ? 1 : 0;
+      const kind = t.kind || 'normal';
+      const badge = kind === 'uncap' ? ' <span class="uncap">UNCAP</span>' : (kind === 'tengoku' ? ' <span class="uncap">TENGOKU</span>' : '');
       html += '<div class="tier-row">' +
-        '<span class="tier-name">' + escapeHtml(t.name) + (t.uncapped ? ' <span class="uncap">UNCAP</span>' : '') + '</span>' +
+        '<span class="tier-name">' + escapeHtml(t.name) + badge + '</span>' +
         '<span class="tier-type muted">' + escapeHtml(t.type) + '</span>';
       if (st.state === 'owned') {
-        const disp = rawToDisplay(st.raw, t.uncapped);
-        html += '<input class="spin-narrow" type="number" min="' + tierMinDisp(t.uncapped) + '" max="' + tierMaxDisp(t.uncapped) + '" step="1" data-tier="' + escapeHtml(t.ptid) + '" data-uncap="' + uncap + '" value="' + disp + '">' +
+        const disp = rawToDisplay(st.raw, kind);
+        html += '<input class="spin-narrow" type="number" min="' + tierMinDisp(kind) + '" max="' + tierMaxDisp(kind) + '" step="1" data-tier="' + escapeHtml(t.ptid) + '" data-kind="' + kind + '" value="' + disp + '">' +
           '<span class="plus muted">+' + disp + '</span>';
       } else if (st.state === 'map') {
         html += '<span class="muted">blueprint acquired</span>' +
-          '<button data-research="' + escapeHtml(t.ptid) + '" data-uncap="' + uncap + '">Research +' + tierMinDisp(t.uncapped) + '</button>';
+          '<button data-research="' + escapeHtml(t.ptid) + '" data-kind="' + kind + '">Research +' + tierMinDisp(kind) + '</button>';
       } else {
         html += '<span class="muted">not owned</span>' +
           '<button data-add-bp="' + escapeHtml(t.ptid) + '">Add blueprint</button>';
@@ -675,7 +676,7 @@ function researchAll() {
   roots.forEach(root => {
     const tiers = chain(root);
     tiers.forEach((tier, i) => {
-      const max = tier.uncapped ? 20 : 5;
+      const max = tier.kind === 'normal' ? 5 : (tier.kind === 'uncap' ? 20 : 25);
       const prev = i > 0 ? tiers[i - 1] : null;
       for (let lvl = 1; lvl <= max; lvl++) {
         newRecords.push({
@@ -924,8 +925,8 @@ document.addEventListener('click', e => {
   } else if (e.target.matches('button[data-research]')) {
     if (!save) return;
     const ptid = e.target.dataset.research;
-    const uncapped = e.target.dataset.uncap === '1';
-    setTierLevel(ptid, tierMinDisp(uncapped), uncapped);
+    const kind = e.target.dataset.kind || 'normal';
+    setTierLevel(ptid, tierMinDisp(kind), kind);
     render();
   }
 });
@@ -954,9 +955,9 @@ document.addEventListener('change', e => {
   }
   else if (e.target.matches('input[data-tier]')) {
     const ptid = e.target.dataset.tier;
-    const uncapped = e.target.dataset.uncap === '1';
+    const kind = e.target.dataset.kind || 'normal';
     const disp = Math.floor(parseFloat(e.target.value) || 0);
-    setTierLevel(ptid, disp, uncapped);
+    setTierLevel(ptid, disp, kind);
     render();
   }
   else if (e.target.matches('select[data-fighter][data-fclass]')) {

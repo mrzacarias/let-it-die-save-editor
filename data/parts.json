@@ -3,8022 +3,8022 @@
   "name": "Machete",
   "type": "Weapon",
   "next": "PT_ARM_WP001_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP001_002": {
   "name": "Battle Machete",
   "type": "Weapon",
   "next": "PT_ARM_WP001_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP001_003": {
   "name": "Jungle Machete E",
   "type": "Weapon",
   "next": "PT_ARM_WP001_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP001_004": {
   "name": "Battle Machete E",
   "type": "Weapon",
   "next": "PT_ARM_WP001_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP001_005": {
   "name": "Battle Machete E",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP001_0B1": {
   "name": "Jungle Machete E RG",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP001_0H4": {
   "name": "Fenrir",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP001_0N1": {
   "name": "Beam Katana 1",
   "type": "Weapon",
   "next": "PT_ARM_WP001_0N3",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP001_0N2": {
   "name": "Beam Katana 3",
   "type": "Weapon",
   "next": "PT_ARM_WP001_0N4",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP001_0N3": {
   "name": "Beam Katana 2",
   "type": "Weapon",
   "next": "PT_ARM_WP001_0N2",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP001_0N4": {
   "name": "Beam Katana 4",
   "type": "Weapon",
   "next": "PT_ARM_WP001_0N5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP001_0N5": {
   "name": "Beam Katana 4",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP002_001": {
   "name": "Knife",
   "type": "Weapon",
   "next": "PT_ARM_WP002_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP002_002": {
   "name": "Combat Knife",
   "type": "Weapon",
   "next": "PT_ARM_WP002_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP002_003": {
   "name": "Butterfly Knife E",
   "type": "Weapon",
   "next": "PT_ARM_WP002_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP002_004": {
   "name": "Combat Knife E",
   "type": "Weapon",
   "next": "PT_ARM_WP002_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP002_005": {
   "name": "Combat Knife E",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP002_0H4": {
   "name": "Nosferatu",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP002_0N1": {
   "name": "No Knife 1",
   "type": "Weapon",
   "next": "PT_ARM_WP002_0N3",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP002_0N2": {
   "name": "No Knife 3",
   "type": "Weapon",
   "next": "PT_ARM_WP002_0N4",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP002_0N3": {
   "name": "No Knife 2",
   "type": "Weapon",
   "next": "PT_ARM_WP002_0N2",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP002_0N4": {
   "name": "No Knife 3",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP002_0Y1": {
   "name": "Yes Knife 1",
   "type": "Weapon",
   "next": "PT_ARM_WP002_0Y3",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP002_0Y2": {
   "name": "Yes Knife 3",
   "type": "Weapon",
   "next": "PT_ARM_WP002_0Y4",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP002_0Y3": {
   "name": "Yes Knife 2",
   "type": "Weapon",
   "next": "PT_ARM_WP002_0Y2",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP002_0Y4": {
   "name": "Yes Knife 3",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP003_001": {
   "name": "Axe",
   "type": "Weapon",
   "next": "PT_ARM_WP003_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP003_002": {
   "name": "Axe of Destruction",
   "type": "Weapon",
   "next": "PT_ARM_WP003_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP003_003": {
   "name": "Steel Axe S",
   "type": "Weapon",
   "next": "PT_ARM_WP003_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP003_004": {
   "name": "Axe of Destruction S",
   "type": "Weapon",
   "next": "PT_ARM_WP003_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP003_005": {
   "name": "Axe of Destruction S",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP003_0H4": {
   "name": "Astaroth",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP004_001": {
   "name": "Crossbow",
   "type": "Weapon",
   "next": "PT_ARM_WP004_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP004_002": {
   "name": "Assassin’s Crossbow",
   "type": "Weapon",
   "next": "PT_ARM_WP004_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP004_003": {
   "name": "Robber Crossbow S",
   "type": "Weapon",
   "next": "PT_ARM_WP004_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP004_004": {
   "name": "Assassin’s Crossbow S",
   "type": "Weapon",
   "next": "PT_ARM_WP004_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP004_005": {
   "name": "Assassin’s Crossbow S",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP004_0H4": {
   "name": "Muspelheim",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP005_001": {
   "name": "Bat",
   "type": "Weapon",
   "next": "PT_ARM_WP005_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP005_002": {
   "name": "Spiked Bat",
   "type": "Weapon",
   "next": "PT_ARM_WP005_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP005_003": {
   "name": "Metal Bat A",
   "type": "Weapon",
   "next": "PT_ARM_WP005_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP005_004": {
   "name": "Spiked Bat A",
   "type": "Weapon",
   "next": "PT_ARM_WP005_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP005_005": {
   "name": "Spiked Bat A",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP005_0H4": {
   "name": "Thunderbolt",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP006_001": {
   "name": "Buzzsaw",
   "type": "Weapon",
   "next": "PT_ARM_WP006_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP006_002": {
   "name": "Buzzsaw Masher",
   "type": "Weapon",
   "next": "PT_ARM_WP006_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP006_003": {
   "name": "Buzzsaw Knuckles +",
   "type": "Weapon",
   "next": "PT_ARM_WP006_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP006_004": {
   "name": "Buzzsaw Masher +",
   "type": "Weapon",
   "next": "PT_ARM_WP006_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP006_005": {
   "name": "Buzzsaw Masher +",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP006_0H4": {
   "name": "Electro Trigger",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP007_001": {
   "name": "Flamethrower",
   "type": "Weapon",
   "next": "PT_ARM_WP007_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP007_002": {
   "name": "FFWF-285 Flamethrower",
   "type": "Weapon",
   "next": "PT_ARM_WP007_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP007_003": {
   "name": "FFWF-103 Flamethrower E",
   "type": "Weapon",
   "next": "PT_ARM_WP007_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP007_004": {
   "name": "FFWF-285 Flamethrower E",
   "type": "Weapon",
   "next": "PT_ARM_WP007_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP007_005": {
   "name": "FFWF-285 Flamethrower E",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP007_0A1": {
   "name": "FFWF-103 Flamethrower TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP007_0A2": {
   "name": "FFWF-285 Flamethrower TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP007_0A3": {
   "name": "FFWF-103 Flamethrower E TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP007_0A4": {
   "name": "FFWF-285 Flamethrower E TDM",
   "type": "Weapon",
   "next": "PT_ARM_WP007_0A5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP007_0A5": {
   "name": "FFWF-285 Flamethrower E TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP011_001": {
   "name": "Hammer",
   "type": "Weapon",
   "next": "PT_ARM_WP011_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP011_002": {
   "name": "Strike Hammer",
   "type": "Weapon",
   "next": "PT_ARM_WP011_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP011_003": {
   "name": "Iron Hammer +",
   "type": "Weapon",
   "next": "PT_ARM_WP011_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP011_004": {
   "name": "Strike Hammer +",
   "type": "Weapon",
   "next": "PT_ARM_WP011_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP011_005": {
   "name": "Strike Hammer +",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP011_0B1": {
   "name": "Iron Hammer RG",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP011_0H4": {
   "name": "Lunatic",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP012_001": {
   "name": "Pickaxe",
   "type": "Weapon",
   "next": "PT_ARM_WP012_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP012_002": {
   "name": "Murderous Rake",
   "type": "Weapon",
   "next": "PT_ARM_WP012_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP012_003": {
   "name": "Definitive Combat Pickaxe",
   "type": "Weapon",
   "next": "PT_ARM_WP012_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP012_004": {
   "name": "Murderous Rake +",
   "type": "Weapon",
   "next": "PT_ARM_WP012_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP012_005": {
   "name": "Murderous Rake +",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP012_0H4": {
   "name": "Death Stalker",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP013_001": {
   "name": "Spear",
   "type": "Weapon",
   "next": "PT_ARM_WP013_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP013_002": {
   "name": "Spirit Lance",
   "type": "Weapon",
   "next": "PT_ARM_WP013_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP013_003": {
   "name": "Knight’s Lance S",
   "type": "Weapon",
   "next": "PT_ARM_WP013_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP013_004": {
   "name": "Spirit Lance S",
   "type": "Weapon",
   "next": "PT_ARM_WP013_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP013_005": {
   "name": "Spirit Lance S",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP013_0H4": {
   "name": "Belphegor",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP016_001": {
   "name": "Katana",
   "type": "Weapon",
   "next": "PT_ARM_WP016_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP016_002": {
   "name": "Muramasa Blade",
   "type": "Weapon",
   "next": "PT_ARM_WP016_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP016_003": {
   "name": "Masamune Blade S",
   "type": "Weapon",
   "next": "PT_ARM_WP016_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP016_004": {
   "name": "Muramasa Blade S",
   "type": "Weapon",
   "next": "PT_ARM_WP016_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP016_005": {
   "name": "Muramasa Blade S",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP016_0H4": {
   "name": "Takama-ga-hara",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP017_001": {
   "name": "Magnum",
   "type": "Weapon",
   "next": "PT_ARM_WP017_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP017_002": {
   "name": "Bronson Magnum",
   "type": "Weapon",
   "next": "PT_ARM_WP017_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP017_003": {
   "name": "Glinty Magnum E",
   "type": "Weapon",
   "next": "PT_ARM_WP017_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP017_004": {
   "name": "Bronson Magnum E",
   "type": "Weapon",
   "next": "PT_ARM_WP017_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP017_005": {
   "name": "Bronson Magnum E",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP017_0A1": {
   "name": "Demon Gun 1",
   "type": "Weapon",
   "next": "PT_ARM_WP017_0A3",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP017_0A2": {
   "name": "Demon Gun 3",
   "type": "Weapon",
   "next": "PT_ARM_WP017_0A4",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP017_0A3": {
   "name": "Demon Gun 2",
   "type": "Weapon",
   "next": "PT_ARM_WP017_0A2",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP017_0A4": {
   "name": "Demon Gun 4",
   "type": "Weapon",
   "next": "PT_ARM_WP017_0A5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP017_0A5": {
   "name": "Demon Gun 4",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP017_0H4": {
   "name": "Lethal Weapon",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP018_001": {
   "name": "Stun Rod",
   "type": "Weapon",
   "next": "PT_ARM_WP018_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP018_002": {
   "name": "Stun Master",
   "type": "Weapon",
   "next": "PT_ARM_WP018_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP018_003": {
   "name": "Stun Rod E",
   "type": "Weapon",
   "next": "PT_ARM_WP018_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP018_004": {
   "name": "Stun Master E",
   "type": "Weapon",
   "next": "PT_ARM_WP018_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP018_005": {
   "name": "Stun Master E",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP019_001": {
   "name": "Sword",
   "type": "Weapon",
   "next": "PT_ARM_WP019_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP019_002": {
   "name": "Dragon Buster Sword",
   "type": "Weapon",
   "next": "PT_ARM_WP019_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP019_003": {
   "name": "Longsword S",
   "type": "Weapon",
   "next": "PT_ARM_WP019_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP019_004": {
   "name": "Dragon Buster Sword S",
   "type": "Weapon",
   "next": "PT_ARM_WP019_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP019_005": {
   "name": "Dragon Buster Sword S",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP019_0H4": {
   "name": "Asgard",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP020_001": {
   "name": "Claws",
   "type": "Weapon",
   "next": "PT_ARM_WP020_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP020_002": {
   "name": "Nightmare Claw",
   "type": "Weapon",
   "next": "PT_ARM_WP020_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP020_003": {
   "name": "Iron Claw S",
   "type": "Weapon",
   "next": "PT_ARM_WP020_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP020_004": {
   "name": "Nightmare Claw S",
   "type": "Weapon",
   "next": "PT_ARM_WP020_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP020_005": {
   "name": "Nightmare Claw S",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP021_001": {
   "name": "Shotgun",
   "type": "Weapon",
   "next": "PT_ARM_WP021_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP021_002": {
   "name": "Cerberus Shotgun",
   "type": "Weapon",
   "next": "PT_ARM_WP021_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP021_003": {
   "name": "Pitbull Shotgun E",
   "type": "Weapon",
   "next": "PT_ARM_WP021_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP021_004": {
   "name": "Cerberus Shotgun E",
   "type": "Weapon",
   "next": "PT_ARM_WP021_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP021_005": {
   "name": "Cerberus Shotgun E",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP024_001": {
   "name": "Flail",
   "type": "Weapon",
   "next": "PT_ARM_WP024_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP024_002": {
   "name": "Armor Breaking Flail",
   "type": "Weapon",
   "next": "PT_ARM_WP024_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP024_003": {
   "name": "Striker Flail S",
   "type": "Weapon",
   "next": "PT_ARM_WP024_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP024_004": {
   "name": "Armor Breaking Flail S",
   "type": "Weapon",
   "next": "PT_ARM_WP024_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP024_005": {
   "name": "Armor Breaking Flail S",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP024_0H4": {
   "name": "Ouroboros",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP025_001": {
   "name": "Sniper Rifle",
   "type": "Weapon",
   "next": "PT_ARM_WP025_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP025_002": {
   "name": "DUKE-13 Sniper Rifle",
   "type": "Weapon",
   "next": "PT_ARM_WP025_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP025_003": {
   "name": "DUKE-02 Sniper Rifle E",
   "type": "Weapon",
   "next": "PT_ARM_WP025_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP025_004": {
   "name": "DUKE-13 Sniper Rifle E",
   "type": "Weapon",
   "next": "PT_ARM_WP025_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP025_005": {
   "name": "DUKE-13 Sniper Rifle E",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP025_0H4": {
   "name": "Hellhound",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP025_0K1": {
   "name": "GLIDER 1",
   "type": "Weapon",
   "next": "PT_ARM_WP025_0K3",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP025_0K2": {
   "name": "GLIDER 3",
   "type": "Weapon",
   "next": "PT_ARM_WP025_0K4",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP025_0K3": {
   "name": "GLIDER 2",
   "type": "Weapon",
   "next": "PT_ARM_WP025_0K2",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP025_0K4": {
   "name": "GLIDER 4",
   "type": "Weapon",
   "next": "PT_ARM_WP025_0K5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP025_0K5": {
   "name": "GLIDER 4",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP026_001": {
   "name": "Saber",
   "type": "Weapon",
   "next": "PT_ARM_WP026_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP026_002": {
   "name": "Hornet Saber",
   "type": "Weapon",
   "next": "PT_ARM_WP026_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP026_003": {
   "name": "Cleaver Saber A",
   "type": "Weapon",
   "next": "PT_ARM_WP026_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP026_004": {
   "name": "Hornet Saber A",
   "type": "Weapon",
   "next": "PT_ARM_WP026_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP026_005": {
   "name": "Hornet Saber A",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP026_0A1": {
   "name": "Cleaver Saber TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP026_0A2": {
   "name": "Hornet Saber TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP026_0A3": {
   "name": "Cleaver Saber A TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP026_0A4": {
   "name": "Hornet Saber A TDM",
   "type": "Weapon",
   "next": "PT_ARM_WP026_0A5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP026_0A5": {
   "name": "Hornet Saber A TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP026_0H4": {
   "name": "Crimson Rose",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP028_001": {
   "name": "Pitching Machine",
   "type": "Weapon",
   "next": "PT_ARM_WP028_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP028_002": {
   "name": "Ghastly Pitching Machine",
   "type": "Weapon",
   "next": "PT_ARM_WP028_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP028_003": {
   "name": "Bloody Pitching Machine A",
   "type": "Weapon",
   "next": "PT_ARM_WP028_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP028_004": {
   "name": "Ghastly Pitching Machine A",
   "type": "Weapon",
   "next": "PT_ARM_WP028_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP028_005": {
   "name": "Ghastly Pitching Machine A",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP028_0A1": {
   "name": "Bloody Pitching Machine TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP028_0A2": {
   "name": "Ghastly Pitching Machine TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP028_0A3": {
   "name": "Bloody Pitching Machine A TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP028_0A4": {
   "name": "Ghastly Pitching Machine A TDM",
   "type": "Weapon",
   "next": "PT_ARM_WP028_0A5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP028_0A5": {
   "name": "Ghastly Pitching Machine A TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP029_001": {
   "name": "Fire Rod",
   "type": "Weapon",
   "next": "PT_ARM_WP029_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP029_002": {
   "name": "Wand of Conflagration",
   "type": "Weapon",
   "next": "PT_ARM_WP029_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP029_003": {
   "name": "Flame Wand S",
   "type": "Weapon",
   "next": "PT_ARM_WP029_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP029_004": {
   "name": "Wand of Conflagration S",
   "type": "Weapon",
   "next": "PT_ARM_WP029_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP029_005": {
   "name": "Wand of Conflagration S",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP030_001": {
   "name": "Boxing Gloves",
   "type": "Weapon",
   "next": "PT_ARM_WP030_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP030_002": {
   "name": "Spiked Boxing Glove",
   "type": "Weapon",
   "next": "PT_ARM_WP030_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP030_003": {
   "name": "Loaded Glove A",
   "type": "Weapon",
   "next": "PT_ARM_WP030_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP030_004": {
   "name": "Spiked Boxing Glove A",
   "type": "Weapon",
   "next": "PT_ARM_WP030_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP030_005": {
   "name": "Spiked Boxing Glove A",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP030_0H4": {
   "name": "Fixed Match",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP031_001": {
   "name": "Assault Rifle",
   "type": "Weapon",
   "next": "PT_ARM_WP031_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_002": {
   "name": "KAMAS-SP Assault Rifle",
   "type": "Weapon",
   "next": "PT_ARM_WP031_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_003": {
   "name": "KAMAS-A1 Assault Rifle E",
   "type": "Weapon",
   "next": "PT_ARM_WP031_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_004": {
   "name": "KAMAS-SP Assault Rifle E",
   "type": "Weapon",
   "next": "PT_ARM_WP031_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_005": {
   "name": "KAMAS-SP Assault Rifle E",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP031_0A1": {
   "name": "KAMAS-WoT Assault Rifle01",
   "type": "Weapon",
   "next": "PT_ARM_WP031_0A3",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_0A2": {
   "name": "KAMAS-WoT Assault Rifle03",
   "type": "Weapon",
   "next": "PT_ARM_WP031_0A4",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_0A3": {
   "name": "KAMAS-WoT Assault Rifle02",
   "type": "Weapon",
   "next": "PT_ARM_WP031_0A2",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_0A4": {
   "name": "KAMAS-WoT Assault Rifle04",
   "type": "Weapon",
   "next": "PT_ARM_WP031_0A5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_0A5": {
   "name": "KAMAS-WoT Assault Rifle04",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP031_0B1": {
   "name": "KAMAS-A1 Assault Rifle RE",
   "type": "Weapon",
   "next": "PT_ARM_WP031_0B3",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_0B2": {
   "name": "KAMAS-SP Assault Rifle RE",
   "type": "Weapon",
   "next": "PT_ARM_WP031_0B4",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_0B3": {
   "name": "KAMAS-A1 Assault Rifle E RE",
   "type": "Weapon",
   "next": "PT_ARM_WP031_0B2",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_0B4": {
   "name": "KAMAS-SP Assault Rifle E RE",
   "type": "Weapon",
   "next": "PT_ARM_WP031_0B5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP031_0B5": {
   "name": "KAMAS-SP Assault Rifle E RE",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP031_0H4": {
   "name": "Mad Police",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP032_001": {
   "name": "Nail Gun",
   "type": "Weapon",
   "next": "PT_ARM_WP032_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP032_002": {
   "name": "Nail Blaster",
   "type": "Weapon",
   "next": "PT_ARM_WP032_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP032_003": {
   "name": "Nail Gun +",
   "type": "Weapon",
   "next": "PT_ARM_WP032_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP032_004": {
   "name": "Nail Blaster +",
   "type": "Weapon",
   "next": "PT_ARM_WP032_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP032_005": {
   "name": "Nail Blaster +",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP033_001": {
   "name": "Yo-yo",
   "type": "Weapon",
   "next": "PT_ARM_WP033_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP033_002": {
   "name": "Yo-Yo Blade",
   "type": "Weapon",
   "next": "PT_ARM_WP033_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP033_003": {
   "name": "Brutal Yo-Yo A",
   "type": "Weapon",
   "next": "PT_ARM_WP033_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP033_004": {
   "name": "Yo-Yo Blade A",
   "type": "Weapon",
   "next": "PT_ARM_WP033_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP033_005": {
   "name": "Yo-Yo Blade A",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP034_001": {
   "name": "Arc Welder",
   "type": "Weapon",
   "next": "PT_ARM_WP034_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP034_002": {
   "name": "Plasma Welding Gun",
   "type": "Weapon",
   "next": "PT_ARM_WP034_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP034_003": {
   "name": "Welding Gun +",
   "type": "Weapon",
   "next": "PT_ARM_WP034_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP034_004": {
   "name": "Plasma Welding Gun +",
   "type": "Weapon",
   "next": "PT_ARM_WP034_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP034_005": {
   "name": "Plasma Welding Gun +",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP035_001": {
   "name": "Bowling Ball",
   "type": "Weapon",
   "next": "PT_ARM_WP035_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP035_002": {
   "name": "Bowling Crusher",
   "type": "Weapon",
   "next": "PT_ARM_WP035_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP035_003": {
   "name": "Bowling Stomper A",
   "type": "Weapon",
   "next": "PT_ARM_WP035_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP035_004": {
   "name": "Bowling Crusher A",
   "type": "Weapon",
   "next": "PT_ARM_WP035_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP035_005": {
   "name": "Bowling Crusher A",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP035_0A1": {
   "name": "Bowling Stomper TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP035_0A2": {
   "name": "Bowling Crusher TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP035_0A3": {
   "name": "Bowling Stomper A TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP035_0A4": {
   "name": "Bowling Crusher A TDM",
   "type": "Weapon",
   "next": "PT_ARM_WP035_0A5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP035_0A5": {
   "name": "Bowling Crusher A TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP036_001": {
   "name": "Drill",
   "type": "Weapon",
   "next": "PT_ARM_WP036_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP036_002": {
   "name": "Drill Buster",
   "type": "Weapon",
   "next": "PT_ARM_WP036_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP036_003": {
   "name": "Drill Arm +",
   "type": "Weapon",
   "next": "PT_ARM_WP036_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP036_004": {
   "name": "Drill Buster +",
   "type": "Weapon",
   "next": "PT_ARM_WP036_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP036_005": {
   "name": "Drill Buster +",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP036_0A1": {
   "name": "Drill Arm TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP036_0A2": {
   "name": "Drill Buster TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP036_0A3": {
   "name": "Drill Arm + TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP036_0A4": {
   "name": "Drill Buster + TDM",
   "type": "Weapon",
   "next": "PT_ARM_WP036_0A5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP036_0A5": {
   "name": "Drill Buster + TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP037_001": {
   "name": "Iron",
   "type": "Weapon",
   "next": "PT_ARM_WP037_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP037_002": {
   "name": "Death Burner Iron",
   "type": "Weapon",
   "next": "PT_ARM_WP037_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP037_003": {
   "name": "Red Hot Iron +",
   "type": "Weapon",
   "next": "PT_ARM_WP037_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP037_004": {
   "name": "Death Burner Iron +",
   "type": "Weapon",
   "next": "PT_ARM_WP037_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP037_005": {
   "name": "Death Burner Iron +",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP037_0H4": {
   "name": "King Baboon",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP038_001": {
   "name": "Shovel",
   "type": "Weapon",
   "next": "PT_ARM_WP038_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP038_002": {
   "name": "Special Forces Shovel",
   "type": "Weapon",
   "next": "PT_ARM_WP038_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP038_003": {
   "name": "Tactical Shovel E",
   "type": "Weapon",
   "next": "PT_ARM_WP038_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP038_004": {
   "name": "Special Forces Shovel E",
   "type": "Weapon",
   "next": "PT_ARM_WP038_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP038_005": {
   "name": "Special Forces Shovel E",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP038_0H4": {
   "name": "Backdraft",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP039_001": {
   "name": "Shuriken",
   "type": "Weapon",
   "next": "PT_ARM_WP039_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP039_002": {
   "name": "Tornado Shuriken",
   "type": "Weapon",
   "next": "PT_ARM_WP039_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP039_003": {
   "name": "Cyclone Shuriken S",
   "type": "Weapon",
   "next": "PT_ARM_WP039_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP039_004": {
   "name": "Tornado Shuriken S",
   "type": "Weapon",
   "next": "PT_ARM_WP039_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP039_005": {
   "name": "Tornado Shuriken S",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP039_0H4": {
   "name": "Hatatagami",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP040_001": {
   "name": "Fire Baton",
   "type": "Weapon",
   "next": "PT_ARM_WP040_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP040_002": {
   "name": "Inferno Baton",
   "type": "Weapon",
   "next": "PT_ARM_WP040_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP040_003": {
   "name": "Fireball Baton A",
   "type": "Weapon",
   "next": "PT_ARM_WP040_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP040_004": {
   "name": "Inferno Baton A",
   "type": "Weapon",
   "next": "PT_ARM_WP040_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP040_005": {
   "name": "Inferno Baton A",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP040_0H4": {
   "name": "Midnight Empress",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP041_001": {
   "name": "Motorcycle",
   "type": "Weapon",
   "next": "PT_ARM_WP041_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP041_002": {
   "name": "Executioner’s Ride",
   "type": "Weapon",
   "next": "PT_ARM_WP041_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP041_003": {
   "name": "Motor Psycho A",
   "type": "Weapon",
   "next": "PT_ARM_WP041_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP041_004": {
   "name": "Executioner’s Ride A",
   "type": "Weapon",
   "next": "PT_ARM_WP041_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP041_005": {
   "name": "Executioner’s Ride A",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP041_0A1": {
   "name": "Executioner’s Ride ZX",
   "type": "Weapon",
   "next": "PT_ARM_WP041_0A3",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP041_0A3": {
   "name": "Executioner’s Ride A ZX",
   "type": "Weapon",
   "next": "PT_ARM_WP041_0A5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP041_0A5": {
   "name": "Executioner’s Ride A ZX",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP041_0B1": {
   "name": "Motor Psycho TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP041_0B2": {
   "name": "Executioner’s Ride TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP041_0B3": {
   "name": "Motor Psycho A TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP041_0B4": {
   "name": "Executioner’s Ride A TDM",
   "type": "Weapon",
   "next": "PT_ARM_WP041_0B5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP041_0B5": {
   "name": "Executioner’s Ride A TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP041_0H4": {
   "name": "Emperor",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP042_001": {
   "name": "Chopper",
   "type": "Weapon",
   "next": "PT_ARM_WP042_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP042_002": {
   "name": "Zombie Chopper",
   "type": "Weapon",
   "next": "PT_ARM_WP042_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP042_003": {
   "name": "Pork Chopper +",
   "type": "Weapon",
   "next": "PT_ARM_WP042_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP042_004": {
   "name": "Zombie Chopper +",
   "type": "Weapon",
   "next": "PT_ARM_WP042_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP042_005": {
   "name": "Zombie Chopper +",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP042_0H4": {
   "name": "Predator",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP043_001": {
   "name": "Hockey Stick",
   "type": "Weapon",
   "next": "PT_ARM_WP043_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP043_002": {
   "name": "Murderer’s Hockey Stick",
   "type": "Weapon",
   "next": "PT_ARM_WP043_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP043_003": {
   "name": "Apocalyptic Hockey Stick A",
   "type": "Weapon",
   "next": "PT_ARM_WP043_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP043_004": {
   "name": "Murderer’s Hockey Stick A",
   "type": "Weapon",
   "next": "PT_ARM_WP043_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP043_005": {
   "name": "Murderer’s Hockey Stick A",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP043_0H4": {
   "name": "Judgement Day",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP044_001": {
   "name": "Fireworks",
   "type": "Weapon",
   "next": "PT_ARM_WP044_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP044_002": {
   "name": "Fireworks Blaster",
   "type": "Weapon",
   "next": "PT_ARM_WP044_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP044_003": {
   "name": "Fireworks Launcher +",
   "type": "Weapon",
   "next": "PT_ARM_WP044_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP044_004": {
   "name": "Fireworks Blaster +",
   "type": "Weapon",
   "next": "PT_ARM_WP044_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP044_005": {
   "name": "Fireworks Blaster +",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP044_0H4": {
   "name": "Dragon",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP045_001": {
   "name": "Rocket Launcher",
   "type": "Weapon",
   "next": "PT_ARM_WP045_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP045_002": {
   "name": "M-844 Rocket Launcher",
   "type": "Weapon",
   "next": "PT_ARM_WP045_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP045_003": {
   "name": "M-404 Rocket Launcher E",
   "type": "Weapon",
   "next": "PT_ARM_WP045_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP045_004": {
   "name": "M-844 Rocket Launcher E",
   "type": "Weapon",
   "next": "PT_ARM_WP045_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP045_005": {
   "name": "M-844 Rocket Launcher E",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP045_0A1": {
   "name": "M-404 Rocket Launcher TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP045_0A2": {
   "name": "M-844 Rocket Launcher TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP045_0A3": {
   "name": "M-404 Rocket Launcher E TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP045_0A4": {
   "name": "M-844 Rocket Launcher E TDM",
   "type": "Weapon",
   "next": "PT_ARM_WP045_0A5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP045_0A5": {
   "name": "M-844 Rocket Launcher E TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP045_0H4": {
   "name": "Pandemic",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP046_001": {
   "name": "Archer's Bow",
   "type": "Weapon",
   "next": "PT_ARM_WP046_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP046_002": {
   "name": "Stinger Bow",
   "type": "Weapon",
   "next": "PT_ARM_WP046_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP046_003": {
   "name": "Hunting Bow A",
   "type": "Weapon",
   "next": "PT_ARM_WP046_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP046_004": {
   "name": "Stinger Bow A",
   "type": "Weapon",
   "next": "PT_ARM_WP046_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP046_005": {
   "name": "Stinger Bow A",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP046_0H4": {
   "name": "Dominion",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP047_001": {
   "name": "Thunder Rod",
   "type": "Weapon",
   "next": "PT_ARM_WP047_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP047_002": {
   "name": "Thor’s Wand",
   "type": "Weapon",
   "next": "PT_ARM_WP047_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP047_003": {
   "name": "Lightning Wand S",
   "type": "Weapon",
   "next": "PT_ARM_WP047_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP047_004": {
   "name": "Thor’s Wand S",
   "type": "Weapon",
   "next": "PT_ARM_WP047_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP047_005": {
   "name": "Thor’s Wand S",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP047_0A1": {
   "name": "Lightning Wand TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP047_0A2": {
   "name": "Thor’s Wand TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP047_0A3": {
   "name": "Lightning Wand S TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP047_0A4": {
   "name": "Thor’s Wand S TDM",
   "type": "Weapon",
   "next": "PT_ARM_WP047_0A5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP047_0A5": {
   "name": "Thor’s Wand S TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP048_001": {
   "name": "Chainsaw",
   "type": "Weapon",
   "next": "PT_ARM_WP048_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP048_002": {
   "name": "Chainsaw Shark",
   "type": "Weapon",
   "next": "PT_ARM_WP048_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP048_003": {
   "name": "Chainsaw Viper +",
   "type": "Weapon",
   "next": "PT_ARM_WP048_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP048_004": {
   "name": "Chainsaw Shark +",
   "type": "Weapon",
   "next": "PT_ARM_WP048_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP048_005": {
   "name": "Chainsaw Shark +",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP048_0H4": {
   "name": "Black Mamba",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "tengoku"
  },
  "PT_ARM_WP050_001": {
   "name": "Death's Scythe",
   "type": "Weapon",
   "next": "PT_ARM_WP050_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP050_002": {
   "name": "Death's Scythe",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP050_003": {
   "name": "Grim Reaper’s Scythe",
   "type": "Weapon",
   "next": "PT_ARM_WP050_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP050_004": {
   "name": "Grim Reaper’s Scythe",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP050_0R1": {
   "name": "Grim Reaper’s Scythe R1",
   "type": "Weapon",
   "next": "PT_ARM_WP050_0R3",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP050_0R2": {
   "name": "Grim Reaper’s Scythe R3",
   "type": "Weapon",
   "next": "PT_ARM_WP050_0R4",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP050_0R3": {
   "name": "Grim Reaper’s Scythe R2",
   "type": "Weapon",
   "next": "PT_ARM_WP050_0R2",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP050_0R4": {
   "name": "Grim Reaper’s Scythe R3",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP051_001": {
   "name": "Jackal Sword",
   "type": "Weapon",
   "next": "PT_ARM_WP051_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP051_002": {
   "name": "Jackal Sword D",
   "type": "Weapon",
   "next": "PT_ARM_WP051_0D5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP051_003": {
   "name": "Jackal Sword R",
   "type": "Weapon",
   "next": "PT_ARM_WP051_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP051_005": {
   "name": "Jackal Sword R",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP051_0D5": {
   "name": "Jackal Sword D",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP052_001": {
   "name": "Jackal Yo-yo",
   "type": "Weapon",
   "next": "PT_ARM_WP052_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP052_002": {
   "name": "Jackal Yo-Yo D",
   "type": "Weapon",
   "next": "PT_ARM_WP052_0D5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP052_003": {
   "name": "Jackal Yo-Yo R",
   "type": "Weapon",
   "next": "PT_ARM_WP052_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP052_005": {
   "name": "Jackal Yo-Yo R",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP052_0D5": {
   "name": "Jackal Yo-Yo D",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP053_001": {
   "name": "Jackal Gun",
   "type": "Weapon",
   "next": "PT_ARM_WP053_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP053_002": {
   "name": "Jackal Blaster D",
   "type": "Weapon",
   "next": "PT_ARM_WP053_0D5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP053_003": {
   "name": "Jackal Blaster R",
   "type": "Weapon",
   "next": "PT_ARM_WP053_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP053_005": {
   "name": "Jackal Blaster R",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP053_0D5": {
   "name": "Jackal Blaster D",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP054_001": {
   "name": "Spike Crusher",
   "type": "Weapon",
   "next": "PT_ARM_WP054_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP054_005": {
   "name": "Spike Crusher",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP054_0H1": {
   "name": "Hell Spike Crusher",
   "type": "Weapon",
   "next": "PT_ARM_WP054_0H5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP054_0H5": {
   "name": "Hell Spike Crusher",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP055_001": {
   "name": "Static Massager",
   "type": "Weapon",
   "next": "PT_ARM_WP055_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP055_005": {
   "name": "Static Massager",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP055_0H1": {
   "name": "Viral Massager",
   "type": "Weapon",
   "next": "PT_ARM_WP055_0H5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP055_0H5": {
   "name": "Viral Massager",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP056_001": {
   "name": "M2G-87",
   "type": "Weapon",
   "next": "PT_ARM_WP056_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP056_005": {
   "name": "M2G-87",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP056_0H1": {
   "name": "M2G-87 Mod.1 FireFly",
   "type": "Weapon",
   "next": "PT_ARM_WP056_0H5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP056_0H5": {
   "name": "M2G-87 Mod.1 FireFly",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP057_001": {
   "name": "Vajra of Light",
   "type": "Weapon",
   "next": "PT_ARM_WP057_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP057_005": {
   "name": "Vajra of Light",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP057_0H1": {
   "name": "Vajra of God",
   "type": "Weapon",
   "next": "PT_ARM_WP057_0H5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP057_0H5": {
   "name": "Vajra of God",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP058_001": {
   "name": "Head of Medusa",
   "type": "Weapon",
   "next": "PT_ARM_WP058_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP058_005": {
   "name": "Head of Medusa",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP058_0H1": {
   "name": "Head of Euryale",
   "type": "Weapon",
   "next": "PT_ARM_WP058_0H5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP058_0H5": {
   "name": "Head of Euryale",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP059_001": {
   "name": "Mortal Bobslayer",
   "type": "Weapon",
   "next": "PT_ARM_WP059_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP059_005": {
   "name": "Mortal Bobslayer",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP059_0H1": {
   "name": "Immortal Bobslayer",
   "type": "Weapon",
   "next": "PT_ARM_WP059_0H5",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP059_0H5": {
   "name": "Immortal Bobslayer",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP060_001": {
   "name": "Longsword RE",
   "type": "Weapon",
   "next": "PT_ARM_WP060_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP060_002": {
   "name": "Dragon Buster Sword RE",
   "type": "Weapon",
   "next": "PT_ARM_WP060_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP060_003": {
   "name": "Longsword S RE",
   "type": "Weapon",
   "next": "PT_ARM_WP060_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP060_004": {
   "name": "Dragon Buster Sword S RE",
   "type": "Weapon",
   "next": "PT_ARM_WP060_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP060_005": {
   "name": "Dragon Buster Sword S RE",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP061_001": {
   "name": "Masamune Blade TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP061_002": {
   "name": "Muramasa Blade TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP061_003": {
   "name": "Masamune Blade S TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP061_004": {
   "name": "Muramasa Blade S TDM",
   "type": "Weapon",
   "next": "PT_ARM_WP061_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP061_005": {
   "name": "Muramasa Blade S TDM",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP062_001": {
   "name": "Lion Dance Knuckles",
   "type": "Weapon",
   "next": "PT_ARM_WP062_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP062_002": {
   "name": "Classic Lion Knuckles",
   "type": "Weapon",
   "next": "PT_ARM_WP062_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP062_003": {
   "name": "Lion Knuckles S",
   "type": "Weapon",
   "next": "PT_ARM_WP062_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP062_004": {
   "name": "Classic Lion Knuckles S",
   "type": "Weapon",
   "next": "PT_ARM_WP062_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP062_005": {
   "name": "Classic Lion Knuckles S",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP063_001": {
   "name": "Stun Gun",
   "type": "Weapon",
   "next": "PT_ARM_WP063_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP063_002": {
   "name": "Pulse Tron Stun Gun",
   "type": "Weapon",
   "next": "PT_ARM_WP063_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP063_003": {
   "name": "Pulse Stun Gun E",
   "type": "Weapon",
   "next": "PT_ARM_WP063_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP063_004": {
   "name": "Pulse Tron Stun Gun E",
   "type": "Weapon",
   "next": "PT_ARM_WP063_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP063_005": {
   "name": "Pulse Tron Stun Gun E",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_ARM_WP064_001": {
   "name": "Timber",
   "type": "Weapon",
   "next": "PT_ARM_WP064_003",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP064_002": {
   "name": "Timber Riot",
   "type": "Weapon",
   "next": "PT_ARM_WP064_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP064_003": {
   "name": "Timber Rebellion +",
   "type": "Weapon",
   "next": "PT_ARM_WP064_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP064_004": {
   "name": "Timber Riot +",
   "type": "Weapon",
   "next": "PT_ARM_WP064_005",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_ARM_WP064_005": {
   "name": "Timber Riot +",
   "type": "Weapon",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_001": {
   "name": "DIY Attack Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_002": {
   "name": "DIY Assault Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_003": {
   "name": "Doctor Drill Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_004": {
   "name": "Driller Killer Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_005": {
   "name": "Happy Wheeler Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_006": {
   "name": "Wheel Assassin Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_007": {
   "name": "Chemical Agent Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_008": {
   "name": "Chemical Chaos Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_009": {
   "name": "Trucker Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_010": {
   "name": "Battle Trucker Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_011": {
   "name": "Steel Soldier Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_012": {
   "name": "Steel God Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_013": {
   "name": "Steel Tribe Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_014": {
   "name": "Steel Madman Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_015": {
   "name": "Power Stomper Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_016": {
   "name": "Alien Roadster Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_017": {
   "name": "Texas Farmer Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_018": {
   "name": "Texas Slasher Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_019": {
   "name": "Road Shocker Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_020": {
   "name": "Road Killer Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_021": {
   "name": "White Steel Leggings",
   "type": "Legs",
   "next": "PT_DIY_BTM_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_021_G": {
   "name": "White Steel Leggings",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_022": {
   "name": "Hell Steel Leggings",
   "type": "Legs",
   "next": "PT_DIY_BTM_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_022_G": {
   "name": "Hell Steel Leggings",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_031": {
   "name": "Violent Grinder Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_032": {
   "name": "Suicidal Grinder Pants",
   "type": "Legs",
   "next": "PT_DIY_BTM_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_101": {
   "name": "DIY Attack Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_102": {
   "name": "DIY Assault Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_102_G": {
   "name": "DIY Assault Pants +",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_103": {
   "name": "Doctor Drill Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_104": {
   "name": "Driller Killer Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_104_G": {
   "name": "Driller Killer Pants +",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_105": {
   "name": "Happy Wheeler Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_106": {
   "name": "Wheel Assassin Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_106_G": {
   "name": "Wheel Assassin Pants +",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_107": {
   "name": "Chemical Agent Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_108": {
   "name": "Chemical Chaos Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_108_G": {
   "name": "Chemical Chaos Pants +",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_109": {
   "name": "Trucker Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_110": {
   "name": "Battle Trucker Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_110_G": {
   "name": "Battle Trucker Pants +",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_111": {
   "name": "Steel Soldier Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_112": {
   "name": "Steel God Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_112_G": {
   "name": "Steel God Pants +",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_113": {
   "name": "Steel Tribe Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_114": {
   "name": "Steel Madman Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_114_G": {
   "name": "Steel Madman Pants +",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_115": {
   "name": "Power Stomper Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_116": {
   "name": "Alien Roadster Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_116_G": {
   "name": "Alien Roadster Pants +",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_117": {
   "name": "Texas Farmer Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_118": {
   "name": "Texas Slasher Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_118_G": {
   "name": "Texas Slasher Pants +",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_119": {
   "name": "Road Shocker Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_120": {
   "name": "Road Killer Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_120_G": {
   "name": "Road Killer Pants +",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_BTM_131": {
   "name": "Violent Grinder Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_132": {
   "name": "Suicidal Grinder Pants +",
   "type": "Legs",
   "next": "PT_DIY_BTM_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_BTM_132_G": {
   "name": "Suicidal Grinder Pants +",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_001": {
   "name": "DIY Attack Head",
   "type": "Head",
   "next": "PT_DIY_HEAD_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_002": {
   "name": "DIY Assault Head",
   "type": "Head",
   "next": "PT_DIY_HEAD_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_003": {
   "name": "Doctor Drill Mask",
   "type": "Head",
   "next": "PT_DIY_HEAD_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_004": {
   "name": "Driller Killer Mask",
   "type": "Head",
   "next": "PT_DIY_HEAD_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_005": {
   "name": "Happy Wheeler Head",
   "type": "Head",
   "next": "PT_DIY_HEAD_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_006": {
   "name": "Wheel Assassin Head",
   "type": "Head",
   "next": "PT_DIY_HEAD_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_007": {
   "name": "Chemical Agent Mask",
   "type": "Head",
   "next": "PT_DIY_HEAD_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_008": {
   "name": "Chemical Chaos Mask",
   "type": "Head",
   "next": "PT_DIY_HEAD_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_009": {
   "name": "Trucker Hat",
   "type": "Head",
   "next": "PT_DIY_HEAD_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_010": {
   "name": "Battle Trucker Hat",
   "type": "Head",
   "next": "PT_DIY_HEAD_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_011": {
   "name": "Steel Soldier Mask",
   "type": "Head",
   "next": "PT_DIY_HEAD_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_012": {
   "name": "Steel God Mask",
   "type": "Head",
   "next": "PT_DIY_HEAD_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_013": {
   "name": "Steel Tribe Mask",
   "type": "Head",
   "next": "PT_DIY_HEAD_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_014": {
   "name": "Steel Madman Mask",
   "type": "Head",
   "next": "PT_DIY_HEAD_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_015": {
   "name": "Power Stomper Mask",
   "type": "Head",
   "next": "PT_DIY_HEAD_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_016": {
   "name": "Alien Roadster Head",
   "type": "Head",
   "next": "PT_DIY_HEAD_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_017": {
   "name": "Texas Farmer Mask",
   "type": "Head",
   "next": "PT_DIY_HEAD_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_018": {
   "name": "Texas Slasher Mask",
   "type": "Head",
   "next": "PT_DIY_HEAD_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_019": {
   "name": "Road Shocker Head",
   "type": "Head",
   "next": "PT_DIY_HEAD_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_020": {
   "name": "Road Killer Head",
   "type": "Head",
   "next": "PT_DIY_HEAD_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_021": {
   "name": "White Steel Head",
   "type": "Head",
   "next": "PT_DIY_HEAD_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_021_G": {
   "name": "White Steel Head",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_022": {
   "name": "Hell Steel Head",
   "type": "Head",
   "next": "PT_DIY_HEAD_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_022_G": {
   "name": "Hell Steel Head",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_031": {
   "name": "Violent Grinder Head",
   "type": "Head",
   "next": "PT_DIY_HEAD_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_032": {
   "name": "Suicidal Grinder Head",
   "type": "Head",
   "next": "PT_DIY_HEAD_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_101": {
   "name": "DIY Attack Head +",
   "type": "Head",
   "next": "PT_DIY_HEAD_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_102": {
   "name": "DIY Assault Head +",
   "type": "Head",
   "next": "PT_DIY_HEAD_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_102_G": {
   "name": "DIY Assault Head +",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_103": {
   "name": "Doctor Drill Mask +",
   "type": "Head",
   "next": "PT_DIY_HEAD_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_104": {
   "name": "Driller Killer Mask +",
   "type": "Head",
   "next": "PT_DIY_HEAD_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_104_G": {
   "name": "Driller Killer Mask +",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_105": {
   "name": "Happy Wheeler Head +",
   "type": "Head",
   "next": "PT_DIY_HEAD_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_106": {
   "name": "Wheel Assassin Head +",
   "type": "Head",
   "next": "PT_DIY_HEAD_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_106_G": {
   "name": "Wheel Assassin Head +",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_107": {
   "name": "Chemical Agent Mask +",
   "type": "Head",
   "next": "PT_DIY_HEAD_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_108": {
   "name": "Chemical Chaos Mask +",
   "type": "Head",
   "next": "PT_DIY_HEAD_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_108_G": {
   "name": "Chemical Chaos Mask +",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_109": {
   "name": "Trucker Hat +",
   "type": "Head",
   "next": "PT_DIY_HEAD_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_110": {
   "name": "Battle Trucker Hat +",
   "type": "Head",
   "next": "PT_DIY_HEAD_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_110_G": {
   "name": "Battle Trucker Hat +",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_111": {
   "name": "Steel Soldier Mask +",
   "type": "Head",
   "next": "PT_DIY_HEAD_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_112": {
   "name": "Steel God Mask +",
   "type": "Head",
   "next": "PT_DIY_HEAD_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_112_G": {
   "name": "Steel God Mask +",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_113": {
   "name": "Steel Tribe Mask +",
   "type": "Head",
   "next": "PT_DIY_HEAD_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_114": {
   "name": "Steel Madman Mask +",
   "type": "Head",
   "next": "PT_DIY_HEAD_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_114_G": {
   "name": "Steel Madman Mask +",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_115": {
   "name": "Power Stomper Head +",
   "type": "Head",
   "next": "PT_DIY_HEAD_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_116": {
   "name": "Alien Roadster Head +",
   "type": "Head",
   "next": "PT_DIY_HEAD_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_116_G": {
   "name": "Alien Roadster Head +",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_117": {
   "name": "Texas Farmer Mask +",
   "type": "Head",
   "next": "PT_DIY_HEAD_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_118": {
   "name": "Texas Slasher Mask +",
   "type": "Head",
   "next": "PT_DIY_HEAD_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_118_G": {
   "name": "Texas Slasher Mask +",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_119": {
   "name": "Road Shocker Head +",
   "type": "Head",
   "next": "PT_DIY_HEAD_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_120": {
   "name": "Road Killer Head +",
   "type": "Head",
   "next": "PT_DIY_HEAD_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_120_G": {
   "name": "Road Killer Head +",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_HEAD_131": {
   "name": "Violent Grinder Head +",
   "type": "Head",
   "next": "PT_DIY_HEAD_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_132": {
   "name": "Suicidal Grinder Head +",
   "type": "Head",
   "next": "PT_DIY_HEAD_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_HEAD_132_G": {
   "name": "Suicidal Grinder Head +",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_001": {
   "name": "DIY Attack Coat",
   "type": "Body",
   "next": "PT_DIY_TOPS_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_002": {
   "name": "DIY Assault Coat",
   "type": "Body",
   "next": "PT_DIY_TOPS_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_003": {
   "name": "Doctor Drill Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_004": {
   "name": "Driller Killer Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_005": {
   "name": "Happy Wheeler Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_006": {
   "name": "Wheel Assassin Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_007": {
   "name": "Chemical Agent Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_008": {
   "name": "Chemical Chaos Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_009": {
   "name": "Trucker Apron",
   "type": "Body",
   "next": "PT_DIY_TOPS_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_010": {
   "name": "Battle Trucker Apron",
   "type": "Body",
   "next": "PT_DIY_TOPS_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_011": {
   "name": "Steel Soldier Apron",
   "type": "Body",
   "next": "PT_DIY_TOPS_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_012": {
   "name": "Steel God Apron",
   "type": "Body",
   "next": "PT_DIY_TOPS_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_013": {
   "name": "Steel Tribe Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_014": {
   "name": "Steel Madman Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_015": {
   "name": "Power Stomper Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_016": {
   "name": "Alien Roadster Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_017": {
   "name": "Texas Farmer Coat",
   "type": "Body",
   "next": "PT_DIY_TOPS_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_018": {
   "name": "Texas Slasher Coat",
   "type": "Body",
   "next": "PT_DIY_TOPS_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_019": {
   "name": "Road Shocker Coat",
   "type": "Body",
   "next": "PT_DIY_TOPS_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_020": {
   "name": "Road Killer Coat",
   "type": "Body",
   "next": "PT_DIY_TOPS_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_021": {
   "name": "White Steel Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_021_G": {
   "name": "White Steel Body",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_022": {
   "name": "Hell Steel Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_022_G": {
   "name": "Hell Steel Body",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_031": {
   "name": "Violent Grinder Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_032": {
   "name": "Suicidal Grinder Body",
   "type": "Body",
   "next": "PT_DIY_TOPS_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_101": {
   "name": "DIY Attack Coat +",
   "type": "Body",
   "next": "PT_DIY_TOPS_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_102": {
   "name": "DIY Assault Coat +",
   "type": "Body",
   "next": "PT_DIY_TOPS_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_102_G": {
   "name": "DIY Assault Coat +",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_103": {
   "name": "Doctor Drill Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_104": {
   "name": "Driller Killer Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_104_G": {
   "name": "Driller Killer Body +",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_105": {
   "name": "Happy Wheeler Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_106": {
   "name": "Wheel Assassin Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_106_G": {
   "name": "Wheel Assassin Body +",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_107": {
   "name": "Chemical Agent Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_108": {
   "name": "Chemical Chaos Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_108_G": {
   "name": "Chemical Chaos Body +",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_109": {
   "name": "Trucker Apron +",
   "type": "Body",
   "next": "PT_DIY_TOPS_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_110": {
   "name": "Battle Trucker Apron +",
   "type": "Body",
   "next": "PT_DIY_TOPS_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_110_G": {
   "name": "Battle Trucker Apron +",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_111": {
   "name": "Steel Soldier Apron +",
   "type": "Body",
   "next": "PT_DIY_TOPS_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_112": {
   "name": "Steel God Apron +",
   "type": "Body",
   "next": "PT_DIY_TOPS_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_112_G": {
   "name": "Steel God Apron +",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_113": {
   "name": "Steel Tribe Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_114": {
   "name": "Steel Madman Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_114_G": {
   "name": "Steel Madman Body +",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_115": {
   "name": "Power Stomper Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_116": {
   "name": "Alien Roadster Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_116_G": {
   "name": "Alien Roadster Body +",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_117": {
   "name": "Texas Farmer Coat +",
   "type": "Body",
   "next": "PT_DIY_TOPS_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_118": {
   "name": "Texas Slasher Coat +",
   "type": "Body",
   "next": "PT_DIY_TOPS_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_118_G": {
   "name": "Texas Slasher Coat +",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_119": {
   "name": "Road Shocker Coat +",
   "type": "Body",
   "next": "PT_DIY_TOPS_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_120": {
   "name": "Road Killer Coat +",
   "type": "Body",
   "next": "PT_DIY_TOPS_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_120_G": {
   "name": "Road Killer Coat +",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_DIY_TOPS_131": {
   "name": "Violent Grinder Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_132": {
   "name": "Suicidal Grinder Body +",
   "type": "Body",
   "next": "PT_DIY_TOPS_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_DIY_TOPS_132_G": {
   "name": "Suicidal Grinder Body +",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_001": {
   "name": "Knight's Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_002": {
   "name": "Hades Knight Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_003": {
   "name": "Agamemnon Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_004": {
   "name": "Avatar of Zard Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_005": {
   "name": "Fencing Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_006": {
   "name": "Swordmaster Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_007": {
   "name": "Clay Figurine Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_008": {
   "name": "Arahabaki Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_009": {
   "name": "Rogue Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_010": {
   "name": "Dark Rogue Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_011": {
   "name": "Sengoku Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_012": {
   "name": "Shogun Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_013": {
   "name": "Evil Wizard Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_014": {
   "name": "Manic Wizard Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_015": {
   "name": "Paladin Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_016": {
   "name": "Last Paladin’s Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_017": {
   "name": "Priest's Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_018": {
   "name": "Bishop's Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_019": {
   "name": "Warrior Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_020": {
   "name": "Berserker Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_021": {
   "name": "Black Thunder Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_021_G": {
   "name": "Black Thunder Leggings",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_022": {
   "name": "Hell Thunder Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_022_G": {
   "name": "Hell Thunder Leggings",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_031": {
   "name": "Sword Dancer Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_032": {
   "name": "Lion Swd Dancer Leggings",
   "type": "Legs",
   "next": "PT_FAN_BTM_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_0A1": {
   "name": "Knight's Leggings ZX",
   "type": "Legs",
   "next": "PT_FAN_BTM_1A1",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_101": {
   "name": "Knight's Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_102": {
   "name": "Hades Knight Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_102_G": {
   "name": "Hades Knight Leggings S",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_103": {
   "name": "Agamemnon Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_104": {
   "name": "Avatar of Zard Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_104_G": {
   "name": "Avatar of Zard Leggings S",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_105": {
   "name": "Fencing Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_106": {
   "name": "Swordmaster Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_106_G": {
   "name": "Swordmaster Leggings S",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_107": {
   "name": "Clay Figurine Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_108": {
   "name": "Arahabaki Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_108_G": {
   "name": "Arahabaki Leggings S",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_109": {
   "name": "Rogue Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_110": {
   "name": "Dark Rogue Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_110_G": {
   "name": "Dark Rogue Leggings S",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_111": {
   "name": "Sengoku Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_112": {
   "name": "Shogun Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_112_G": {
   "name": "Shogun Leggings S",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_113": {
   "name": "Evil Wizard Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_114": {
   "name": "Manic Wizard Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_114_G": {
   "name": "Manic Wizard Leggings S",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_115": {
   "name": "Paladin Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_116": {
   "name": "Last Paladin’s Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_116_G": {
   "name": "Last Paladin’s Leggings S",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_117": {
   "name": "Priest's Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_118": {
   "name": "Bishop's Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_118_G": {
   "name": "Bishop's Leggings S",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_119": {
   "name": "Warrior Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_120": {
   "name": "Berserker Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_120_G": {
   "name": "Berserker Leggings S",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_131": {
   "name": "Sword Dancer Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_132": {
   "name": "Lion Swd Dancer Leggings S",
   "type": "Legs",
   "next": "PT_FAN_BTM_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_132_G": {
   "name": "Lion Swd Dancer Leggings S",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_BTM_1A1": {
   "name": "Knight's Leggings A ZX",
   "type": "Legs",
   "next": "PT_FAN_BTM_1A1_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_BTM_1A1_G": {
   "name": "Knight's Leggings A ZX",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_001": {
   "name": "Knight's Helm",
   "type": "Head",
   "next": "PT_FAN_HEAD_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_002": {
   "name": "Hades Knight Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_003": {
   "name": "Agamemnon Mask",
   "type": "Head",
   "next": "PT_FAN_HEAD_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_004": {
   "name": "Avatar of Zard Mask",
   "type": "Head",
   "next": "PT_FAN_HEAD_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_005": {
   "name": "Fencing Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_006": {
   "name": "Swordmaster Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_007": {
   "name": "Clay Figurine Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_008": {
   "name": "Arahabaki Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_009": {
   "name": "Rogue Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_010": {
   "name": "Dark Rogue Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_011": {
   "name": "Sengoku Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_012": {
   "name": "Shogun Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_013": {
   "name": "Evil Wizard Cowl",
   "type": "Head",
   "next": "PT_FAN_HEAD_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_014": {
   "name": "Manic Wizard Cowl",
   "type": "Head",
   "next": "PT_FAN_HEAD_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_015": {
   "name": "Paladin Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_016": {
   "name": "Last Paladin’s Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_017": {
   "name": "Priest's Cowl",
   "type": "Head",
   "next": "PT_FAN_HEAD_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_018": {
   "name": "Bishop's Cowl",
   "type": "Head",
   "next": "PT_FAN_HEAD_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_019": {
   "name": "Warrior Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_020": {
   "name": "Berserker Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_021": {
   "name": "Black Thunder Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_021_G": {
   "name": "Black Thunder Helmet",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_022": {
   "name": "Hell Thunder Helmet",
   "type": "Head",
   "next": "PT_FAN_HEAD_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_022_G": {
   "name": "Hell Thunder Helmet",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_031": {
   "name": "Sword Dancer Head",
   "type": "Head",
   "next": "PT_FAN_HEAD_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_032": {
   "name": "Lion Sword Dancer Head",
   "type": "Head",
   "next": "PT_FAN_HEAD_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_0A1": {
   "name": "Knight's Helm ZX",
   "type": "Head",
   "next": "PT_FAN_HEAD_1A1",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_101": {
   "name": "Knight's Helm S",
   "type": "Head",
   "next": "PT_FAN_HEAD_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_102": {
   "name": "Hades Knight Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_102_G": {
   "name": "Hades Knight Helmet S",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_103": {
   "name": "Agamemnon Mask S",
   "type": "Head",
   "next": "PT_FAN_HEAD_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_104": {
   "name": "Avatar of Zard Mask S",
   "type": "Head",
   "next": "PT_FAN_HEAD_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_104_G": {
   "name": "Avatar of Zard Mask S",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_105": {
   "name": "Fencing Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_106": {
   "name": "Swordmaster Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_106_G": {
   "name": "Swordmaster Helmet S",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_107": {
   "name": "Clay Figurine Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_108": {
   "name": "Arahabaki Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_108_G": {
   "name": "Arahabaki Helmet S",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_109": {
   "name": "Rogue Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_110": {
   "name": "Dark Rogue Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_110_G": {
   "name": "Dark Rogue Helmet S",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_111": {
   "name": "Sengoku Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_112": {
   "name": "Shogun Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_112_G": {
   "name": "Shogun Helmet S",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_113": {
   "name": "Evil Wizard Cowl S",
   "type": "Head",
   "next": "PT_FAN_HEAD_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_114": {
   "name": "Manic Wizard Cowl S",
   "type": "Head",
   "next": "PT_FAN_HEAD_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_114_G": {
   "name": "Manic Wizard Cowl S",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_115": {
   "name": "Paladin Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_116": {
   "name": "Last Paladin’s Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_116_G": {
   "name": "Last Paladin’s Helmet S",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_117": {
   "name": "Priest's Cowl S",
   "type": "Head",
   "next": "PT_FAN_HEAD_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_118": {
   "name": "Bishop's Cowl S",
   "type": "Head",
   "next": "PT_FAN_HEAD_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_118_G": {
   "name": "Bishop's Cowl S",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_119": {
   "name": "Warrior Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_120": {
   "name": "Berserker Helmet S",
   "type": "Head",
   "next": "PT_FAN_HEAD_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_120_G": {
   "name": "Berserker Helmet S",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_131": {
   "name": "Sword Dancer Head S",
   "type": "Head",
   "next": "PT_FAN_HEAD_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_132": {
   "name": "Lion Sword Dancer Head S",
   "type": "Head",
   "next": "PT_FAN_HEAD_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_132_G": {
   "name": "Lion Sword Dancer Head S",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_HEAD_1A1": {
   "name": "Knight's Helm A ZX",
   "type": "Head",
   "next": "PT_FAN_HEAD_1A1_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_HEAD_1A1_G": {
   "name": "Knight's Helm A ZX",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_001": {
   "name": "Knight's Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_002": {
   "name": "Hades Knight Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_003": {
   "name": "Agamemnon Mail",
   "type": "Body",
   "next": "PT_FAN_TOPS_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_004": {
   "name": "Avatar of Zard Mail",
   "type": "Body",
   "next": "PT_FAN_TOPS_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_005": {
   "name": "Fencing Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_006": {
   "name": "Swordmaster Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_007": {
   "name": "Clay Figurine Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_008": {
   "name": "Arahabaki Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_009": {
   "name": "Rogue Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_010": {
   "name": "Dark Rogue Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_011": {
   "name": "Sengoku Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_012": {
   "name": "Shogun Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_013": {
   "name": "Evil Wizard Coat",
   "type": "Body",
   "next": "PT_FAN_TOPS_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_014": {
   "name": "Manic Wizard Coat",
   "type": "Body",
   "next": "PT_FAN_TOPS_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_015": {
   "name": "Paladin Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_016": {
   "name": "Last Paladin’s Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_017": {
   "name": "Priest's Coat",
   "type": "Body",
   "next": "PT_FAN_TOPS_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_018": {
   "name": "Bishop's Coat",
   "type": "Body",
   "next": "PT_FAN_TOPS_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_019": {
   "name": "Warrior Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_020": {
   "name": "Berserker Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_021": {
   "name": "Black Thunder Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_021_G": {
   "name": "Black Thunder Armor",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_022": {
   "name": "Hell Thunder Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_022_G": {
   "name": "Hell Thunder Armor",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_031": {
   "name": "Sword Dancer Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_032": {
   "name": "Lion Sword Dancer Armor",
   "type": "Body",
   "next": "PT_FAN_TOPS_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_0A1": {
   "name": "Knight's Armor ZX",
   "type": "Body",
   "next": "PT_FAN_TOPS_1A1",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_101": {
   "name": "Knight's Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_102": {
   "name": "Hades Knight Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_102_G": {
   "name": "Hades Knight Armor S",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_103": {
   "name": "Agamemnon Mail S",
   "type": "Body",
   "next": "PT_FAN_TOPS_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_104": {
   "name": "Avatar of Zard Mail S",
   "type": "Body",
   "next": "PT_FAN_TOPS_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_104_G": {
   "name": "Avatar of Zard Mail S",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_105": {
   "name": "Fencing Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_106": {
   "name": "Swordmaster Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_106_G": {
   "name": "Swordmaster Armor S",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_107": {
   "name": "Clay Figurine Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_108": {
   "name": "Arahabaki Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_108_G": {
   "name": "Arahabaki Armor S",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_109": {
   "name": "Rogue Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_110": {
   "name": "Dark Rogue Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_110_G": {
   "name": "Dark Rogue Armor S",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_111": {
   "name": "Sengoku Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_112": {
   "name": "Shogun Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_112_G": {
   "name": "Shogun Armor S",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_113": {
   "name": "Evil Wizard Coat S",
   "type": "Body",
   "next": "PT_FAN_TOPS_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_114": {
   "name": "Manic Wizard Coat S",
   "type": "Body",
   "next": "PT_FAN_TOPS_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_114_G": {
   "name": "Manic Wizard Coat S",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_115": {
   "name": "Paladin Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_116": {
   "name": "Last Paladin’s Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_116_G": {
   "name": "Last Paladin’s Armor S",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_117": {
   "name": "Priest's Coat S",
   "type": "Body",
   "next": "PT_FAN_TOPS_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_118": {
   "name": "Bishop's Coat S",
   "type": "Body",
   "next": "PT_FAN_TOPS_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_118_G": {
   "name": "Bishop's Coat S",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_119": {
   "name": "Warrior Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_120": {
   "name": "Berserker Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_120_G": {
   "name": "Berserker Armor S",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_131": {
   "name": "Sword Dancer Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_132": {
   "name": "Lion Sword Dancer Armor S",
   "type": "Body",
   "next": "PT_FAN_TOPS_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_132_G": {
   "name": "Lion Sword Dancer Armor S",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_FAN_TOPS_1A1": {
   "name": "Knight's Armor A ZX",
   "type": "Body",
   "next": "PT_FAN_TOPS_1A1_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_FAN_TOPS_1A1_G": {
   "name": "Knight's Armor A ZX",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_GAS_HEAD_0N1": {
   "name": "4M Gas Mask N",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_GAS_HEAD_0N2": {
   "name": "M42 Gas Mask N",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_GAS_HEAD_0N3": {
   "name": "Surgical Mask N",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_GAS_HEAD_0N4": {
   "name": "Pilot’s Mask N",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_GAS_HEAD_0N5": {
   "name": "Iron Mask N",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_GAS_HEAD_0N6": {
   "name": "Tuscan Mask N",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_GAS_HEAD_0N7": {
   "name": "Fencer's Mask N",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_GAS_HEAD_0N8": {
   "name": "Desert Scarf N",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_BTM_001": {
   "name": "Jackal X Pants",
   "type": "Legs",
   "next": "PT_JAC_BTM_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_BTM_002": {
   "name": "Jackal Y Pants",
   "type": "Legs",
   "next": "PT_JAC_BTM_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_BTM_003": {
   "name": "Jackal Z Pants",
   "type": "Legs",
   "next": "PT_JAC_BTM_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_BTM_101": {
   "name": "Jackal X Pants R",
   "type": "Legs",
   "next": "PT_JAC_BTM_101_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_BTM_101_G": {
   "name": "Jackal X Pants R",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_BTM_102": {
   "name": "Jackal Y Pants R",
   "type": "Legs",
   "next": "PT_JAC_BTM_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_BTM_102_G": {
   "name": "Jackal Y Pants R",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_BTM_103": {
   "name": "Jackal Z Pants R",
   "type": "Legs",
   "next": "PT_JAC_BTM_103_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_BTM_103_G": {
   "name": "Jackal Z Pants R",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_BTM_201": {
   "name": "Jackal X Pants D",
   "type": "Legs",
   "next": "PT_JAC_BTM_201_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_BTM_201_G": {
   "name": "Jackal X Pants D",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_BTM_202": {
   "name": "Jackal Y Pants D",
   "type": "Legs",
   "next": "PT_JAC_BTM_202_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_BTM_202_G": {
   "name": "Jackal Y Pants D",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_BTM_203": {
   "name": "Jackal Z Pants D",
   "type": "Legs",
   "next": "PT_JAC_BTM_203_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_BTM_203_G": {
   "name": "Jackal Z Pants D",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_HEAD_001": {
   "name": "Jackal X Head",
   "type": "Head",
   "next": "PT_JAC_HEAD_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_HEAD_002": {
   "name": "Jackal Y Head",
   "type": "Head",
   "next": "PT_JAC_HEAD_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_HEAD_003": {
   "name": "Jackal Z Head",
   "type": "Head",
   "next": "PT_JAC_HEAD_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_HEAD_101": {
   "name": "Jackal X Head R",
   "type": "Head",
   "next": "PT_JAC_HEAD_101_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_HEAD_101_G": {
   "name": "Jackal X Head R",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_HEAD_102": {
   "name": "Jackal Y Head R",
   "type": "Head",
   "next": "PT_JAC_HEAD_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_HEAD_102_G": {
   "name": "Jackal Y Head R",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_HEAD_103": {
   "name": "Jackal Z Head R",
   "type": "Head",
   "next": "PT_JAC_HEAD_103_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_HEAD_103_G": {
   "name": "Jackal Z Head R",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_HEAD_201": {
   "name": "Jackal X Head D",
   "type": "Head",
   "next": "PT_JAC_HEAD_201_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_HEAD_201_G": {
   "name": "Jackal X Head D",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_HEAD_202": {
   "name": "Jackal Y Head D",
   "type": "Head",
   "next": "PT_JAC_HEAD_202_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_HEAD_202_G": {
   "name": "Jackal Y Head D",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_HEAD_203": {
   "name": "Jackal Z Head D",
   "type": "Head",
   "next": "PT_JAC_HEAD_203_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_HEAD_203_G": {
   "name": "Jackal Z Head D",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_TOPS_001": {
   "name": "Jackal X Body",
   "type": "Body",
   "next": "PT_JAC_TOPS_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_TOPS_002": {
   "name": "Jackal Y Body",
   "type": "Body",
   "next": "PT_JAC_TOPS_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_TOPS_003": {
   "name": "Jackal Z Body",
   "type": "Body",
   "next": "PT_JAC_TOPS_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_TOPS_101": {
   "name": "Jackal X Body R",
   "type": "Body",
   "next": "PT_JAC_TOPS_101_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_TOPS_101_G": {
   "name": "Jackal X Body R",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_TOPS_102": {
   "name": "Jackal Y Body R",
   "type": "Body",
   "next": "PT_JAC_TOPS_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_TOPS_102_G": {
   "name": "Jackal Y Body R",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_TOPS_103": {
   "name": "Jackal Z Body R",
   "type": "Body",
   "next": "PT_JAC_TOPS_103_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_TOPS_103_G": {
   "name": "Jackal Z Body R",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_TOPS_201": {
   "name": "Jackal X Body D",
   "type": "Body",
   "next": "PT_JAC_TOPS_201_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_TOPS_201_G": {
   "name": "Jackal X Body D",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_TOPS_202": {
   "name": "Jackal Y Body D",
   "type": "Body",
   "next": "PT_JAC_TOPS_202_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_TOPS_202_G": {
   "name": "Jackal Y Body D",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_JAC_TOPS_203": {
   "name": "Jackal Z Body D",
   "type": "Body",
   "next": "PT_JAC_TOPS_203_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_JAC_TOPS_203_G": {
   "name": "Jackal Z Body D",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_001": {
   "name": "Assault Force Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_002": {
   "name": "Assault Master Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_003": {
   "name": "Dark Ryback Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_004": {
   "name": "Officer Ryback Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_005": {
   "name": "Phantom Soldier Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_006": {
   "name": "Phantom Commando Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_007": {
   "name": "Night Scout Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_008": {
   "name": "Night Raider Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_009": {
   "name": "Special Forces' Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_010": {
   "name": "Captain's Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_011": {
   "name": "Iron Eagle Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_012": {
   "name": "Iron Falcon Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_013": {
   "name": "Silent Sniper Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_014": {
   "name": "Ghost Sniper Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_015": {
   "name": "Barrett Punisher Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_016": {
   "name": "Skull Punisher Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_017": {
   "name": "Combat Diver Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_018": {
   "name": "Storm Diver Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_019": {
   "name": "Guerrilla Blaster Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_020": {
   "name": "Raven Blaster Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_021": {
   "name": "Red Napalm Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_021_G": {
   "name": "Red Napalm Pants",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_022": {
   "name": "Hell Napalm Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_022_G": {
   "name": "Hell Napalm Pants",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_031": {
   "name": "Exo-armor Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_032": {
   "name": "Exo-combat Pants",
   "type": "Legs",
   "next": "PT_MIL_BTM_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_0G1": {
   "name": "Assault Force Pants G1",
   "type": "Legs",
   "next": "PT_MIL_BTM_1G1",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_0G2": {
   "name": "Assault Master Pants G",
   "type": "Legs",
   "next": "PT_MIL_BTM_0G2_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_0G2_G": {
   "name": "Assault Master Pants G",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_1005": {
   "name": "Phantom Soldier Pants WoT01",
   "type": "Legs",
   "next": "PT_MIL_BTM_1105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_1006": {
   "name": "Phantom Soldier Pants WoT03",
   "type": "Legs",
   "next": "PT_MIL_BTM_1106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_1007": {
   "name": "Night Raider Pants WoT01",
   "type": "Legs",
   "next": "PT_MIL_BTM_1107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_1008": {
   "name": "Night Raider Pants WoT03",
   "type": "Legs",
   "next": "PT_MIL_BTM_1108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_101": {
   "name": "Assault Force Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_102": {
   "name": "Assault Master Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_102_G": {
   "name": "Assault Master Pants E",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_103": {
   "name": "Dark Ryback Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_104": {
   "name": "Officer Ryback Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_104_G": {
   "name": "Officer Ryback Pants E",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_105": {
   "name": "Phantom Soldier Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_106": {
   "name": "Phantom Commando Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_106_G": {
   "name": "Phantom Commando Pants E",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_107": {
   "name": "Night Scout Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_108": {
   "name": "Night Raider Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_108_G": {
   "name": "Night Raider Pants E",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_109": {
   "name": "Special Forces' Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_110": {
   "name": "Captain's Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_1105": {
   "name": "Phantom Soldier Pants WoT02",
   "type": "Legs",
   "next": "PT_MIL_BTM_1006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_1106": {
   "name": "Phantom Soldier Pants WoT04",
   "type": "Legs",
   "next": "PT_MIL_BTM_1106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_1106_G": {
   "name": "Phantom Soldier Pants WoT04",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_1107": {
   "name": "Night Raider Pants WoT02",
   "type": "Legs",
   "next": "PT_MIL_BTM_1008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_1108": {
   "name": "Night Raider Pants WoT04",
   "type": "Legs",
   "next": "PT_MIL_BTM_1108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_1108_G": {
   "name": "Night Raider Pants WoT04",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_110_G": {
   "name": "Captain's Pants E",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_111": {
   "name": "Iron Eagle Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_112": {
   "name": "Iron Falcon Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_112_G": {
   "name": "Iron Falcon Pants E",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_113": {
   "name": "Silent Sniper Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_114": {
   "name": "Ghost Sniper Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_114_G": {
   "name": "Ghost Sniper Pants E",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_115": {
   "name": "Barrett Punisher Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_116": {
   "name": "Skull Punisher Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_116_G": {
   "name": "Skull Punisher Pants E",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_117": {
   "name": "Combat Diver Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_118": {
   "name": "Storm Diver Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_118_G": {
   "name": "Storm Diver Pants E",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_119": {
   "name": "Guerrilla Blaster Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_120": {
   "name": "Raven Blaster Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_120_G": {
   "name": "Raven Blaster Pants E",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_131": {
   "name": "Exo-armor Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_132": {
   "name": "Exo-combat Pants E",
   "type": "Legs",
   "next": "PT_MIL_BTM_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_BTM_132_G": {
   "name": "Exo-combat Pants E",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_BTM_1G1": {
   "name": "Assault Force Pants G2",
   "type": "Legs",
   "next": "PT_MIL_BTM_0G2",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_001": {
   "name": "Assault Force Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_002": {
   "name": "Assault Master Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_003": {
   "name": "Dark Ryback Mask",
   "type": "Head",
   "next": "PT_MIL_HEAD_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_004": {
   "name": "Officer Ryback Mask",
   "type": "Head",
   "next": "PT_MIL_HEAD_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_005": {
   "name": "Phantom Soldier Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_006": {
   "name": "Phantom Commando Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_007": {
   "name": "Night Scout Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_008": {
   "name": "Night Raider Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_009": {
   "name": "Special Forces' Beret",
   "type": "Head",
   "next": "PT_MIL_HEAD_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_010": {
   "name": "Captain's Beret",
   "type": "Head",
   "next": "PT_MIL_HEAD_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_011": {
   "name": "Iron Eagle Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_012": {
   "name": "Iron Falcon Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_013": {
   "name": "Silent Sniper Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_014": {
   "name": "Ghost Sniper Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_015": {
   "name": "Barrett Punisher Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_016": {
   "name": "Skull Punisher Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_017": {
   "name": "Combat Diver Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_018": {
   "name": "Storm Diver Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_019": {
   "name": "Guerrilla Blaster Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_020": {
   "name": "Raven Blaster Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_021": {
   "name": "Red Napalm Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_021_G": {
   "name": "Red Napalm Head",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_022": {
   "name": "Hell Napalm Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_022_G": {
   "name": "Hell Napalm Head",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_031": {
   "name": "Exo-armor Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_032": {
   "name": "Exo-combat Head",
   "type": "Head",
   "next": "PT_MIL_HEAD_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_0G1": {
   "name": "Assault Force Head G1",
   "type": "Head",
   "next": "PT_MIL_HEAD_1G1",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_0G2": {
   "name": "Assault Master Head G",
   "type": "Head",
   "next": "PT_MIL_HEAD_0G2_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_0G2_G": {
   "name": "Assault Master Head G",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_1005": {
   "name": "Phantom Soldier Head WoT01",
   "type": "Head",
   "next": "PT_MIL_HEAD_1105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_1006": {
   "name": "Phantom Soldier Head WoT03",
   "type": "Head",
   "next": "PT_MIL_HEAD_1106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_1007": {
   "name": "Night Raider Head WoT01",
   "type": "Head",
   "next": "PT_MIL_HEAD_1107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_1008": {
   "name": "Night Raider Head WoT03",
   "type": "Head",
   "next": "PT_MIL_HEAD_1108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_101": {
   "name": "Assault Force Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_102": {
   "name": "Assault Master Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_102_G": {
   "name": "Assault Master Head E",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_103": {
   "name": "Dark Ryback Mask E",
   "type": "Head",
   "next": "PT_MIL_HEAD_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_104": {
   "name": "Officer Ryback Mask E",
   "type": "Head",
   "next": "PT_MIL_HEAD_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_104_G": {
   "name": "Officer Ryback Mask E",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_105": {
   "name": "Phantom Soldier Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_106": {
   "name": "Phantom Commando Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_106_G": {
   "name": "Phantom Commando Head E",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_107": {
   "name": "Night Scout Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_108": {
   "name": "Night Raider Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_108_G": {
   "name": "Night Raider Head E",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_109": {
   "name": "Special Forces' Beret E",
   "type": "Head",
   "next": "PT_MIL_HEAD_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_110": {
   "name": "Captain's Beret E",
   "type": "Head",
   "next": "PT_MIL_HEAD_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_1105": {
   "name": "Phantom Soldier Head WoT02",
   "type": "Head",
   "next": "PT_MIL_HEAD_1006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_1106": {
   "name": "Phantom Soldier Head WoT04",
   "type": "Head",
   "next": "PT_MIL_HEAD_1106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_1106_G": {
   "name": "Phantom Soldier Head WoT04",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_1107": {
   "name": "Night Raider Head WoT02",
   "type": "Head",
   "next": "PT_MIL_HEAD_1008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_1108": {
   "name": "Night Raider Head WoT04",
   "type": "Head",
   "next": "PT_MIL_HEAD_1108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_1108_G": {
   "name": "Night Raider Head WoT04",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_110_G": {
   "name": "Captain's Beret E",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_111": {
   "name": "Iron Eagle Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_112": {
   "name": "Iron Falcon Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_112_G": {
   "name": "Iron Falcon Head E",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_113": {
   "name": "Silent Sniper Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_114": {
   "name": "Ghost Sniper Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_114_G": {
   "name": "Ghost Sniper Head E",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_115": {
   "name": "Barrett Punisher Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_116": {
   "name": "Skull Punisher Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_116_G": {
   "name": "Skull Punisher Head E",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_117": {
   "name": "Combat Diver Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_118": {
   "name": "Storm Diver Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_118_G": {
   "name": "Storm Diver Head E",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_119": {
   "name": "Guerrilla Blaster Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_120": {
   "name": "Raven Blaster Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_120_G": {
   "name": "Raven Blaster Head E",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_131": {
   "name": "Exo-armor Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_132": {
   "name": "Exo-combat Head E",
   "type": "Head",
   "next": "PT_MIL_HEAD_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_HEAD_132_G": {
   "name": "Exo-combat Head E",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_HEAD_1G1": {
   "name": "Assault Force Head G2",
   "type": "Head",
   "next": "PT_MIL_HEAD_0G2",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_001": {
   "name": "Assault Force Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_002": {
   "name": "Assault Master Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_003": {
   "name": "Dark Ryback Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_004": {
   "name": "Officer Ryback Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_005": {
   "name": "Phantom Soldier Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_006": {
   "name": "Phantom Commando Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_007": {
   "name": "Night Scout Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_008": {
   "name": "Night Raider Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_009": {
   "name": "Special Forces' Vest",
   "type": "Body",
   "next": "PT_MIL_TOPS_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_010": {
   "name": "Captain's Vest",
   "type": "Body",
   "next": "PT_MIL_TOPS_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_011": {
   "name": "Iron Eagle Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_012": {
   "name": "Iron Falcon Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_013": {
   "name": "Silent Sniper Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_014": {
   "name": "Ghost Sniper Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_015": {
   "name": "Barrett Punisher Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_016": {
   "name": "Skull Punisher Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_017": {
   "name": "Combat Diver Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_018": {
   "name": "Storm Diver Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_019": {
   "name": "Guerrilla Blaster Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_020": {
   "name": "Raven Blaster Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_021": {
   "name": "Red Napalm Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_021_G": {
   "name": "Red Napalm Body",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_022": {
   "name": "Hell Napalm Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_022_G": {
   "name": "Hell Napalm Body",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_031": {
   "name": "Exo-armor Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_032": {
   "name": "Exo-combat Body",
   "type": "Body",
   "next": "PT_MIL_TOPS_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_0G1": {
   "name": "Assault Force Body G1",
   "type": "Body",
   "next": "PT_MIL_TOPS_1G1",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_0G2": {
   "name": "Assault Master Body G",
   "type": "Body",
   "next": "PT_MIL_TOPS_0G2_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_0G2_G": {
   "name": "Assault Master Body G",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_1005": {
   "name": "Phantom Soldier Body WoT01",
   "type": "Body",
   "next": "PT_MIL_TOPS_1105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_1006": {
   "name": "Phantom Soldier Body WoT03",
   "type": "Body",
   "next": "PT_MIL_TOPS_1106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_1007": {
   "name": "Night Raider Body WoT01",
   "type": "Body",
   "next": "PT_MIL_TOPS_1107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_1008": {
   "name": "Night Raider Body WoT03",
   "type": "Body",
   "next": "PT_MIL_TOPS_1108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_101": {
   "name": "Assault Force Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_102": {
   "name": "Assault Master Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_102_G": {
   "name": "Assault Master Body E",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_103": {
   "name": "Dark Ryback Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_104": {
   "name": "Officer Ryback Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_104_G": {
   "name": "Officer Ryback Body E",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_105": {
   "name": "Phantom Soldier Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_106": {
   "name": "Phantom Commando Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_106_G": {
   "name": "Phantom Commando Body E",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_107": {
   "name": "Night Scout Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_108": {
   "name": "Night Raider Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_108_G": {
   "name": "Night Raider Body E",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_109": {
   "name": "Special Forces' Vest E",
   "type": "Body",
   "next": "PT_MIL_TOPS_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_110": {
   "name": "Captain's Vest E",
   "type": "Body",
   "next": "PT_MIL_TOPS_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_1105": {
   "name": "Phantom Soldier Body WoT02",
   "type": "Body",
   "next": "PT_MIL_TOPS_1006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_1106": {
   "name": "Phantom Soldier Body WoT04",
   "type": "Body",
   "next": "PT_MIL_TOPS_1106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_1106_G": {
   "name": "Phantom Soldier Body WoT04",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_1107": {
   "name": "Night Raider Body WoT02",
   "type": "Body",
   "next": "PT_MIL_TOPS_1008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_1108": {
   "name": "Night Raider Body WoT04",
   "type": "Body",
   "next": "PT_MIL_TOPS_1108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_1108_G": {
   "name": "Night Raider Body WoT04",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_110_G": {
   "name": "Captain's Vest E",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_111": {
   "name": "Iron Eagle Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_112": {
   "name": "Iron Falcon Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_112_G": {
   "name": "Iron Falcon Body E",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_113": {
   "name": "Silent Sniper Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_114": {
   "name": "Ghost Sniper Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_114_G": {
   "name": "Ghost Sniper Body E",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_115": {
   "name": "Barrett Punisher Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_116": {
   "name": "Skull Punisher Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_116_G": {
   "name": "Skull Punisher Body E",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_117": {
   "name": "Combat Diver Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_118": {
   "name": "Storm Diver Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_118_G": {
   "name": "Storm Diver Body E",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_119": {
   "name": "Guerrilla Blaster Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_120": {
   "name": "Raven Blaster Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_120_G": {
   "name": "Raven Blaster Body E",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_131": {
   "name": "Exo-armor Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_132": {
   "name": "Exo-combat Body E",
   "type": "Body",
   "next": "PT_MIL_TOPS_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_MIL_TOPS_132_G": {
   "name": "Exo-combat Body E",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_MIL_TOPS_1G1": {
   "name": "Assault Force Body G2",
   "type": "Body",
   "next": "PT_MIL_TOPS_0G2",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_BTM_001": {
   "name": "Clay Figurine Leggings RE",
   "type": "Legs",
   "next": "PT_REC_BTM_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_BTM_002": {
   "name": "Arahabaki Leggings RE",
   "type": "Legs",
   "next": "PT_REC_BTM_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_BTM_003": {
   "name": "Iron Eagle Pants RE",
   "type": "Legs",
   "next": "PT_REC_BTM_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_BTM_004": {
   "name": "Iron Falcon Pants RE",
   "type": "Legs",
   "next": "PT_REC_BTM_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_BTM_101": {
   "name": "Clay Figurine Leggings S RE",
   "type": "Legs",
   "next": "PT_REC_BTM_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_BTM_102": {
   "name": "Arahabaki Leggings S RE",
   "type": "Legs",
   "next": "PT_REC_BTM_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_BTM_102_G": {
   "name": "Arahabaki Leggings S RE",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_REC_BTM_103": {
   "name": "Iron Eagle Pants E RE",
   "type": "Legs",
   "next": "PT_REC_BTM_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_BTM_104": {
   "name": "Iron Falcon Pants E RE",
   "type": "Legs",
   "next": "PT_REC_BTM_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_BTM_104_G": {
   "name": "Iron Falcon Pants E RE",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_REC_HEAD_001": {
   "name": "Clay Figurine Helmet RE",
   "type": "Head",
   "next": "PT_REC_HEAD_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_HEAD_002": {
   "name": "Arahabaki Helmet RE",
   "type": "Head",
   "next": "PT_REC_HEAD_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_HEAD_003": {
   "name": "Iron Eagle Head RE",
   "type": "Head",
   "next": "PT_REC_HEAD_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_HEAD_004": {
   "name": "Iron Falcon Head RE",
   "type": "Head",
   "next": "PT_REC_HEAD_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_HEAD_101": {
   "name": "Clay Figurine Helmet S RE",
   "type": "Head",
   "next": "PT_REC_HEAD_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_HEAD_102": {
   "name": "Arahabaki Helmet S RE",
   "type": "Head",
   "next": "PT_REC_HEAD_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_HEAD_102_G": {
   "name": "Arahabaki Helmet S RE",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_REC_HEAD_103": {
   "name": "Iron Eagle Head E RE",
   "type": "Head",
   "next": "PT_REC_HEAD_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_HEAD_104": {
   "name": "Iron Falcon Head E RE",
   "type": "Head",
   "next": "PT_REC_HEAD_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_HEAD_104_G": {
   "name": "Iron Falcon Head E RE",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_REC_TOPS_001": {
   "name": "Clay Figurine Armor RE",
   "type": "Body",
   "next": "PT_REC_TOPS_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_TOPS_002": {
   "name": "Arahabaki Armor RE",
   "type": "Body",
   "next": "PT_REC_TOPS_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_TOPS_003": {
   "name": "Iron Eagle Body RE",
   "type": "Body",
   "next": "PT_REC_TOPS_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_TOPS_004": {
   "name": "Iron Falcon Body RE",
   "type": "Body",
   "next": "PT_REC_TOPS_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_TOPS_101": {
   "name": "Clay Figurine Armor S RE",
   "type": "Body",
   "next": "PT_REC_TOPS_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_TOPS_102": {
   "name": "Arahabaki Armor S RE",
   "type": "Body",
   "next": "PT_REC_TOPS_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_TOPS_102_G": {
   "name": "Arahabaki Armor S RE",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_REC_TOPS_103": {
   "name": "Iron Eagle Body E RE",
   "type": "Body",
   "next": "PT_REC_TOPS_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_TOPS_104": {
   "name": "Iron Falcon Body E RE",
   "type": "Body",
   "next": "PT_REC_TOPS_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_REC_TOPS_104_G": {
   "name": "Iron Falcon Body E RE",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_BTM_001": {
   "name": "Reaper's Pants",
   "type": "Legs",
   "next": "PT_SPE_BTM_001_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_001_G": {
   "name": "Reaper's Pants",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_BTM_003": {
   "name": "Kat Boots 1",
   "type": "Legs",
   "next": "PT_SPE_BTM_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_004": {
   "name": "Kat Boots 3",
   "type": "Legs",
   "next": "PT_SPE_BTM_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_011": {
   "name": "Tank Commander Pants Ver.1",
   "type": "Legs",
   "next": "PT_SPE_BTM_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_012": {
   "name": "Tank Commander Pants Ver.3",
   "type": "Legs",
   "next": "PT_SPE_BTM_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_015": {
   "name": "Travis' Pants 1",
   "type": "Legs",
   "next": "PT_SPE_BTM_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_016": {
   "name": "Travis' Pants 3",
   "type": "Legs",
   "next": "PT_SPE_BTM_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_021": {
   "name": "Meijin Greaves 1",
   "type": "Legs",
   "next": "PT_SPE_BTM_121",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_022": {
   "name": "Meijin Greaves 3",
   "type": "Legs",
   "next": "PT_SPE_BTM_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_022_G": {
   "name": "Meijin Greaves 3",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_BTM_027": {
   "name": "Momoko Yamada Pants 1",
   "type": "Legs",
   "next": "PT_SPE_BTM_127",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_028": {
   "name": "Momoko Yamada Pants 3",
   "type": "Legs",
   "next": "PT_SPE_BTM_028_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_028_G": {
   "name": "Momoko Yamada Pants 3",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_BTM_029": {
   "name": "Direct Hell Pants 1",
   "type": "Legs",
   "next": "PT_SPE_BTM_129",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_030": {
   "name": "Direct Hell Pants 3",
   "type": "Legs",
   "next": "PT_SPE_BTM_030_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_030_G": {
   "name": "Direct Hell Pants 3",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_BTM_103": {
   "name": "Kat Boots 2",
   "type": "Legs",
   "next": "PT_SPE_BTM_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_104": {
   "name": "Kat Boots 4",
   "type": "Legs",
   "next": "PT_SPE_BTM_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_104_G": {
   "name": "Kat Boots 4",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_BTM_111": {
   "name": "Tank Commander Pants Ver.2",
   "type": "Legs",
   "next": "PT_SPE_BTM_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_112": {
   "name": "Tank Commander Pants Ver.4",
   "type": "Legs",
   "next": "PT_SPE_BTM_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_112_G": {
   "name": "Tank Commander Pants Ver.4",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_BTM_115": {
   "name": "Travis' Pants 2",
   "type": "Legs",
   "next": "PT_SPE_BTM_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_116": {
   "name": "Travis' Pants 4",
   "type": "Legs",
   "next": "PT_SPE_BTM_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_116_G": {
   "name": "Travis' Pants 4",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_BTM_121": {
   "name": "Meijin Greaves 2",
   "type": "Legs",
   "next": "PT_SPE_BTM_022",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_127": {
   "name": "Momoko Yamada Pants 2",
   "type": "Legs",
   "next": "PT_SPE_BTM_028",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_BTM_129": {
   "name": "Direct Hell Pants 2",
   "type": "Legs",
   "next": "PT_SPE_BTM_030",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_001": {
   "name": "X-Ray Glasses",
   "type": "Head",
   "next": "PT_SPE_HEAD_001_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_001_G": {
   "name": "X-Ray Glasses",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_HEAD_002": {
   "name": "X-Ray Glasses",
   "type": "Head",
   "next": "PT_SPE_HEAD_002_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_002_G": {
   "name": "X-Ray Glasses",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_HEAD_003": {
   "name": "Kat Head 1",
   "type": "Head",
   "next": "PT_SPE_HEAD_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_004": {
   "name": "Kat Head 3",
   "type": "Head",
   "next": "PT_SPE_HEAD_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_011": {
   "name": "Tank Commander Helmet Ver.1",
   "type": "Head",
   "next": "PT_SPE_HEAD_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_012": {
   "name": "Tank Commander Helmet Ver.3",
   "type": "Head",
   "next": "PT_SPE_HEAD_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_013": {
   "name": "Space Funglasses",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_015": {
   "name": "Travis' Sunglasses 1",
   "type": "Head",
   "next": "PT_SPE_HEAD_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_016": {
   "name": "Travis' Sunglasses 3",
   "type": "Head",
   "next": "PT_SPE_HEAD_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_017": {
   "name": "Ultra 3D Glasses",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_018": {
   "name": "X-Rated Glasses",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_019": {
   "name": "Ultra 3D Glasses W1",
   "type": "Head",
   "next": "PT_SPE_HEAD_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_020": {
   "name": "Ultra 3D Glasses W3",
   "type": "Head",
   "next": "PT_SPE_HEAD_020_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_020_G": {
   "name": "Ultra 3D Glasses W3",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_HEAD_021": {
   "name": "Meijin Head 1",
   "type": "Head",
   "next": "PT_SPE_HEAD_121",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_022": {
   "name": "Meijin Head 3",
   "type": "Head",
   "next": "PT_SPE_HEAD_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_022_G": {
   "name": "Meijin Head 3",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_HEAD_023": {
   "name": "DAIMON Glasses",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_024": {
   "name": "Happy Yuppie Glasses",
   "type": "Head",
   "next": "",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_025": {
   "name": "Uncle-D2 Head 1",
   "type": "Head",
   "next": "PT_SPE_HEAD_125",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_026": {
   "name": "Uncle-D2 Head 3",
   "type": "Head",
   "next": "PT_SPE_HEAD_026_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_026_G": {
   "name": "Uncle-D2 Head 3",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_HEAD_027": {
   "name": "Momoko Yamada Head 1",
   "type": "Head",
   "next": "PT_SPE_HEAD_127",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_028": {
   "name": "Momoko Yamada Head 3",
   "type": "Head",
   "next": "PT_SPE_HEAD_028_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_028_G": {
   "name": "Momoko Yamada Head 3",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_HEAD_029": {
   "name": "Direct Hell Cap 1",
   "type": "Head",
   "next": "PT_SPE_HEAD_129",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_030": {
   "name": "Direct Hell Cap 3",
   "type": "Head",
   "next": "PT_SPE_HEAD_030_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_030_G": {
   "name": "Direct Hell Cap 3",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_HEAD_103": {
   "name": "Kat Head 2",
   "type": "Head",
   "next": "PT_SPE_HEAD_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_104": {
   "name": "Kat Head 4",
   "type": "Head",
   "next": "PT_SPE_HEAD_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_104_G": {
   "name": "Kat Head 4",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_HEAD_111": {
   "name": "Tank Commander Helmet Ver.2",
   "type": "Head",
   "next": "PT_SPE_HEAD_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_112": {
   "name": "Tank Commander Helmet Ver.4",
   "type": "Head",
   "next": "PT_SPE_HEAD_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_112_G": {
   "name": "Tank Commander Helmet Ver.4",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_HEAD_115": {
   "name": "Travis' Sunglasses 2",
   "type": "Head",
   "next": "PT_SPE_HEAD_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_116": {
   "name": "Travis' Sunglasses 4",
   "type": "Head",
   "next": "PT_SPE_HEAD_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_116_G": {
   "name": "Travis' Sunglasses 4",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_HEAD_119": {
   "name": "Ultra 3D Glasses W2",
   "type": "Head",
   "next": "PT_SPE_HEAD_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_121": {
   "name": "Meijin Head 2",
   "type": "Head",
   "next": "PT_SPE_HEAD_022",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_125": {
   "name": "Uncle-D2 Head 2",
   "type": "Head",
   "next": "PT_SPE_HEAD_026",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_127": {
   "name": "Momoko Yamada Head 2",
   "type": "Head",
   "next": "PT_SPE_HEAD_028",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_HEAD_129": {
   "name": "Direct Hell Cap 2",
   "type": "Head",
   "next": "PT_SPE_HEAD_030",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_001": {
   "name": "Reaper's Coat",
   "type": "Body",
   "next": "PT_SPE_TOPS_001_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_001_G": {
   "name": "Reaper's Coat",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_TOPS_003": {
   "name": "Kat Body 1",
   "type": "Body",
   "next": "PT_SPE_TOPS_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_004": {
   "name": "Kat Body 3",
   "type": "Body",
   "next": "PT_SPE_TOPS_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_005": {
   "name": "Paladin Armor EW",
   "type": "Body",
   "next": "PT_SPE_TOPS_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_006": {
   "name": "Last Paladin’s Armor EW",
   "type": "Body",
   "next": "PT_SPE_TOPS_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_007": {
   "name": "Sengoku Armor BT",
   "type": "Body",
   "next": "PT_SPE_TOPS_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_008": {
   "name": "Shogun Armor BT",
   "type": "Body",
   "next": "PT_SPE_TOPS_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_009": {
   "name": "DIY Attack Coat EL",
   "type": "Body",
   "next": "PT_SPE_TOPS_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_010": {
   "name": "DIY Assault Coat EL",
   "type": "Body",
   "next": "PT_SPE_TOPS_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_011": {
   "name": "Tank Commander Armor Ver.1",
   "type": "Body",
   "next": "PT_SPE_TOPS_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_012": {
   "name": "Tank Commander Armor Ver.3",
   "type": "Body",
   "next": "PT_SPE_TOPS_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_015": {
   "name": "Travis' Jacket 1",
   "type": "Body",
   "next": "PT_SPE_TOPS_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_016": {
   "name": "Travis' Jacket 3",
   "type": "Body",
   "next": "PT_SPE_TOPS_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_021": {
   "name": "Meijin Armor 1",
   "type": "Body",
   "next": "PT_SPE_TOPS_121",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_022": {
   "name": "Meijin Armor 3",
   "type": "Body",
   "next": "PT_SPE_TOPS_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_022_G": {
   "name": "Meijin Armor 3",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_TOPS_027": {
   "name": "Momoko Yamada Body 1",
   "type": "Body",
   "next": "PT_SPE_TOPS_127",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_028": {
   "name": "Momoko Yamada Body 3",
   "type": "Body",
   "next": "PT_SPE_TOPS_028_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_028_G": {
   "name": "Momoko Yamada Body 3",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_TOPS_029": {
   "name": "Direct Hell Jacket 1",
   "type": "Body",
   "next": "PT_SPE_TOPS_129",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_030": {
   "name": "Direct Hell Jacket 3",
   "type": "Body",
   "next": "PT_SPE_TOPS_030_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_030_G": {
   "name": "Direct Hell Jacket 3",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_TOPS_103": {
   "name": "Kat Body 2",
   "type": "Body",
   "next": "PT_SPE_TOPS_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_104": {
   "name": "Kat Body 4",
   "type": "Body",
   "next": "PT_SPE_TOPS_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_104_G": {
   "name": "Kat Body 4",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_TOPS_105": {
   "name": "Paladin Armor S EW",
   "type": "Body",
   "next": "PT_SPE_TOPS_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_106": {
   "name": "Last Paladin’s Armor S EW",
   "type": "Body",
   "next": "PT_SPE_TOPS_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_106_G": {
   "name": "Last Paladin’s Armor S EW",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_TOPS_107": {
   "name": "Sengoku Armor S BT",
   "type": "Body",
   "next": "PT_SPE_TOPS_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_108": {
   "name": "Shogun Armor S BT",
   "type": "Body",
   "next": "PT_SPE_TOPS_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_108_G": {
   "name": "Shogun Armor S BT",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_TOPS_109": {
   "name": "DIY Attack Coat + EL",
   "type": "Body",
   "next": "PT_SPE_TOPS_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_110": {
   "name": "DIY Assault Coat + EL",
   "type": "Body",
   "next": "PT_SPE_TOPS_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_110_G": {
   "name": "DIY Assault Coat + EL",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_TOPS_111": {
   "name": "Tank Commander Armor Ver.2",
   "type": "Body",
   "next": "PT_SPE_TOPS_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_112": {
   "name": "Tank Commander Armor Ver.4",
   "type": "Body",
   "next": "PT_SPE_TOPS_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_112_G": {
   "name": "Tank Commander Armor Ver.4",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_TOPS_115": {
   "name": "Travis' Jacket 2",
   "type": "Body",
   "next": "PT_SPE_TOPS_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_116": {
   "name": "Travis' Jacket 4",
   "type": "Body",
   "next": "PT_SPE_TOPS_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_116_G": {
   "name": "Travis' Jacket 4",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPE_TOPS_121": {
   "name": "Meijin Armor 2",
   "type": "Body",
   "next": "PT_SPE_TOPS_022",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_127": {
   "name": "Momoko Yamada Body 2",
   "type": "Body",
   "next": "PT_SPE_TOPS_028",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPE_TOPS_129": {
   "name": "Direct Hell Jacket 2",
   "type": "Body",
   "next": "PT_SPE_TOPS_030",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_001": {
   "name": "Apocalyptic Hockey Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_002": {
   "name": "Murderer Hockey Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_003": {
   "name": "Motocross Rider Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_004": {
   "name": "Execution Rider Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_005": {
   "name": "Killer Wrestler Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_006": {
   "name": "Lucha Master Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_007": {
   "name": "Kendo Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_008": {
   "name": "Bushido Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_009": {
   "name": "Heavy Hitter Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_010": {
   "name": "Hell Slugger Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_011": {
   "name": "Hard Puncher Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_012": {
   "name": "King Smasher Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_013": {
   "name": "Blitz Bowler Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_014": {
   "name": "Raging Bull Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_015": {
   "name": "Cycle Madness Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_016": {
   "name": "Tour de Hell Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_017": {
   "name": "Swimming Master Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_018": {
   "name": "Blood Diver Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_019": {
   "name": "Splatter 13 Boots",
   "type": "Legs",
   "next": "PT_SPO_BTM_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_020": {
   "name": "Black Belt Terror Boots",
   "type": "Legs",
   "next": "PT_SPO_BTM_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_021": {
   "name": "Pale Wind Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_021_G": {
   "name": "Pale Wind Pants",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_022": {
   "name": "Hell Wind Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_022_G": {
   "name": "Hell Wind Pants",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_031": {
   "name": "Hard Target Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_032": {
   "name": "Morbid Target Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_101": {
   "name": "Apocalyptic Hockey Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_102": {
   "name": "Murderer Hockey Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_102_G": {
   "name": "Murderer Hockey Pants A",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_103": {
   "name": "Motocross Rider Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_104": {
   "name": "Execution Rider Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_104_G": {
   "name": "Execution Rider Pants A",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_105": {
   "name": "Killer Wrestler Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_106": {
   "name": "Lucha Master Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_106_G": {
   "name": "Lucha Master Pants A",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_107": {
   "name": "Kendo Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_108": {
   "name": "Bushido Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_108_G": {
   "name": "Bushido Pants A",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_109": {
   "name": "Heavy Hitter Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_110": {
   "name": "Hell Slugger Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_110_G": {
   "name": "Hell Slugger Pants A",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_111": {
   "name": "Hard Puncher Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_112": {
   "name": "King Smasher Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_112_G": {
   "name": "King Smasher Pants A",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_113": {
   "name": "Blitz Bowler Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_114": {
   "name": "Raging Bull Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_114_G": {
   "name": "Raging Bull Pants A",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_115": {
   "name": "Cycle Madness Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_116": {
   "name": "Tour de Hell Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_116_G": {
   "name": "Tour de Hell Pants A",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_117": {
   "name": "Swimming Master Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_118": {
   "name": "Blood Diver Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_118_G": {
   "name": "Blood Diver Pants A",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_119": {
   "name": "Splatter 13 Boots A",
   "type": "Legs",
   "next": "PT_SPO_BTM_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_120": {
   "name": "Black Belt Terror Boots A",
   "type": "Legs",
   "next": "PT_SPO_BTM_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_120_G": {
   "name": "Black Belt Terror Boots A",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_BTM_131": {
   "name": "Hard Target Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_132": {
   "name": "Morbid Target Pants A",
   "type": "Legs",
   "next": "PT_SPO_BTM_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_BTM_132_G": {
   "name": "Morbid Target Pants A",
   "type": "Legs",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_001": {
   "name": "Apocalyptic Hockey Mask",
   "type": "Head",
   "next": "PT_SPO_HEAD_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_002": {
   "name": "Murderer Hockey Mask",
   "type": "Head",
   "next": "PT_SPO_HEAD_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_003": {
   "name": "Motocross Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_004": {
   "name": "Execution Rider Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_005": {
   "name": "Killer Wrestler Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_006": {
   "name": "Lucha Master Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_007": {
   "name": "Kendo Mask",
   "type": "Head",
   "next": "PT_SPO_HEAD_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_008": {
   "name": "Bushido Mask",
   "type": "Head",
   "next": "PT_SPO_HEAD_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_009": {
   "name": "Heavy Hitter Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_010": {
   "name": "Hell Slugger Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_011": {
   "name": "Hard Puncher Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_012": {
   "name": "King Smasher Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_013": {
   "name": "Blitz Bowler Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_014": {
   "name": "Raging Bull Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_015": {
   "name": "Cycle Madness Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_016": {
   "name": "Tour de Hell Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_017": {
   "name": "Swimming Master Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_018": {
   "name": "Blood Diver Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_019": {
   "name": "Splatter 13 Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_020": {
   "name": "Black Belt Terror Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_021": {
   "name": "Pale Wind Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_021_G": {
   "name": "Pale Wind Head",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_022": {
   "name": "Hell Wind Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_022_G": {
   "name": "Hell Wind Head",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_031": {
   "name": "Hard Target Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_032": {
   "name": "Morbid Target Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_101": {
   "name": "Apocalyptic Hockey Mask A",
   "type": "Head",
   "next": "PT_SPO_HEAD_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_102": {
   "name": "Murderer Hockey Mask A",
   "type": "Head",
   "next": "PT_SPO_HEAD_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_102_G": {
   "name": "Murderer Hockey Mask A",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_103": {
   "name": "Motocross Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_104": {
   "name": "Execution Rider Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_104_G": {
   "name": "Execution Rider Head A",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_105": {
   "name": "Killer Wrestler Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_106": {
   "name": "Lucha Master Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_106_G": {
   "name": "Lucha Master Head A",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_107": {
   "name": "Kendo Mask A",
   "type": "Head",
   "next": "PT_SPO_HEAD_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_108": {
   "name": "Bushido Mask A",
   "type": "Head",
   "next": "PT_SPO_HEAD_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_108_G": {
   "name": "Bushido Mask A",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_109": {
   "name": "Heavy Hitter Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_110": {
   "name": "Hell Slugger Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_110_G": {
   "name": "Hell Slugger Head A",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_111": {
   "name": "Hard Puncher Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_112": {
   "name": "King Smasher Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_112_G": {
   "name": "King Smasher Head A",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_113": {
   "name": "Blitz Bowler Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_114": {
   "name": "Raging Bull Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_114_G": {
   "name": "Raging Bull Head A",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_115": {
   "name": "Cycle Madness Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_116": {
   "name": "Tour de Hell Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_116_G": {
   "name": "Tour de Hell Head A",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_117": {
   "name": "Swimming Master Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_118": {
   "name": "Blood Diver Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_118_G": {
   "name": "Blood Diver Head A",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_119": {
   "name": "Splatter 13 Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_120": {
   "name": "Black Belt Terror Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_120_G": {
   "name": "Black Belt Terror Head A",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_HEAD_131": {
   "name": "Hard Target Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_132": {
   "name": "Morbid Target Head A",
   "type": "Head",
   "next": "PT_SPO_HEAD_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_HEAD_132_G": {
   "name": "Morbid Target Head A",
   "type": "Head",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_001": {
   "name": "Apocalyptic Hockey Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_101",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_002": {
   "name": "Murderer Hockey Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_102",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_003": {
   "name": "Motocross Rider Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_103",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_004": {
   "name": "Execution Rider Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_104",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_005": {
   "name": "Killer Wrestler Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_105",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_006": {
   "name": "Lucha Master Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_106",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_007": {
   "name": "Kendo Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_107",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_008": {
   "name": "Bushido Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_108",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_009": {
   "name": "Heavy Hitter Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_109",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_010": {
   "name": "Hell Slugger Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_110",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_011": {
   "name": "Hard Puncher Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_111",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_012": {
   "name": "King Smasher Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_112",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_013": {
   "name": "Blitz Bowler Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_113",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_014": {
   "name": "Raging Bull Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_114",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_015": {
   "name": "Cycle Madness Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_115",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_016": {
   "name": "Tour de Hell Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_116",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_017": {
   "name": "Swimming Master Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_117",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_018": {
   "name": "Blood Diver Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_118",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_019": {
   "name": "Splatter 13 Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_119",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_020": {
   "name": "Black Belt Terror Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_120",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_021": {
   "name": "Pale Wind Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_021_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_021_G": {
   "name": "Pale Wind Body",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_022": {
   "name": "Hell Wind Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_022_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_022_G": {
   "name": "Hell Wind Body",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_031": {
   "name": "Hard Target Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_131",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_032": {
   "name": "Morbid Target Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_132",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_101": {
   "name": "Apocalyptic Hockey Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_002",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_102": {
   "name": "Murderer Hockey Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_102_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_102_G": {
   "name": "Murderer Hockey Body A",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_103": {
   "name": "Motocross Rider Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_004",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_104": {
   "name": "Execution Rider Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_104_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_104_G": {
   "name": "Execution Rider Body A",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_105": {
   "name": "Killer Wrestler Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_006",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_106": {
   "name": "Lucha Master Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_106_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_106_G": {
   "name": "Lucha Master Body A",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_107": {
   "name": "Kendo Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_008",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_108": {
   "name": "Bushido Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_108_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_108_G": {
   "name": "Bushido Body A",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_109": {
   "name": "Heavy Hitter Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_010",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_110": {
   "name": "Hell Slugger Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_110_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_110_G": {
   "name": "Hell Slugger Body A",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_111": {
   "name": "Hard Puncher Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_012",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_112": {
   "name": "King Smasher Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_112_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_112_G": {
   "name": "King Smasher Body A",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_113": {
   "name": "Blitz Bowler Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_014",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_114": {
   "name": "Raging Bull Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_114_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_114_G": {
   "name": "Raging Bull Body A",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_115": {
   "name": "Cycle Madness Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_016",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_116": {
   "name": "Tour de Hell Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_116_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_116_G": {
   "name": "Tour de Hell Body A",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_117": {
   "name": "Swimming Master Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_018",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_118": {
   "name": "Blood Diver Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_118_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_118_G": {
   "name": "Blood Diver Body A",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_119": {
   "name": "Splatter 13 Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_020",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_120": {
   "name": "Black Belt Terror Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_120_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_120_G": {
   "name": "Black Belt Terror Body A",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  },
  "PT_SPO_TOPS_131": {
   "name": "Hard Target Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_032",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_132": {
   "name": "Morbid Target Body A",
   "type": "Body",
   "next": "PT_SPO_TOPS_132_G",
-  "uncapped": false
+  "kind": "normal"
  },
  "PT_SPO_TOPS_132_G": {
   "name": "Morbid Target Body A",
   "type": "Body",
   "next": "",
-  "uncapped": true
+  "kind": "uncap"
  }
 }
