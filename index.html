@@ -848,7 +848,11 @@ document.addEventListener('focusout', e => {
   const max = el.max !== '' ? parseFloat(el.max) : Infinity;
   let v = parseFloat(el.value);
   if (isNaN(v)) v = 0;
-  el.value = Math.max(min, Math.min(max, v));
+  v = Math.max(min, Math.min(max, v));
+  if (el.value !== String(v)) {
+    el.value = v;
+    el.dispatchEvent(new Event('input', { bubbles: true }));
+  }
 });
 document.addEventListener('input', e => {
   if (!save) return;
