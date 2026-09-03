@@ -211,23 +211,67 @@ function render() {
   const main = document.getElementById('main');
   if (!save) { main.innerHTML = ''; return; }
   const u = uid();
-  main.innerHTML = renderCurrencies() + renderFighters(u) + renderResearch() + renderDecals(u);
+  main.innerHTML = renderCurrencies() + renderPlayLog() + renderFighters(u) + renderResearch() + renderDecals(u);
   document.getElementById('saveBtn').disabled = false;
 }
 
 function renderCurrencies() {
   const s = save.soul;
   const rows = [
-    ['Kill Coins', 'free_money'],
-    ['SPLithium', 'spirit'],
-    ['Recycle Points', 'recycle_point'],
-    ['Bloodnium', 'bloodnium_point'],
-    ['TDM Points', 'tdm_point'],
+    ['Kill Coins', 'free_money', 0],
+    ['SPLithium', 'spirit', 0],
+    ['Recycle Points', 'recycle_point', 0],
+    ['Bloodnium', 'bloodnium_point', BLOODNIUM_MAX],
+    ['TDM Points', 'tdm_point', 0],
   ];
   let html = '<div class="panel"><h2>Currencies</h2><div class="grid">';
-  rows.forEach(([label, key]) => {
+  rows.forEach(([label, key, max]) => {
     html += '<div class="field"><label>' + label + '</label>' +
-      '<input class="num" data-path="soul.' + key + '" value="' + num(s[key]) + '"></div>';
+      '<input class="num" type="number" min="0" step="1" ' + (max ? 'max="' + max + '" ' : '') + 'data-path="soul.' + key + '" value="' + num(s[key]) + '"></div>';
+  });
+  html += '</div></div>';
+  return html;
+}
+
+function renderPlayLog() {
+  const died = (save.playlog && save.playlog.died) || {};
+  const enemyDeaths = [
+    ['killed_NormalEnemy_cnt', 'Normal Enemy'],
+    ['killed_Zombie_cnt', 'Zombie'],
+    ['killed_PlayerEnemy_cnt', 'Player Enemy'],
+    ['killed_4ForceMen_cnt', 'Forcemen'],
+    ['killed_Coen_cnt', 'COEN'],
+    ['killed_Jindie_cnt', 'JIN-DIE'],
+    ['killed_Goto09_cnt', 'GOTO-9'],
+    ['killed_U10_cnt', 'U-10'],
+    ['killed_MaxSharp_cnt', 'Max Sharp'],
+    ['killed_Jackson_cnt', 'Jackson'],
+    ['killed_Crowley_cnt', 'Crowley'],
+    ['killed_Gunkan_cnt', 'Gunkanyama'],
+    ['killed_JACKAL_X_cnt', 'Jackal X'],
+    ['killed_JACKAL_Y_cnt', 'Jackal Y'],
+    ['killed_JACKAL_Z_cnt', 'Jackal Z'],
+    ['killed_whitesteel_cnt', 'White Steel'],
+    ['killed_rednapalm_cnt', 'Red Napalm'],
+    ['killed_blackthunder_cnt', 'Black Thunder'],
+    ['killed_palewind_cnt', 'Pale Wind'],
+  ];
+  const causes = [
+    ['by_RAGEMOVE_cnt', 'Rage Move'],
+    ['by_GORE_cnt', 'Gore'],
+    ['by_fall_cnt', 'Falling'],
+    ['by_beast_cnt', 'Beast'],
+  ];
+  let html = '<div class="panel"><h2>Play Log</h2><div class="grid">';
+  html += '<div class="field"><label>Total Deaths</label>' +
+    '<input class="num" type="number" min="0" step="1" data-path="playlog.died.total_died_cnt" value="' + num(died.total_died_cnt) + '"></div>';
+  enemyDeaths.forEach(([key, label]) => {
+    html += '<div class="field"><label>Died by ' + label + '</label>' +
+      '<input class="num" type="number" min="0" step="1" data-path="playlog.died.' + key + '" value="' + num(died[key]) + '"></div>';
+  });
+  causes.forEach(([key, label]) => {
+    html += '<div class="field"><label>Death by ' + label + '</label>' +
+      '<input class="num" type="number" min="0" step="1" data-path="playlog.died.' + key + '" value="' + num(died[key]) + '"></div>';
   });
   html += '</div></div>';
   return html;
@@ -237,7 +281,9 @@ const FIGHTER_CLASSES = {
   BAL: 'All-rounder', BRE: 'Striker', COL: 'Collector', DEF: 'Defender',
   LUK: 'Lucky Star', SHT: 'Shooter', SKI: 'Skill Master', TEC: 'Attacker',
 };
-const STAT_MAX = 50;
+const STAT_CAP = { hp: 50, str: 50, dex: 50, vit: 50, stm: 50, luk: 110, skill: 9, bag: 54 };
+const GRADE_LEVEL_CAP = { 1: 36, 2: 66, 3: 96, 4: 126, 5: 150, 6: 280 };
+const BLOODNIUM_MAX = 999999;
 
 function renderFighters(u) {
   const chrs = (save.soul.chr.chrs[u]) || [];
@@ -277,8 +323,9 @@ function renderFighters(u) {
       ['Skill slots', 'skill'], ['Bag slots', 'bag'],
     ];
     statFields.forEach(([label, key]) => {
+      const cap = STAT_CAP[key] || 50;
       html += '<div class="field"><label>' + label + '</label>' +
-        '<input class="num" type="number" min="0" step="1" data-fighter="' + f.cid + '" data-stat="' + key + '" value="' + num(b[key]) + '"></div>';
+        '<input class="num" type="number" min="0" max="' + cap + '" step="1" data-fighter="' + f.cid + '" data-stat="' + key + '" value="' + num(b[key]) + '"></div>';
     });
     html += '</div></div>';
   });
@@ -549,7 +596,10 @@ document.addEventListener('input', e => {
   if (el.matches('input[data-path]')) {
     const path = el.dataset.path.split('.');
     let obj = save; for (let i = 0; i < path.length - 1; i++) obj = obj[path[i]];
-    obj[path[path.length - 1]] = parseFloat(el.value) || 0;
+    const key = path[path.length - 1];
+    let v = parseFloat(el.value) || 0;
+    if (key === 'bloodnium_point') v = Math.min(BLOODNIUM_MAX, v);
+    obj[key] = Math.max(0, v);
   } else if (el.matches('input[data-cnt]')) {
     const id = el.dataset.cnt;
     const rec = save.soul.skl.psskl.find(r => r.sklid === id);
@@ -563,9 +613,10 @@ document.addEventListener('input', e => {
     if (!f || !b) return;
     const key = el.dataset.stat;
     const old = b[key] || 0;
-    const v = Math.max(0, Math.min(STAT_MAX, Math.floor(parseFloat(el.value) || 0)));
+    const v = Math.max(0, Math.min(STAT_CAP[key] || 50, Math.floor(parseFloat(el.value) || 0)));
     b[key] = v;
-    b.lvl = Math.max(1, (b.lvl || 1) + (v - old));
+    const cap = GRADE_LEVEL_CAP[f.grade] || 280;
+    b.lvl = Math.min(cap, Math.max(1, (b.lvl || 1) + (v - old)));
     const lvlEl = document.querySelector('[data-lvl-of="' + cid + '"]');
     if (lvlEl) lvlEl.textContent = b.lvl;
   } else if (el.matches('input[data-fighter][data-fprop="name"]')) {
