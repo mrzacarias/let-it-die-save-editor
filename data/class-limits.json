@@ -1,0 +1,1091 @@
+{
+ "BAL|1|0": {
+  "stat": 5,
+  "bag": 20,
+  "skill": 1,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BAL|1|1": {
+  "stat": 6,
+  "bag": 21,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "BAL|2|0": {
+  "stat": 9,
+  "bag": 21,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BAL|2|1": {
+  "stat": 10,
+  "bag": 22,
+  "skill": 3,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "BAL|3|0": {
+  "stat": 13,
+  "bag": 22,
+  "skill": 3,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BAL|3|1": {
+  "stat": 15,
+  "bag": 23,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "BAL|4|0": {
+  "stat": 17,
+  "bag": 23,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BAL|4|1": {
+  "stat": 20,
+  "bag": 25,
+  "skill": 5,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 2,
+  "rageExtra": 0
+ },
+ "BAL|5|0": {
+  "stat": 21,
+  "bag": 24,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BAL|5|1": {
+  "stat": 25,
+  "bag": 27,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "BAL|6|0": {
+  "stat": 25,
+  "bag": 24,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BAL|6|1": {
+  "stat": 30,
+  "bag": 27,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "BAL|6|2": {
+  "stat": 35,
+  "bag": 30,
+  "skill": 7,
+  "rage": 5,
+  "skillExtra": 2,
+  "bagExtra": 6,
+  "rageExtra": 0
+ },
+ "BAL|6|3": {
+  "stat": 40,
+  "bag": 33,
+  "skill": 8,
+  "rage": 5,
+  "skillExtra": 3,
+  "bagExtra": 9,
+  "rageExtra": 0
+ },
+ "BAL|6|4": {
+  "stat": 45,
+  "bag": 36,
+  "skill": 9,
+  "rage": 5,
+  "skillExtra": 4,
+  "bagExtra": 12,
+  "rageExtra": 0
+ },
+ "BRE|1|0": {
+  "stat": 5,
+  "bag": 18,
+  "skill": 1,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BRE|1|1": {
+  "stat": 6,
+  "bag": 19,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "BRE|2|0": {
+  "stat": 9,
+  "bag": 19,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BRE|2|1": {
+  "stat": 10,
+  "bag": 20,
+  "skill": 3,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "BRE|3|0": {
+  "stat": 13,
+  "bag": 20,
+  "skill": 3,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BRE|3|1": {
+  "stat": 15,
+  "bag": 21,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "BRE|4|0": {
+  "stat": 17,
+  "bag": 21,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BRE|4|1": {
+  "stat": 20,
+  "bag": 23,
+  "skill": 5,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 2,
+  "rageExtra": 0
+ },
+ "BRE|5|0": {
+  "stat": 21,
+  "bag": 22,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BRE|5|1": {
+  "stat": 25,
+  "bag": 25,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "BRE|6|0": {
+  "stat": 25,
+  "bag": 22,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "BRE|6|1": {
+  "stat": 30,
+  "bag": 25,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "BRE|6|2": {
+  "stat": 35,
+  "bag": 28,
+  "skill": 7,
+  "rage": 5,
+  "skillExtra": 2,
+  "bagExtra": 6,
+  "rageExtra": 0
+ },
+ "BRE|6|3": {
+  "stat": 40,
+  "bag": 31,
+  "skill": 8,
+  "rage": 5,
+  "skillExtra": 3,
+  "bagExtra": 9,
+  "rageExtra": 0
+ },
+ "BRE|6|4": {
+  "stat": 45,
+  "bag": 34,
+  "skill": 9,
+  "rage": 5,
+  "skillExtra": 4,
+  "bagExtra": 12,
+  "rageExtra": 0
+ },
+ "COL|1|0": {
+  "stat": 5,
+  "bag": 30,
+  "skill": 1,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "COL|1|1": {
+  "stat": 6,
+  "bag": 31,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "COL|2|0": {
+  "stat": 9,
+  "bag": 33,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "COL|2|1": {
+  "stat": 10,
+  "bag": 34,
+  "skill": 3,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "COL|3|0": {
+  "stat": 13,
+  "bag": 36,
+  "skill": 3,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "COL|3|1": {
+  "stat": 15,
+  "bag": 37,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "COL|4|0": {
+  "stat": 17,
+  "bag": 39,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "COL|4|1": {
+  "stat": 20,
+  "bag": 41,
+  "skill": 5,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 2,
+  "rageExtra": 0
+ },
+ "COL|5|0": {
+  "stat": 21,
+  "bag": 42,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "COL|5|1": {
+  "stat": 25,
+  "bag": 45,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "COL|6|0": {
+  "stat": 25,
+  "bag": 42,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "COL|6|1": {
+  "stat": 30,
+  "bag": 45,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "COL|6|2": {
+  "stat": 35,
+  "bag": 48,
+  "skill": 7,
+  "rage": 5,
+  "skillExtra": 2,
+  "bagExtra": 6,
+  "rageExtra": 0
+ },
+ "COL|6|3": {
+  "stat": 40,
+  "bag": 51,
+  "skill": 8,
+  "rage": 5,
+  "skillExtra": 3,
+  "bagExtra": 9,
+  "rageExtra": 0
+ },
+ "COL|6|4": {
+  "stat": 45,
+  "bag": 54,
+  "skill": 9,
+  "rage": 5,
+  "skillExtra": 4,
+  "bagExtra": 12,
+  "rageExtra": 0
+ },
+ "DEF|1|0": {
+  "stat": 5,
+  "bag": 18,
+  "skill": 1,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "DEF|1|1": {
+  "stat": 6,
+  "bag": 19,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "DEF|2|0": {
+  "stat": 9,
+  "bag": 19,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "DEF|2|1": {
+  "stat": 10,
+  "bag": 20,
+  "skill": 3,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "DEF|3|0": {
+  "stat": 13,
+  "bag": 20,
+  "skill": 3,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "DEF|3|1": {
+  "stat": 15,
+  "bag": 21,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "DEF|4|0": {
+  "stat": 17,
+  "bag": 21,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "DEF|4|1": {
+  "stat": 20,
+  "bag": 23,
+  "skill": 5,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 2,
+  "rageExtra": 0
+ },
+ "DEF|5|0": {
+  "stat": 21,
+  "bag": 22,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "DEF|5|1": {
+  "stat": 25,
+  "bag": 25,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "DEF|6|0": {
+  "stat": 25,
+  "bag": 22,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "DEF|6|1": {
+  "stat": 30,
+  "bag": 25,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "DEF|6|2": {
+  "stat": 35,
+  "bag": 28,
+  "skill": 7,
+  "rage": 5,
+  "skillExtra": 2,
+  "bagExtra": 6,
+  "rageExtra": 0
+ },
+ "DEF|6|3": {
+  "stat": 40,
+  "bag": 31,
+  "skill": 8,
+  "rage": 5,
+  "skillExtra": 3,
+  "bagExtra": 9,
+  "rageExtra": 0
+ },
+ "DEF|6|4": {
+  "stat": 45,
+  "bag": 34,
+  "skill": 9,
+  "rage": 5,
+  "skillExtra": 4,
+  "bagExtra": 12,
+  "rageExtra": 0
+ },
+ "LUK|1|0": {
+  "stat": 5,
+  "bag": 20,
+  "skill": 1,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "LUK|1|1": {
+  "stat": 6,
+  "bag": 21,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "LUK|2|0": {
+  "stat": 9,
+  "bag": 21,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "LUK|2|1": {
+  "stat": 10,
+  "bag": 22,
+  "skill": 3,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "LUK|3|0": {
+  "stat": 13,
+  "bag": 22,
+  "skill": 3,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "LUK|3|1": {
+  "stat": 15,
+  "bag": 23,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "LUK|4|0": {
+  "stat": 17,
+  "bag": 23,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "LUK|4|1": {
+  "stat": 20,
+  "bag": 25,
+  "skill": 5,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 2,
+  "rageExtra": 0
+ },
+ "LUK|5|0": {
+  "stat": 21,
+  "bag": 24,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "LUK|5|1": {
+  "stat": 25,
+  "bag": 27,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "LUK|6|0": {
+  "stat": 25,
+  "bag": 24,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "LUK|6|1": {
+  "stat": 30,
+  "bag": 27,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "LUK|6|2": {
+  "stat": 35,
+  "bag": 30,
+  "skill": 7,
+  "rage": 5,
+  "skillExtra": 2,
+  "bagExtra": 6,
+  "rageExtra": 0
+ },
+ "LUK|6|3": {
+  "stat": 40,
+  "bag": 33,
+  "skill": 8,
+  "rage": 5,
+  "skillExtra": 3,
+  "bagExtra": 9,
+  "rageExtra": 0
+ },
+ "LUK|6|4": {
+  "stat": 45,
+  "bag": 36,
+  "skill": 9,
+  "rage": 5,
+  "skillExtra": 4,
+  "bagExtra": 12,
+  "rageExtra": 0
+ },
+ "OLD|1|0": {
+  "stat": 50,
+  "bag": 30,
+  "skill": 8,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SHT|1|0": {
+  "stat": 5,
+  "bag": 18,
+  "skill": 1,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SHT|1|1": {
+  "stat": 6,
+  "bag": 19,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "SHT|2|0": {
+  "stat": 9,
+  "bag": 19,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SHT|2|1": {
+  "stat": 10,
+  "bag": 20,
+  "skill": 3,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "SHT|3|0": {
+  "stat": 13,
+  "bag": 20,
+  "skill": 3,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SHT|3|1": {
+  "stat": 15,
+  "bag": 21,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "SHT|4|0": {
+  "stat": 17,
+  "bag": 21,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SHT|4|1": {
+  "stat": 20,
+  "bag": 23,
+  "skill": 5,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 2,
+  "rageExtra": 0
+ },
+ "SHT|5|0": {
+  "stat": 21,
+  "bag": 22,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SHT|5|1": {
+  "stat": 25,
+  "bag": 25,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "SHT|6|0": {
+  "stat": 25,
+  "bag": 22,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SHT|6|1": {
+  "stat": 30,
+  "bag": 25,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "SHT|6|2": {
+  "stat": 35,
+  "bag": 28,
+  "skill": 7,
+  "rage": 5,
+  "skillExtra": 2,
+  "bagExtra": 6,
+  "rageExtra": 0
+ },
+ "SHT|6|3": {
+  "stat": 40,
+  "bag": 31,
+  "skill": 8,
+  "rage": 5,
+  "skillExtra": 3,
+  "bagExtra": 9,
+  "rageExtra": 0
+ },
+ "SHT|6|4": {
+  "stat": 45,
+  "bag": 34,
+  "skill": 9,
+  "rage": 5,
+  "skillExtra": 4,
+  "bagExtra": 12,
+  "rageExtra": 0
+ },
+ "SKI|1|0": {
+  "stat": 5,
+  "bag": 18,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SKI|1|1": {
+  "stat": 6,
+  "bag": 19,
+  "skill": 3,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "SKI|2|0": {
+  "stat": 9,
+  "bag": 19,
+  "skill": 3,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SKI|2|1": {
+  "stat": 10,
+  "bag": 20,
+  "skill": 4,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "SKI|3|0": {
+  "stat": 13,
+  "bag": 20,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SKI|3|1": {
+  "stat": 15,
+  "bag": 21,
+  "skill": 5,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "SKI|4|0": {
+  "stat": 17,
+  "bag": 21,
+  "skill": 6,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SKI|4|1": {
+  "stat": 20,
+  "bag": 23,
+  "skill": 7,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 2,
+  "rageExtra": 0
+ },
+ "SKI|5|0": {
+  "stat": 21,
+  "bag": 22,
+  "skill": 9,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SKI|5|1": {
+  "stat": 25,
+  "bag": 25,
+  "skill": 9,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "SKI|6|0": {
+  "stat": 25,
+  "bag": 22,
+  "skill": 9,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "SKI|6|1": {
+  "stat": 30,
+  "bag": 25,
+  "skill": 9,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "SKI|6|2": {
+  "stat": 35,
+  "bag": 28,
+  "skill": 9,
+  "rage": 6,
+  "skillExtra": 0,
+  "bagExtra": 6,
+  "rageExtra": 1
+ },
+ "SKI|6|3": {
+  "stat": 40,
+  "bag": 31,
+  "skill": 9,
+  "rage": 7,
+  "skillExtra": 0,
+  "bagExtra": 9,
+  "rageExtra": 2
+ },
+ "SKI|6|4": {
+  "stat": 45,
+  "bag": 34,
+  "skill": 9,
+  "rage": 8,
+  "skillExtra": 0,
+  "bagExtra": 12,
+  "rageExtra": 3
+ },
+ "TEC|1|0": {
+  "stat": 5,
+  "bag": 18,
+  "skill": 1,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "TEC|1|1": {
+  "stat": 6,
+  "bag": 19,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "TEC|2|0": {
+  "stat": 9,
+  "bag": 19,
+  "skill": 2,
+  "rage": 3,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "TEC|2|1": {
+  "stat": 10,
+  "bag": 20,
+  "skill": 3,
+  "rage": 3,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "TEC|3|0": {
+  "stat": 13,
+  "bag": 20,
+  "skill": 3,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "TEC|3|1": {
+  "stat": 15,
+  "bag": 21,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 1,
+  "rageExtra": 0
+ },
+ "TEC|4|0": {
+  "stat": 17,
+  "bag": 21,
+  "skill": 4,
+  "rage": 4,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "TEC|4|1": {
+  "stat": 20,
+  "bag": 23,
+  "skill": 5,
+  "rage": 4,
+  "skillExtra": 1,
+  "bagExtra": 2,
+  "rageExtra": 0
+ },
+ "TEC|5|0": {
+  "stat": 21,
+  "bag": 22,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "TEC|5|1": {
+  "stat": 25,
+  "bag": 25,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "TEC|6|0": {
+  "stat": 25,
+  "bag": 22,
+  "skill": 5,
+  "rage": 5,
+  "skillExtra": 0,
+  "bagExtra": 0,
+  "rageExtra": 0
+ },
+ "TEC|6|1": {
+  "stat": 30,
+  "bag": 25,
+  "skill": 6,
+  "rage": 5,
+  "skillExtra": 1,
+  "bagExtra": 3,
+  "rageExtra": 0
+ },
+ "TEC|6|2": {
+  "stat": 35,
+  "bag": 28,
+  "skill": 7,
+  "rage": 5,
+  "skillExtra": 2,
+  "bagExtra": 6,
+  "rageExtra": 0
+ },
+ "TEC|6|3": {
+  "stat": 40,
+  "bag": 31,
+  "skill": 8,
+  "rage": 5,
+  "skillExtra": 3,
+  "bagExtra": 9,
+  "rageExtra": 0
+ },
+ "TEC|6|4": {
+  "stat": 45,
+  "bag": 34,
+  "skill": 9,
+  "rage": 5,
+  "skillExtra": 4,
+  "bagExtra": 12,
+  "rageExtra": 0
+ }
+}

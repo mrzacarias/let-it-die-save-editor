@@ -9,6 +9,7 @@
 <script src="equipment-catalog.js"></script>
 <script src="base-blueprints.js"></script>
 <script src="parts-catalog.js"></script>
+<script src="class-limits.js"></script>
 <script src="all-decals.js"></script>
 <style>
   :root {
@@ -65,6 +66,7 @@
   .fighter:last-child { border-bottom: none; }
   .fighter-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
   .fighter-head .badge { background: var(--panel2); border: 1px solid var(--border); border-radius: 3px; padding: 2px 8px; font-size: 11px; color: var(--muted); }
+  .fighter-meta { font-size: 11px; margin-bottom: 10px; }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
   th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); }
   th { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
@@ -205,6 +207,7 @@ function decalName(id) {
   return { name: id, stars: null, premium: id.endsWith('_P') };
 }
 function num(v) { return (typeof v === 'number') ? v : 0; }
+function asArr(v) { return Array.isArray(v) ? v : []; }
 
 /* ---------- render ---------- */
 function render() {
@@ -223,8 +226,11 @@ function renderCurrencies() {
     ['Recycle Points', 'recycle_point', 0],
     ['Bloodnium', 'bloodnium_point', BLOODNIUM_MAX],
     ['TDM Points', 'tdm_point', 0],
+    ['Death Bag Capacity', 'bag_slot', BAG_SLOT_MAX],
+    ['KC Bank Level', 'safe_level', SAFE_LEVEL_MAX],
+    ['SPLithium Tank Level', 'spirit_tank_level', TANK_LEVEL_MAX],
   ];
-  let html = '<div class="panel"><h2>Currencies</h2><div class="grid">';
+  let html = '<div class="panel"><h2>Currencies & Facilities</h2><div class="grid">';
   rows.forEach(([label, key, max]) => {
     html += '<div class="field"><label>' + label + '</label>' +
       '<input class="num" type="number" min="0" step="1" ' + (max ? 'max="' + max + '" ' : '') + 'data-path="soul.' + key + '" value="' + num(s[key]) + '"></div>';
@@ -281,24 +287,44 @@ const FIGHTER_CLASSES = {
   BAL: 'All-rounder', BRE: 'Striker', COL: 'Collector', DEF: 'Defender',
   LUK: 'Lucky Star', SHT: 'Shooter', SKI: 'Skill Master', TEC: 'Attacker',
 };
-const STAT_CAP = { hp: 50, str: 50, dex: 50, vit: 50, stm: 50, luk: 110, skill: 9, bag: 54 };
-const GRADE_LEVEL_CAP = { 1: 36, 2: 66, 3: 96, 4: 126, 5: 150, 6: 280 };
+const STAT_CAP = { hp: 45, str: 45, dex: 45, vit: 45, stm: 45, luk: 45, skill: 4, bag: 12, rage: 1, hp_bonus: 20, str_bonus: 20, dex_bonus: 20, vit_bonus: 20, stm_bonus: 20, luk_bonus: 20 };
+const GRADE_LEVEL_CAP = { 1: 36, 2: 66, 3: 96, 4: 126, 5: 150, 6: 247 };
 const BLOODNIUM_MAX = 999999;
+const BAG_SLOT_MAX = 50;
+const SAFE_LEVEL_MAX = 100;
+const TANK_LEVEL_MAX = 100;
+
+function classLimits(type, grade, lb) {
+  const m = window.CLASS_LIMITS || {};
+  const key = (type || 'BAL') + '|' + (grade || 1) + '|' + (lb || 0);
+  return m[key] || { stat: 45, bag: 0, skill: 0, rage: 0, skillExtra: 4, bagExtra: 12, rageExtra: 0 };
+}
+function statCap(key, lim) {
+  if (key === 'hp' || key === 'str' || key === 'dex' || key === 'vit' || key === 'stm' || key === 'luk') return lim.stat || 45;
+  if (key === 'skill') return lim.skillExtra || 0;
+  if (key === 'bag') return lim.bagExtra || 0;
+  if (key === 'rage') return lim.rageExtra || 0;
+  return STAT_CAP[key] || 20;
+}
 
 function renderFighters(u) {
-  const chrs = (save.soul.chr.chrs[u]) || [];
-  const body = (save.bodyuser[u]) || [];
+  const chrs = asArr(save.soul.chr.chrs[u]);
+  const body = asArr(save.bodyuser[u]);
   const byCid = {}; body.forEach(b => byCid[b.cid] = b);
   let html = '<div class="panel"><h2>Fighters <span class="count">(' + chrs.length + ')</span></h2>';
   chrs.forEach(f => {
     const b = byCid[f.cid] || {};
     const cls = FIGHTER_CLASSES[f.type] || f.type;
     const lvl = num(b.lvl);
+    const lim = classLimits(f.type, f.grade, f.limit_break);
     html += '<div class="fighter">';
     html += '<div class="fighter-head">' +
       '<span class="badge">' + escapeHtml(f.name || '?') + '</span>' +
       '<span class="badge">' + escapeHtml(cls) + '</span>' +
       '<span class="badge">' + escapeHtml(f.body || '') + '</span>' +
+      '</div>';
+    html += '<div class="fighter-meta muted">' +
+      'Max: ' + lim.skill + ' skill slots · ' + lim.bag + ' bag · ' + lim.rage + ' rage' +
       '</div>';
     html += '<div class="grid">';
     html += '<div class="field"><label>Level <span class="muted">(auto)</span></label>' +
@@ -320,10 +346,12 @@ function renderFighters(u) {
     const statFields = [
       ['HP', 'hp'], ['STR', 'str'], ['DEX', 'dex'],
       ['VIT', 'vit'], ['STM', 'stm'], ['LUK', 'luk'],
-      ['Skill slots', 'skill'], ['Bag slots', 'bag'],
+      ['Extra skill slots', 'skill'], ['Extra bag slots', 'bag'], ['Rage bars', 'rage'],
+      ['HP bonus', 'hp_bonus'], ['STR bonus', 'str_bonus'], ['DEX bonus', 'dex_bonus'],
+      ['VIT bonus', 'vit_bonus'], ['STM bonus', 'stm_bonus'], ['LUK bonus', 'luk_bonus'],
     ];
     statFields.forEach(([label, key]) => {
-      const cap = STAT_CAP[key] || 50;
+      const cap = statCap(key, lim);
       html += '<div class="field"><label>' + label + '</label>' +
         '<input class="num" type="number" min="0" max="' + cap + '" step="1" data-fighter="' + f.cid + '" data-stat="' + key + '" value="' + num(b[key]) + '"></div>';
     });
@@ -334,10 +362,10 @@ function renderFighters(u) {
 }
 
 function renderDecals(u) {
-  const psskl = save.soul.skl.psskl || [];
-  const eqskl = (save.soul.skl.eqskl[u]) || [];
+  const psskl = asArr(save.soul.skl.psskl);
+  const eqskl = asArr(save.soul.skl.eqskl && save.soul.skl.eqskl[u]);
   const equippedBySkl = {};
-  eqskl.forEach(e => { if (e.sklid) equippedBySkl[e.sklid] = e.slot; });
+  eqskl.forEach(e => { if (e && e.sklid) equippedBySkl[e.sklid] = e.slot; });
   let html = '<div class="panel"><h2>Decals <span class="count">(' + psskl.length + ')</span></h2>';
   html += '<div class="decals-tools">' +
     '<input id="decalSearch" placeholder="Search decal by name or SKL id to add...">' +
@@ -577,7 +605,8 @@ function giveAllDecals() {
   if (!save) return;
   const all = window.ALL_DECALS || [];
   if (!confirm('Give 5 copies of every decal (' + all.length + ')?')) return;
-  const psskl = save.soul.skl.psskl;
+  let psskl = save.soul.skl.psskl;
+  if (!Array.isArray(psskl)) psskl = save.soul.skl.psskl = [];
   const bySkl = {};
   psskl.forEach(r => bySkl[r.sklid] = r);
   const now = Math.floor(Date.now() / 1000);
@@ -599,29 +628,36 @@ document.addEventListener('input', e => {
     const key = path[path.length - 1];
     let v = parseFloat(el.value) || 0;
     if (key === 'bloodnium_point') v = Math.min(BLOODNIUM_MAX, v);
+    else if (key === 'bag_slot') v = Math.min(BAG_SLOT_MAX, v);
+    else if (key === 'safe_level') v = Math.min(SAFE_LEVEL_MAX, v);
+    else if (key === 'spirit_tank_level') v = Math.min(TANK_LEVEL_MAX, v);
     obj[key] = Math.max(0, v);
   } else if (el.matches('input[data-cnt]')) {
     const id = el.dataset.cnt;
-    const rec = save.soul.skl.psskl.find(r => r.sklid === id);
+    const rec = asArr(save.soul.skl.psskl).find(r => r.sklid === id);
     if (rec) rec.cnt = Math.max(0, Math.floor(parseFloat(el.value) || 0));
   } else if (el.matches('input[data-fighter][data-stat]')) {
     const cid = el.dataset.fighter;
-    const chrs = save.soul.chr.chrs[uid()] || [];
+    const chrs = asArr(save.soul.chr.chrs[uid()]);
     const f = chrs.find(x => x.cid === cid);
-    const body = save.bodyuser[uid()] || [];
+    const body = asArr(save.bodyuser[uid()]);
     const b = body.find(x => x.cid === cid);
     if (!f || !b) return;
     const key = el.dataset.stat;
+    const lim = classLimits(f.type, f.grade, f.limit_break);
     const old = b[key] || 0;
-    const v = Math.max(0, Math.min(STAT_CAP[key] || 50, Math.floor(parseFloat(el.value) || 0)));
+    const v = Math.max(0, Math.min(statCap(key, lim), Math.floor(parseFloat(el.value) || 0)));
     b[key] = v;
-    const cap = GRADE_LEVEL_CAP[f.grade] || 280;
-    b.lvl = Math.min(cap, Math.max(1, (b.lvl || 1) + (v - old)));
+    const isAlloc = key === 'hp' || key === 'str' || key === 'dex' || key === 'vit' || key === 'stm' || key === 'luk';
+    if (isAlloc) {
+      const cap = GRADE_LEVEL_CAP[f.grade] || 247;
+      b.lvl = Math.min(cap, Math.max(1, (b.lvl || 1) + (v - old)));
+    }
     const lvlEl = document.querySelector('[data-lvl-of="' + cid + '"]');
     if (lvlEl) lvlEl.textContent = b.lvl;
   } else if (el.matches('input[data-fighter][data-fprop="name"]')) {
     const cid = el.dataset.fighter;
-    const chrs = save.soul.chr.chrs[uid()] || [];
+    const chrs = asArr(save.soul.chr.chrs[uid()]);
     const f = chrs.find(x => x.cid === cid);
     if (f) f.name = el.value;
   }
@@ -631,7 +667,7 @@ document.addEventListener('click', e => {
   if (e.target.matches('button[data-remove]')) {
     if (!save) return;
     const id = e.target.dataset.remove;
-    save.soul.skl.psskl = save.soul.skl.psskl.filter(r => r.sklid !== id);
+    save.soul.skl.psskl = asArr(save.soul.skl.psskl).filter(r => r.sklid !== id);
     const u = uid();
     if (save.soul.skl.eqskl[u]) save.soul.skl.eqskl[u] = save.soul.skl.eqskl[u].filter(r => r.sklid !== id);
     render(); toast('Removed ' + id);
@@ -667,19 +703,19 @@ document.addEventListener('change', e => {
   }
   else if (e.target.matches('select[data-fighter][data-fclass]')) {
     const cid = e.target.dataset.fighter;
-    const chrs = save.soul.chr.chrs[uid()] || [];
+    const chrs = asArr(save.soul.chr.chrs[uid()]);
     const f = chrs.find(x => x.cid === cid);
     if (f) { f.type = e.target.value; render(); }
   }
   else if (e.target.matches('select[data-fighter][data-fgrade]')) {
     const cid = e.target.dataset.fighter;
-    const chrs = save.soul.chr.chrs[uid()] || [];
+    const chrs = asArr(save.soul.chr.chrs[uid()]);
     const f = chrs.find(x => x.cid === cid);
     if (f) { f.grade = parseInt(e.target.value, 10); render(); }
   }
   else if (e.target.matches('select[data-fighter][data-flb]')) {
     const cid = e.target.dataset.fighter;
-    const chrs = save.soul.chr.chrs[uid()] || [];
+    const chrs = asArr(save.soul.chr.chrs[uid()]);
     const f = chrs.find(x => x.cid === cid);
     if (f) { f.limit_break = parseInt(e.target.value, 10); render(); }
   }
@@ -722,7 +758,8 @@ document.addEventListener('click', e => {
 
 function addDecal(id) {
   if (!save) return;
-  const psskl = save.soul.skl.psskl;
+  let psskl = save.soul.skl.psskl;
+  if (!Array.isArray(psskl)) psskl = save.soul.skl.psskl = [];
   if (psskl.some(r => r.sklid === id)) { toast('Already owned: ' + id, true); return; }
   psskl.push({ sklid: id, cnt: 1, updated: Math.floor(Date.now() / 1000), is_checked: 0 });
   render(); toast('Added ' + id);
