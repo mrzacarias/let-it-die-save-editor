@@ -325,7 +325,7 @@ const FIGHTER_CLASSES = {
   BAL: 'All-rounder', BRE: 'Striker', COL: 'Collector', DEF: 'Defender',
   LUK: 'Lucky Star', SHT: 'Shooter', SKI: 'Skill Master', TEC: 'Attacker',
 };
-const STAT_CAP = { hp: 45, str: 45, dex: 45, vit: 45, stm: 45, luk: 45, skill: 4, bag: 12, rage: 1, hp_bonus: 20, str_bonus: 20, dex_bonus: 20, vit_bonus: 20, stm_bonus: 20, luk_bonus: 20 };
+const STAT_CAP = { hp: 45, str: 45, dex: 45, vit: 45, stm: 45, luk: 45, skill: 4, bag: 12, rage: 1 };
 const GRADE_LEVEL_CAP = { 1: 36, 2: 66, 3: 96, 4: 126, 5: 150, 6: 247 };
 const BLOODNIUM_MAX = 999999;
 const STORE_MAX = 2000;
@@ -345,7 +345,7 @@ function statCap(key, lim) {
   if (key === 'skill') return lim.skillExtra || 0;
   if (key === 'bag') return lim.bagExtra || 0;
   if (key === 'rage') return lim.rageExtra || 0;
-  return STAT_CAP[key] || 20;
+  return STAT_CAP[key] || 0;
 }
 
 function renderFighters(u) {
@@ -390,8 +390,6 @@ function renderFighters(u) {
       ['HP', 'hp'], ['STR', 'str'], ['DEX', 'dex'],
       ['VIT', 'vit'], ['STM', 'stm'], ['LUK', 'luk'],
       ['Extra skill slots', 'skill'], ['Extra bag slots', 'bag'], ['Rage bars', 'rage'],
-      ['HP bonus', 'hp_bonus'], ['STR bonus', 'str_bonus'], ['DEX bonus', 'dex_bonus'],
-      ['VIT bonus', 'vit_bonus'], ['STM bonus', 'stm_bonus'], ['LUK bonus', 'luk_bonus'],
     ];
     statFields.forEach(([label, key]) => {
       const cap = statCap(key, lim);
@@ -760,7 +758,6 @@ function maxFighter(cid) {
   b.skill = lim.skillExtra;
   b.bag = lim.bagExtra;
   b.rage = lim.rageExtra;
-  b.hp_bonus = b.str_bonus = b.dex_bonus = b.vit_bonus = b.stm_bonus = b.luk_bonus = 20;
   b.lvl = 247;
   b.die = 0;
   render();
