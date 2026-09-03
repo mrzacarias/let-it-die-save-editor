@@ -113,7 +113,7 @@
 </head>
 <body>
 <header>
-  <h1>LET IT DIE — SAVE EDITOR <span class="version">v1.0.2</span></h1>
+  <h1>LET IT DIE — SAVE EDITOR <span class="version">v1.0.3</span></h1>
   <span class="status" id="status">no file loaded</span>
   <div class="actions">
     <button id="createBtn">Create .sav</button>
@@ -226,7 +226,7 @@ function render() {
   const main = document.getElementById('main');
   if (!save) { main.innerHTML = ''; return; }
   const u = uid();
-  main.innerHTML = renderCurrencies() + renderVip() + renderPlayLog() + renderFighters(u) + renderResearch() + renderDecals(u) + renderMastery();
+  main.innerHTML = renderAccount() + renderCurrencies() + renderVip() + renderPlayLog() + renderFighters(u) + renderResearch() + renderDecals(u) + renderMastery();
   document.getElementById('saveBtn').disabled = false;
 }
 
@@ -275,6 +275,17 @@ function setRestroomSize(target) {
   }
   save.soul.prison[u] = out;
   return out.length;
+}
+
+function renderAccount() {
+  const u = save.user || {};
+  let html = '<div class="panel"><h2>Account</h2><div class="grid">';
+  html += '<div class="field"><label>Steam ID <span class="muted">(save filename)</span></label>' +
+    '<input data-text="user.psnacid" value="' + escapeHtml(u.psnacid || '') + '"></div>';
+  html += '<div class="field"><label>Player Name</label>' +
+    '<input data-text="user.nm" value="' + escapeHtml(u.nm || '') + '"></div>';
+  html += '</div></div>';
+  return html;
 }
 
 function renderCurrencies() {
@@ -893,6 +904,10 @@ document.addEventListener('input', e => {
     else if (key === 'safe_level') v = Math.min(SAFE_LEVEL_MAX, v);
     else if (key === 'spirit_tank_level') v = Math.min(TANK_LEVEL_MAX, v);
     obj[key] = Math.max(0, v);
+  } else if (el.matches('input[data-text]')) {
+    const path = el.dataset.text.split('.');
+    let obj = save; for (let i = 0; i < path.length - 1; i++) obj = obj[path[i]];
+    obj[path[path.length - 1]] = el.value;
   } else if (el.matches('input[data-storage]')) {
     setStorageSize(parseFloat(el.value) || 0);
     toast('Storage size set to ' + storageCapacity());
@@ -1137,8 +1152,10 @@ document.getElementById('saveBtn').addEventListener('click', () => {
   if (!save) return;
   try {
     const bytes = encodeSave(save);
-    downloadBytes(bytes, fileName);
-    toast('Saved ' + fileName);
+    const sid = save.user && save.user.psnacid;
+    const outName = sid ? sid + '.sav' : fileName;
+    downloadBytes(bytes, outName);
+    toast('Saved ' + outName);
   } catch (err) {
     toast('Save failed: ' + err.message, true);
   }
