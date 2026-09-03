@@ -419,9 +419,6 @@ function renderDecals(u) {
       '<option value="copies">Copies</option>' +
       '<option value="premium">Premium</option>' +
     '</select>' +
-    '<select data-loadout><option value="">Loadout…</option>' +
-      Object.keys(DECAL_LOADOUTS).map(n => '<option value="' + escapeHtml(n) + '">' + escapeHtml(n) + '</option>').join('') +
-    '</select>' +
     '<button class="bulk" data-bulk="decals">100% Decals</button>' +
     '</div><div class="search-results" id="decalResults"></div>';
   const sorted = sortDecals(psskl, decalSort);
@@ -694,24 +691,6 @@ function researchAll() {
   render();
   toast('Researched all ' + roots.length + ' blueprints to max');
 }
-const DECAL_LOADOUTS = {
-  'Tengoku God Climber': ['SKL_FIGHTER_STUP_01_P', 'SKL_ATKUP_NODMG_P', 'SKL_ATKUP_03_P', 'SKL_DRAIN_01_P', 'SKL_HPUP_03_P', 'SKL_ARRNG_STATUP_ALL_P', 'SKL_STRENGTHEN_BODY_01_P', 'SKL_HEADSHOTUP_P'],
-  'KAMAS God Shooter': ['SKL_HEADSHOTUP_P', 'SKL_ATKUP_NODMG_P', 'SKL_FIGHTER_STUP_01_P', 'SKL_ATKUP_03_P', 'SKL_WEP_SPDUP_P', 'SKL_CRIUP_02_P', 'SKL_DRAIN_01_P', 'SKL_SEARCHUP_ITEM_P'],
-  'Melee Striker': ['SKL_FIGHTER_STUP_01_P', 'SKL_ATKUP_03_P', 'SKL_ATKUP_NODMG_P', 'SKL_DRAIN_01_P', 'SKL_HPUP_02_P', 'SKL_DEFUP_02_P', 'SKL_STRENGTHEN_BODY_01_P', 'SKL_RGSPDUP_02_P'],
-  'TDM Defensive Wall': ['SKL_HPUP_03_P', 'SKL_HPUP_02_P', 'SKL_DEFUP_02_P', 'SKL_SNOWWHITE_P', 'SKL_STRENGTHEN_BODY_01_P', 'SKL_ATKDEFUP_HPLOW_01_P', 'SKL_FIGHTER_STUP_01_P', 'SKL_ATKUP_CRIUP_DEFDWN_P'],
-};
-function giveDecals(ids) {
-  if (!save) return;
-  let psskl = save.soul.skl.psskl;
-  if (!Array.isArray(psskl)) psskl = save.soul.skl.psskl = [];
-  const existing = new Set(psskl.map(r => r.sklid));
-  let added = 0;
-  (ids || []).forEach(id => {
-    if (!existing.has(id)) { psskl.push({ sklid: id, cnt: 1, updated: Math.floor(Date.now() / 1000), is_checked: 0 }); existing.add(id); added++; }
-  });
-  render();
-  toast('Added ' + added + ' decals');
-}
 function giveAllDecals() {
   if (!save) return;
   const all = window.ALL_DECALS || [];
@@ -931,10 +910,6 @@ document.addEventListener('click', e => {
 document.addEventListener('change', e => {
   if (!save) return;
   if (e.target.id === 'decalSort') { decalSort = e.target.value; decalPage = 0; render(); }
-  else if (e.target.matches('select[data-loadout]')) {
-    if (e.target.value && DECAL_LOADOUTS[e.target.value]) giveDecals(DECAL_LOADOUTS[e.target.value]);
-    e.target.value = '';
-  }
   else if (e.target.id === 'researchStatus') { researchStatus = e.target.value; researchPage = 0; render(); }
   else if (e.target.matches('select[data-pagesize]')) {
     const kind = e.target.dataset.pagesize;
