@@ -446,16 +446,21 @@ function renderDecals(u) {
 }
 function renderMastery() {
   const exp = asArr(save.soul.expert);
-  if (!exp.length) return '';
-  let html = '<div class="panel"><h2>Weapon Mastery <span class="count">(' + exp.length + ')</span></h2>';
+  const byPt = {};
+  exp.forEach(e => byPt[e.ptarmtp] = e);
+  const cats = window.MASTERY_CATALOG || {};
+  const ids = [...new Set([...Object.keys(cats), ...Object.keys(byPt)])].sort();
+  if (!ids.length) return '';
+  let html = '<div class="panel"><h2>Weapon Mastery <span class="count">(' + ids.length + ')</span></h2>';
   html += '<div class="decals-tools" style="margin-bottom:10px"><span style="flex:1"></span>' +
     '<button class="bulk" data-bulk="maxmastery">Max Mastery (20)</button></div>';
   html += '<table><thead><tr><th>Weapon</th><th>Code</th><th>Level</th></tr></thead><tbody>';
-  exp.forEach(e => {
-    const nm = (window.MASTERY_CATALOG && window.MASTERY_CATALOG[e.ptarmtp]) || e.ptarmtp;
+  ids.forEach(id => {
+    const e = byPt[id];
+    const nm = cats[id] || id;
     html += '<tr><td>' + escapeHtml(nm) + '</td>' +
-      '<td class="muted" style="font-family:monospace">' + escapeHtml(e.ptarmtp) + '</td>' +
-      '<td><input class="num cnt-input" type="number" min="0" max="20" step="1" data-mastery="' + escapeHtml(e.ptarmtp) + '" value="' + num(e.lvl) + '"></td></tr>';
+      '<td class="muted" style="font-family:monospace">' + escapeHtml(id) + '</td>' +
+      '<td><input class="num cnt-input" type="number" min="0" max="20" step="1" data-mastery="' + escapeHtml(id) + '" value="' + num(e && e.lvl) + '"></td></tr>';
   });
   html += '</tbody></table></div>';
   return html;
@@ -744,11 +749,19 @@ function maxFighter(cid) {
 }
 function maxMastery() {
   if (!save) return;
-  const exp = asArr(save.soul.expert);
-  if (!exp.length) return;
-  exp.forEach(e => { e.lvl = 20; e.is_checked = 1; });
+  let exp = save.soul.expert;
+  if (!Array.isArray(exp)) exp = save.soul.expert = [];
+  const byPt = {};
+  exp.forEach(e => byPt[e.ptarmtp] = e);
+  const abpMap = window.MASTERY_ABP || {};
+  let added = 0;
+  Object.keys(abpMap).forEach(pt => {
+    const abp20 = abpMap[pt] && abpMap[pt]['20'];
+    if (byPt[pt]) { byPt[pt].lvl = 20; byPt[pt].abp = abp20; byPt[pt].is_checked = 1; }
+    else { exp.push({ ptarmtp: pt, abp: abp20, lvl: 20, is_checked: 1 }); added++; }
+  });
   render();
-  toast('Maxed weapon mastery for ' + exp.length + ' weapons');
+  toast('Maxed mastery for ' + Object.keys(abpMap).length + ' weapons (+' + added + ' new)');
 }
 const ELEVATORS = [
   'ELV_MAIN_HUB',
@@ -858,8 +871,19 @@ document.addEventListener('input', e => {
     if (rec) rec.cnt = Math.max(0, Math.floor(parseFloat(el.value) || 0));
   } else if (el.matches('input[data-mastery]')) {
     const id = el.dataset.mastery;
-    const rec = asArr(save.soul.expert).find(r => r.ptarmtp === id);
-    if (rec) rec.lvl = Math.max(0, Math.min(20, Math.floor(parseFloat(el.value) || 0)));
+    let exp = save.soul.expert;
+    if (!Array.isArray(exp)) exp = save.soul.expert = [];
+    let rec = exp.find(r => r.ptarmtp === id);
+    if (!rec) { rec = { ptarmtp: id, abp: 0, lvl: 0, is_checked: 1 }; exp.push(rec); }
+    const v = Math.max(0, Math.min(20, Math.floor(parseFloat(el.value) || 0)));
+    rec.lvl = v;
+    rec.is_checked = 1;
+    const curve = window.MASTERY_ABP && window.MASTERY_ABP[id];
+    if (curve) {
+      if (v >= 20) rec.abp = curve['20'] || rec.abp || 99999;
+      else if (v < 2) rec.abp = 0;
+      else if (curve[String(v)]) rec.abp = curve[String(v)];
+    }
   } else if (el.matches('input[data-fighter][data-stat]')) {
     const cid = el.dataset.fighter;
     const chrs = asArr(save.soul.chr.chrs[uid()]);

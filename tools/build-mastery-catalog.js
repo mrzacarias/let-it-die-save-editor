@@ -11,17 +11,26 @@ const tout = cp.execFileSync('sqlite3', [DB, tq], { encoding: 'utf8' });
 const nameMap = {};
 tout.split('\n').forEach(l => { const i = l.indexOf('|'); if (i >= 0) nameMap[l.slice(0, i)] = l.slice(i + 1); });
 
-// ptarmtp -> name key (WEAPON_CTGRY.TXT_PT_ARM_WP000_001)
+// ptarmtp -> name key
 const q = "SELECT id, name FROM master_ptarm_type;";
 const out = cp.execFileSync('sqlite3', [DB, q], { encoding: 'utf8' });
-const map = {};
+const names = {};
 out.trim().split('\n').filter(Boolean).forEach(l => {
   const [id, name] = l.split('|');
-  const key = (name || '').split('.').pop();
-  map[id] = nameMap[key] || null;
+  names[id] = nameMap[(name || '').split('.').pop()] || null;
 });
 
-fs.writeFileSync(path.join(DIR, 'data', 'mastery-catalog.json'), JSON.stringify(map, null, 1));
-const js = 'window.MASTERY_CATALOG=' + JSON.stringify(map) + ';\n';
+// ptarmtp -> { lvl: cumulative abp } (full mastery curve)
+const aq = "SELECT ptarmtp, lvl, abp FROM master_expert_lvl_reward ORDER BY ptarmtp, lvl;";
+const aout = cp.execFileSync('sqlite3', [DB, aq], { encoding: 'utf8' });
+const abp = {};
+aout.trim().split('\n').filter(Boolean).forEach(l => {
+  const [id, lvl, a] = l.split('|');
+  (abp[id] = abp[id] || {})[lvl] = Number(a);
+});
+
+fs.writeFileSync(path.join(DIR, 'data', 'mastery-catalog.json'), JSON.stringify({ names, abp }, null, 1));
+const js = 'window.MASTERY_CATALOG=' + JSON.stringify(names) + ';\nwindow.MASTERY_ABP=' + JSON.stringify(abp) + ';\n';
 fs.writeFileSync(path.join(DIR, 'mastery-catalog.js'), js);
-console.log('mastery catalog entries:', Object.keys(map).length);
+
+console.log('mastery catalog:', Object.keys(names).length, 'weapons,', Object.keys(abp).length, 'with mastery curve');
