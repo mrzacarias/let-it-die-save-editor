@@ -1,6 +1,6 @@
 {
  "PT_ARM_WP001_001": {
-  "name": "Jungle Machete",
+  "name": "Machete",
   "type": "Weapon",
   "next": "PT_ARM_WP001_003",
   "uncapped": false
@@ -72,7 +72,7 @@
   "uncapped": true
  },
  "PT_ARM_WP002_001": {
-  "name": "Butterfly Knife",
+  "name": "Knife",
   "type": "Weapon",
   "next": "PT_ARM_WP002_003",
   "uncapped": false
@@ -126,7 +126,7 @@
   "uncapped": false
  },
  "PT_ARM_WP002_0N4": {
-  "name": "PT_ARM_WP002_0N4",
+  "name": "No Knife 3",
   "type": "Weapon",
   "next": "",
   "uncapped": true
@@ -150,13 +150,13 @@
   "uncapped": false
  },
  "PT_ARM_WP002_0Y4": {
-  "name": "PT_ARM_WP002_0Y4",
+  "name": "Yes Knife 3",
   "type": "Weapon",
   "next": "",
   "uncapped": true
  },
  "PT_ARM_WP003_001": {
-  "name": "Steel Axe",
+  "name": "Axe",
   "type": "Weapon",
   "next": "PT_ARM_WP003_003",
   "uncapped": false
@@ -192,7 +192,7 @@
   "uncapped": false
  },
  "PT_ARM_WP004_001": {
-  "name": "Robber Crossbow",
+  "name": "Crossbow",
   "type": "Weapon",
   "next": "PT_ARM_WP004_003",
   "uncapped": false
@@ -228,7 +228,7 @@
   "uncapped": false
  },
  "PT_ARM_WP005_001": {
-  "name": "Metal Bat",
+  "name": "Bat",
   "type": "Weapon",
   "next": "PT_ARM_WP005_003",
   "uncapped": false
@@ -264,7 +264,7 @@
   "uncapped": false
  },
  "PT_ARM_WP006_001": {
-  "name": "Buzzsaw Knuckles",
+  "name": "Buzzsaw",
   "type": "Weapon",
   "next": "PT_ARM_WP006_003",
   "uncapped": false
@@ -300,7 +300,7 @@
   "uncapped": false
  },
  "PT_ARM_WP007_001": {
-  "name": "FFWF-103 Flamethrower",
+  "name": "Flamethrower",
   "type": "Weapon",
   "next": "PT_ARM_WP007_003",
   "uncapped": false
@@ -360,7 +360,7 @@
   "uncapped": true
  },
  "PT_ARM_WP011_001": {
-  "name": "Iron Hammer",
+  "name": "Hammer",
   "type": "Weapon",
   "next": "PT_ARM_WP011_003",
   "uncapped": false
@@ -396,13 +396,13 @@
   "uncapped": false
  },
  "PT_ARM_WP011_0H4": {
-  "name": "PT_ARM_WP011_0H4",
+  "name": "Lunatic",
   "type": "Weapon",
   "next": "",
   "uncapped": false
  },
  "PT_ARM_WP012_001": {
-  "name": "Combat Pickaxe",
+  "name": "Pickaxe",
   "type": "Weapon",
   "next": "PT_ARM_WP012_003",
   "uncapped": false
@@ -438,7 +438,7 @@
   "uncapped": false
  },
  "PT_ARM_WP013_001": {
-  "name": "Knight’s Lance",
+  "name": "Spear",
   "type": "Weapon",
   "next": "PT_ARM_WP013_003",
   "uncapped": false
@@ -474,7 +474,7 @@
   "uncapped": false
  },
  "PT_ARM_WP016_001": {
-  "name": "Masamune Blade",
+  "name": "Katana",
   "type": "Weapon",
   "next": "PT_ARM_WP016_003",
   "uncapped": false
@@ -510,7 +510,7 @@
   "uncapped": false
  },
  "PT_ARM_WP017_001": {
-  "name": "Glinty Magnum",
+  "name": "Magnum",
   "type": "Weapon",
   "next": "PT_ARM_WP017_003",
   "uncapped": false
@@ -564,7 +564,7 @@
   "uncapped": false
  },
  "PT_ARM_WP017_0A5": {
-  "name": "PT_ARM_WP017_0A5",
+  "name": "Demon Gun 4",
   "type": "Weapon",
   "next": "",
   "uncapped": true
@@ -606,7 +606,7 @@
   "uncapped": true
  },
  "PT_ARM_WP019_001": {
-  "name": "Longsword",
+  "name": "Sword",
   "type": "Weapon",
   "next": "PT_ARM_WP019_003",
   "uncapped": false
@@ -636,13 +636,13 @@
   "uncapped": true
  },
  "PT_ARM_WP019_0H4": {
-  "name": "PT_ARM_WP019_0H4",
+  "name": "Asgard",
   "type": "Weapon",
   "next": "",
   "uncapped": false
  },
  "PT_ARM_WP020_001": {
-  "name": "Iron Claw",
+  "name": "Claws",
   "type": "Weapon",
   "next": "PT_ARM_WP020_003",
   "uncapped": false
@@ -672,7 +672,7 @@
   "uncapped": true
  },
  "PT_ARM_WP021_001": {
-  "name": "Pitbull Shotgun",
+  "name": "Shotgun",
   "type": "Weapon",
   "next": "PT_ARM_WP021_003",
   "uncapped": false
@@ -702,7 +702,7 @@
   "uncapped": true
  },
  "PT_ARM_WP024_001": {
-  "name": "Striker Flail",
+  "name": "Flail",
   "type": "Weapon",
   "next": "PT_ARM_WP024_003",
   "uncapped": false
@@ -738,7 +738,7 @@
   "uncapped": false
  },
  "PT_ARM_WP025_001": {
-  "name": "DUKE-02 Sniper Rifle",
+  "name": "Sniper Rifle",
   "type": "Weapon",
   "next": "PT_ARM_WP025_003",
   "uncapped": false
@@ -798,13 +798,13 @@
   "uncapped": false
  },
  "PT_ARM_WP025_0K5": {
-  "name": "PT_ARM_WP025_0K5",
+  "name": "GLIDER 4",
   "type": "Weapon",
   "next": "",
   "uncapped": true
  },
  "PT_ARM_WP026_001": {
-  "name": "Cleaver Saber",
+  "name": "Saber",
   "type": "Weapon",
   "next": "PT_ARM_WP026_003",
   "uncapped": false
@@ -864,13 +864,13 @@
   "uncapped": true
  },
  "PT_ARM_WP026_0H4": {
-  "name": "PT_ARM_WP026_0H4",
+  "name": "Crimson Rose",
   "type": "Weapon",
   "next": "",
   "uncapped": false
  },
  "PT_ARM_WP028_001": {
-  "name": "Bloody Pitching Machine",
+  "name": "Pitching Machine",
   "type": "Weapon",
   "next": "PT_ARM_WP028_003",
   "uncapped": false
@@ -930,7 +930,7 @@
   "uncapped": true
  },
  "PT_ARM_WP029_001": {
-  "name": "Flame Wand",
+  "name": "Fire Rod",
   "type": "Weapon",
   "next": "PT_ARM_WP029_003",
   "uncapped": false
@@ -960,7 +960,7 @@
   "uncapped": true
  },
  "PT_ARM_WP030_001": {
-  "name": "Loaded Glove",
+  "name": "Boxing Gloves",
   "type": "Weapon",
   "next": "PT_ARM_WP030_003",
   "uncapped": false
@@ -990,13 +990,13 @@
   "uncapped": true
  },
  "PT_ARM_WP030_0H4": {
-  "name": "PT_ARM_WP030_0H4",
+  "name": "Fixed Match",
   "type": "Weapon",
   "next": "",
   "uncapped": false
  },
  "PT_ARM_WP031_001": {
-  "name": "KAMAS-A1 Assault Rifle",
+  "name": "Assault Rifle",
   "type": "Weapon",
   "next": "PT_ARM_WP031_003",
   "uncapped": false
@@ -1050,7 +1050,7 @@
   "uncapped": false
  },
  "PT_ARM_WP031_0A5": {
-  "name": "PT_ARM_WP031_0A5",
+  "name": "KAMAS-WoT Assault Rifle04",
   "type": "Weapon",
   "next": "",
   "uncapped": true
@@ -1086,7 +1086,7 @@
   "uncapped": true
  },
  "PT_ARM_WP031_0H4": {
-  "name": "PT_ARM_WP031_0H4",
+  "name": "Mad Police",
   "type": "Weapon",
   "next": "",
   "uncapped": false
@@ -1122,7 +1122,7 @@
   "uncapped": true
  },
  "PT_ARM_WP033_001": {
-  "name": "Brutal Yo-Yo",
+  "name": "Yo-yo",
   "type": "Weapon",
   "next": "PT_ARM_WP033_003",
   "uncapped": false
@@ -1152,7 +1152,7 @@
   "uncapped": true
  },
  "PT_ARM_WP034_001": {
-  "name": "Welding Gun",
+  "name": "Arc Welder",
   "type": "Weapon",
   "next": "PT_ARM_WP034_003",
   "uncapped": false
@@ -1182,7 +1182,7 @@
   "uncapped": true
  },
  "PT_ARM_WP035_001": {
-  "name": "Bowling Stomper",
+  "name": "Bowling Ball",
   "type": "Weapon",
   "next": "PT_ARM_WP035_003",
   "uncapped": false
@@ -1242,7 +1242,7 @@
   "uncapped": true
  },
  "PT_ARM_WP036_001": {
-  "name": "Drill Arm",
+  "name": "Drill",
   "type": "Weapon",
   "next": "PT_ARM_WP036_003",
   "uncapped": false
@@ -1302,7 +1302,7 @@
   "uncapped": true
  },
  "PT_ARM_WP037_001": {
-  "name": "Red Hot Iron",
+  "name": "Iron",
   "type": "Weapon",
   "next": "PT_ARM_WP037_003",
   "uncapped": false
@@ -1338,7 +1338,7 @@
   "uncapped": false
  },
  "PT_ARM_WP038_001": {
-  "name": "Tactical Shovel",
+  "name": "Shovel",
   "type": "Weapon",
   "next": "PT_ARM_WP038_003",
   "uncapped": false
@@ -1374,7 +1374,7 @@
   "uncapped": false
  },
  "PT_ARM_WP039_001": {
-  "name": "Cyclone Shuriken",
+  "name": "Shuriken",
   "type": "Weapon",
   "next": "PT_ARM_WP039_003",
   "uncapped": false
@@ -1410,7 +1410,7 @@
   "uncapped": false
  },
  "PT_ARM_WP040_001": {
-  "name": "Fireball Baton",
+  "name": "Fire Baton",
   "type": "Weapon",
   "next": "PT_ARM_WP040_003",
   "uncapped": false
@@ -1440,13 +1440,13 @@
   "uncapped": true
  },
  "PT_ARM_WP040_0H4": {
-  "name": "PT_ARM_WP040_0H4",
+  "name": "Midnight Empress",
   "type": "Weapon",
   "next": "",
   "uncapped": false
  },
  "PT_ARM_WP041_001": {
-  "name": "Motor Psycho",
+  "name": "Motorcycle",
   "type": "Weapon",
   "next": "PT_ARM_WP041_003",
   "uncapped": false
@@ -1530,7 +1530,7 @@
   "uncapped": false
  },
  "PT_ARM_WP042_001": {
-  "name": "Pork Chopper",
+  "name": "Chopper",
   "type": "Weapon",
   "next": "PT_ARM_WP042_003",
   "uncapped": false
@@ -1566,7 +1566,7 @@
   "uncapped": false
  },
  "PT_ARM_WP043_001": {
-  "name": "Apocalyptic Hockey Stick",
+  "name": "Hockey Stick",
   "type": "Weapon",
   "next": "PT_ARM_WP043_003",
   "uncapped": false
@@ -1602,7 +1602,7 @@
   "uncapped": false
  },
  "PT_ARM_WP044_001": {
-  "name": "Fireworks Launcher",
+  "name": "Fireworks",
   "type": "Weapon",
   "next": "PT_ARM_WP044_003",
   "uncapped": false
@@ -1638,7 +1638,7 @@
   "uncapped": false
  },
  "PT_ARM_WP045_001": {
-  "name": "M-404 Rocket Launcher",
+  "name": "Rocket Launcher",
   "type": "Weapon",
   "next": "PT_ARM_WP045_003",
   "uncapped": false
@@ -1704,7 +1704,7 @@
   "uncapped": false
  },
  "PT_ARM_WP046_001": {
-  "name": "Hunting Bow",
+  "name": "Archer's Bow",
   "type": "Weapon",
   "next": "PT_ARM_WP046_003",
   "uncapped": false
@@ -1740,7 +1740,7 @@
   "uncapped": false
  },
  "PT_ARM_WP047_001": {
-  "name": "Lightning Wand",
+  "name": "Thunder Rod",
   "type": "Weapon",
   "next": "PT_ARM_WP047_003",
   "uncapped": false
@@ -1800,7 +1800,7 @@
   "uncapped": true
  },
  "PT_ARM_WP048_001": {
-  "name": "Chainsaw Viper",
+  "name": "Chainsaw",
   "type": "Weapon",
   "next": "PT_ARM_WP048_003",
   "uncapped": false
@@ -1836,13 +1836,13 @@
   "uncapped": false
  },
  "PT_ARM_WP050_001": {
-  "name": "Grim Reaper’s Scythe",
+  "name": "Death's Scythe",
   "type": "Weapon",
   "next": "PT_ARM_WP050_002",
   "uncapped": false
  },
  "PT_ARM_WP050_002": {
-  "name": "Grim Reaper’s Scythe",
+  "name": "Death's Scythe",
   "type": "Weapon",
   "next": "",
   "uncapped": true
@@ -1914,7 +1914,7 @@
   "uncapped": true
  },
  "PT_ARM_WP052_001": {
-  "name": "Jackal Yo-Yo",
+  "name": "Jackal Yo-yo",
   "type": "Weapon",
   "next": "PT_ARM_WP052_003",
   "uncapped": false
@@ -1944,7 +1944,7 @@
   "uncapped": true
  },
  "PT_ARM_WP053_001": {
-  "name": "Jackal Blaster",
+  "name": "Jackal Gun",
   "type": "Weapon",
   "next": "PT_ARM_WP053_003",
   "uncapped": false
@@ -1992,7 +1992,7 @@
   "uncapped": false
  },
  "PT_ARM_WP054_0H5": {
-  "name": "PT_ARM_WP054_0H5",
+  "name": "Hell Spike Crusher",
   "type": "Weapon",
   "next": "",
   "uncapped": true
@@ -2016,7 +2016,7 @@
   "uncapped": false
  },
  "PT_ARM_WP055_0H5": {
-  "name": "PT_ARM_WP055_0H5",
+  "name": "Viral Massager",
   "type": "Weapon",
   "next": "",
   "uncapped": true
@@ -2040,7 +2040,7 @@
   "uncapped": false
  },
  "PT_ARM_WP056_0H5": {
-  "name": "PT_ARM_WP056_0H5",
+  "name": "M2G-87 Mod.1 FireFly",
   "type": "Weapon",
   "next": "",
   "uncapped": true
@@ -2064,7 +2064,7 @@
   "uncapped": false
  },
  "PT_ARM_WP057_0H5": {
-  "name": "PT_ARM_WP057_0H5",
+  "name": "Vajra of God",
   "type": "Weapon",
   "next": "",
   "uncapped": true
@@ -2088,7 +2088,7 @@
   "uncapped": false
  },
  "PT_ARM_WP058_0H5": {
-  "name": "PT_ARM_WP058_0H5",
+  "name": "Head of Euryale",
   "type": "Weapon",
   "next": "",
   "uncapped": true
@@ -2106,13 +2106,13 @@
   "uncapped": true
  },
  "PT_ARM_WP059_0H1": {
-  "name": "PT_ARM_WP059_0H1",
+  "name": "Immortal Bobslayer",
   "type": "Weapon",
   "next": "PT_ARM_WP059_0H5",
   "uncapped": false
  },
  "PT_ARM_WP059_0H5": {
-  "name": "PT_ARM_WP059_0H5",
+  "name": "Immortal Bobslayer",
   "type": "Weapon",
   "next": "",
   "uncapped": true
@@ -2178,7 +2178,7 @@
   "uncapped": true
  },
  "PT_ARM_WP062_001": {
-  "name": "Lion Knuckles",
+  "name": "Lion Dance Knuckles",
   "type": "Weapon",
   "next": "PT_ARM_WP062_003",
   "uncapped": false
@@ -2208,7 +2208,7 @@
   "uncapped": true
  },
  "PT_ARM_WP063_001": {
-  "name": "Pulse Stun Gun",
+  "name": "Stun Gun",
   "type": "Weapon",
   "next": "PT_ARM_WP063_003",
   "uncapped": false
@@ -2238,7 +2238,7 @@
   "uncapped": true
  },
  "PT_ARM_WP064_001": {
-  "name": "Timber Rebellion",
+  "name": "Timber",
   "type": "Weapon",
   "next": "PT_ARM_WP064_003",
   "uncapped": false
@@ -2406,7 +2406,7 @@
   "uncapped": false
  },
  "PT_DIY_BTM_022_G": {
-  "name": "PT_DIY_BTM_022_G",
+  "name": "Hell Steel Leggings",
   "type": "Legs",
   "next": "",
   "uncapped": true
@@ -2760,7 +2760,7 @@
   "uncapped": false
  },
  "PT_DIY_HEAD_022_G": {
-  "name": "PT_DIY_HEAD_022_G",
+  "name": "Hell Steel Head",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -3114,7 +3114,7 @@
   "uncapped": false
  },
  "PT_DIY_TOPS_022_G": {
-  "name": "PT_DIY_TOPS_022_G",
+  "name": "Hell Steel Body",
   "type": "Body",
   "next": "",
   "uncapped": true
@@ -3468,7 +3468,7 @@
   "uncapped": false
  },
  "PT_FAN_BTM_022_G": {
-  "name": "PT_FAN_BTM_022_G",
+  "name": "Hell Thunder Leggings",
   "type": "Legs",
   "next": "",
   "uncapped": true
@@ -3840,7 +3840,7 @@
   "uncapped": false
  },
  "PT_FAN_HEAD_022_G": {
-  "name": "PT_FAN_HEAD_022_G",
+  "name": "Hell Thunder Helmet",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -4212,7 +4212,7 @@
   "uncapped": false
  },
  "PT_FAN_TOPS_022_G": {
-  "name": "PT_FAN_TOPS_022_G",
+  "name": "Hell Thunder Armor",
   "type": "Body",
   "next": "",
   "uncapped": true
@@ -4902,7 +4902,7 @@
   "uncapped": false
  },
  "PT_MIL_BTM_022_G": {
-  "name": "PT_MIL_BTM_022_G",
+  "name": "Hell Napalm Pants",
   "type": "Legs",
   "next": "",
   "uncapped": true
@@ -4932,7 +4932,7 @@
   "uncapped": false
  },
  "PT_MIL_BTM_0G2_G": {
-  "name": "PT_MIL_BTM_0G2_G",
+  "name": "Assault Master Pants G",
   "type": "Legs",
   "next": "",
   "uncapped": true
@@ -5058,7 +5058,7 @@
   "uncapped": false
  },
  "PT_MIL_BTM_1106_G": {
-  "name": "PT_MIL_BTM_1106_G",
+  "name": "Phantom Soldier Pants WoT04",
   "type": "Legs",
   "next": "",
   "uncapped": true
@@ -5076,7 +5076,7 @@
   "uncapped": false
  },
  "PT_MIL_BTM_1108_G": {
-  "name": "PT_MIL_BTM_1108_G",
+  "name": "Night Raider Pants WoT04",
   "type": "Legs",
   "next": "",
   "uncapped": true
@@ -5340,7 +5340,7 @@
   "uncapped": false
  },
  "PT_MIL_HEAD_022_G": {
-  "name": "PT_MIL_HEAD_022_G",
+  "name": "Hell Napalm Head",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -5370,7 +5370,7 @@
   "uncapped": false
  },
  "PT_MIL_HEAD_0G2_G": {
-  "name": "PT_MIL_HEAD_0G2_G",
+  "name": "Assault Master Head G",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -5496,7 +5496,7 @@
   "uncapped": false
  },
  "PT_MIL_HEAD_1106_G": {
-  "name": "PT_MIL_HEAD_1106_G",
+  "name": "Phantom Soldier Head WoT04",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -5514,7 +5514,7 @@
   "uncapped": false
  },
  "PT_MIL_HEAD_1108_G": {
-  "name": "PT_MIL_HEAD_1108_G",
+  "name": "Night Raider Head WoT04",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -5778,7 +5778,7 @@
   "uncapped": false
  },
  "PT_MIL_TOPS_022_G": {
-  "name": "PT_MIL_TOPS_022_G",
+  "name": "Hell Napalm Body",
   "type": "Body",
   "next": "",
   "uncapped": true
@@ -5808,7 +5808,7 @@
   "uncapped": false
  },
  "PT_MIL_TOPS_0G2_G": {
-  "name": "PT_MIL_TOPS_0G2_G",
+  "name": "Assault Master Body G",
   "type": "Body",
   "next": "",
   "uncapped": true
@@ -5934,7 +5934,7 @@
   "uncapped": false
  },
  "PT_MIL_TOPS_1106_G": {
-  "name": "PT_MIL_TOPS_1106_G",
+  "name": "Phantom Soldier Body WoT04",
   "type": "Body",
   "next": "",
   "uncapped": true
@@ -5952,7 +5952,7 @@
   "uncapped": false
  },
  "PT_MIL_TOPS_1108_G": {
-  "name": "PT_MIL_TOPS_1108_G",
+  "name": "Night Raider Body WoT04",
   "type": "Body",
   "next": "",
   "uncapped": true
@@ -6306,55 +6306,55 @@
   "uncapped": false
  },
  "PT_SPE_BTM_021": {
-  "name": "PT_SPE_BTM_021",
+  "name": "Meijin Greaves 1",
   "type": "Legs",
   "next": "PT_SPE_BTM_121",
   "uncapped": false
  },
  "PT_SPE_BTM_022": {
-  "name": "PT_SPE_BTM_022",
+  "name": "Meijin Greaves 3",
   "type": "Legs",
   "next": "PT_SPE_BTM_022_G",
   "uncapped": false
  },
  "PT_SPE_BTM_022_G": {
-  "name": "PT_SPE_BTM_022_G",
+  "name": "Meijin Greaves 3",
   "type": "Legs",
   "next": "",
   "uncapped": true
  },
  "PT_SPE_BTM_027": {
-  "name": "PT_SPE_BTM_027",
+  "name": "Momoko Yamada Pants 1",
   "type": "Legs",
   "next": "PT_SPE_BTM_127",
   "uncapped": false
  },
  "PT_SPE_BTM_028": {
-  "name": "PT_SPE_BTM_028",
+  "name": "Momoko Yamada Pants 3",
   "type": "Legs",
   "next": "PT_SPE_BTM_028_G",
   "uncapped": false
  },
  "PT_SPE_BTM_028_G": {
-  "name": "PT_SPE_BTM_028_G",
+  "name": "Momoko Yamada Pants 3",
   "type": "Legs",
   "next": "",
   "uncapped": true
  },
  "PT_SPE_BTM_029": {
-  "name": "PT_SPE_BTM_029",
+  "name": "Direct Hell Pants 1",
   "type": "Legs",
   "next": "PT_SPE_BTM_129",
   "uncapped": false
  },
  "PT_SPE_BTM_030": {
-  "name": "PT_SPE_BTM_030",
+  "name": "Direct Hell Pants 3",
   "type": "Legs",
   "next": "PT_SPE_BTM_030_G",
   "uncapped": false
  },
  "PT_SPE_BTM_030_G": {
-  "name": "PT_SPE_BTM_030_G",
+  "name": "Direct Hell Pants 3",
   "type": "Legs",
   "next": "",
   "uncapped": true
@@ -6372,7 +6372,7 @@
   "uncapped": false
  },
  "PT_SPE_BTM_104_G": {
-  "name": "PT_SPE_BTM_104_G",
+  "name": "Kat Boots 4",
   "type": "Legs",
   "next": "",
   "uncapped": true
@@ -6390,7 +6390,7 @@
   "uncapped": false
  },
  "PT_SPE_BTM_112_G": {
-  "name": "PT_SPE_BTM_112_G",
+  "name": "Tank Commander Pants Ver.4",
   "type": "Legs",
   "next": "",
   "uncapped": true
@@ -6414,19 +6414,19 @@
   "uncapped": true
  },
  "PT_SPE_BTM_121": {
-  "name": "PT_SPE_BTM_121",
+  "name": "Meijin Greaves 2",
   "type": "Legs",
   "next": "PT_SPE_BTM_022",
   "uncapped": false
  },
  "PT_SPE_BTM_127": {
-  "name": "PT_SPE_BTM_127",
+  "name": "Momoko Yamada Pants 2",
   "type": "Legs",
   "next": "PT_SPE_BTM_028",
   "uncapped": false
  },
  "PT_SPE_BTM_129": {
-  "name": "PT_SPE_BTM_129",
+  "name": "Direct Hell Pants 2",
   "type": "Legs",
   "next": "PT_SPE_BTM_030",
   "uncapped": false
@@ -6540,7 +6540,7 @@
   "uncapped": false
  },
  "PT_SPE_HEAD_022_G": {
-  "name": "PT_SPE_HEAD_022_G",
+  "name": "Meijin Head 3",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -6570,7 +6570,7 @@
   "uncapped": false
  },
  "PT_SPE_HEAD_026_G": {
-  "name": "PT_SPE_HEAD_026_G",
+  "name": "Uncle-D2 Head 3",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -6588,25 +6588,25 @@
   "uncapped": false
  },
  "PT_SPE_HEAD_028_G": {
-  "name": "PT_SPE_HEAD_028_G",
+  "name": "Momoko Yamada Head 3",
   "type": "Head",
   "next": "",
   "uncapped": true
  },
  "PT_SPE_HEAD_029": {
-  "name": "PT_SPE_HEAD_029",
+  "name": "Direct Hell Cap 1",
   "type": "Head",
   "next": "PT_SPE_HEAD_129",
   "uncapped": false
  },
  "PT_SPE_HEAD_030": {
-  "name": "PT_SPE_HEAD_030",
+  "name": "Direct Hell Cap 3",
   "type": "Head",
   "next": "PT_SPE_HEAD_030_G",
   "uncapped": false
  },
  "PT_SPE_HEAD_030_G": {
-  "name": "PT_SPE_HEAD_030_G",
+  "name": "Direct Hell Cap 3",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -6624,7 +6624,7 @@
   "uncapped": false
  },
  "PT_SPE_HEAD_104_G": {
-  "name": "PT_SPE_HEAD_104_G",
+  "name": "Kat Head 4",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -6642,7 +6642,7 @@
   "uncapped": false
  },
  "PT_SPE_HEAD_112_G": {
-  "name": "PT_SPE_HEAD_112_G",
+  "name": "Tank Commander Helmet Ver.4",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -6690,7 +6690,7 @@
   "uncapped": false
  },
  "PT_SPE_HEAD_129": {
-  "name": "PT_SPE_HEAD_129",
+  "name": "Direct Hell Cap 2",
   "type": "Head",
   "next": "PT_SPE_HEAD_030",
   "uncapped": false
@@ -6780,55 +6780,55 @@
   "uncapped": false
  },
  "PT_SPE_TOPS_021": {
-  "name": "PT_SPE_TOPS_021",
+  "name": "Meijin Armor 1",
   "type": "Body",
   "next": "PT_SPE_TOPS_121",
   "uncapped": false
  },
  "PT_SPE_TOPS_022": {
-  "name": "PT_SPE_TOPS_022",
+  "name": "Meijin Armor 3",
   "type": "Body",
   "next": "PT_SPE_TOPS_022_G",
   "uncapped": false
  },
  "PT_SPE_TOPS_022_G": {
-  "name": "PT_SPE_TOPS_022_G",
+  "name": "Meijin Armor 3",
   "type": "Body",
   "next": "",
   "uncapped": true
  },
  "PT_SPE_TOPS_027": {
-  "name": "PT_SPE_TOPS_027",
+  "name": "Momoko Yamada Body 1",
   "type": "Body",
   "next": "PT_SPE_TOPS_127",
   "uncapped": false
  },
  "PT_SPE_TOPS_028": {
-  "name": "PT_SPE_TOPS_028",
+  "name": "Momoko Yamada Body 3",
   "type": "Body",
   "next": "PT_SPE_TOPS_028_G",
   "uncapped": false
  },
  "PT_SPE_TOPS_028_G": {
-  "name": "PT_SPE_TOPS_028_G",
+  "name": "Momoko Yamada Body 3",
   "type": "Body",
   "next": "",
   "uncapped": true
  },
  "PT_SPE_TOPS_029": {
-  "name": "PT_SPE_TOPS_029",
+  "name": "Direct Hell Jacket 1",
   "type": "Body",
   "next": "PT_SPE_TOPS_129",
   "uncapped": false
  },
  "PT_SPE_TOPS_030": {
-  "name": "PT_SPE_TOPS_030",
+  "name": "Direct Hell Jacket 3",
   "type": "Body",
   "next": "PT_SPE_TOPS_030_G",
   "uncapped": false
  },
  "PT_SPE_TOPS_030_G": {
-  "name": "PT_SPE_TOPS_030_G",
+  "name": "Direct Hell Jacket 3",
   "type": "Body",
   "next": "",
   "uncapped": true
@@ -6846,7 +6846,7 @@
   "uncapped": false
  },
  "PT_SPE_TOPS_104_G": {
-  "name": "PT_SPE_TOPS_104_G",
+  "name": "Kat Body 4",
   "type": "Body",
   "next": "",
   "uncapped": true
@@ -6918,7 +6918,7 @@
   "uncapped": false
  },
  "PT_SPE_TOPS_112_G": {
-  "name": "PT_SPE_TOPS_112_G",
+  "name": "Tank Commander Armor Ver.4",
   "type": "Body",
   "next": "",
   "uncapped": true
@@ -6942,19 +6942,19 @@
   "uncapped": true
  },
  "PT_SPE_TOPS_121": {
-  "name": "PT_SPE_TOPS_121",
+  "name": "Meijin Armor 2",
   "type": "Body",
   "next": "PT_SPE_TOPS_022",
   "uncapped": false
  },
  "PT_SPE_TOPS_127": {
-  "name": "PT_SPE_TOPS_127",
+  "name": "Momoko Yamada Body 2",
   "type": "Body",
   "next": "PT_SPE_TOPS_028",
   "uncapped": false
  },
  "PT_SPE_TOPS_129": {
-  "name": "PT_SPE_TOPS_129",
+  "name": "Direct Hell Jacket 2",
   "type": "Body",
   "next": "PT_SPE_TOPS_030",
   "uncapped": false
@@ -7092,13 +7092,13 @@
   "uncapped": true
  },
  "PT_SPO_BTM_022": {
-  "name": "PT_SPO_BTM_022",
+  "name": "Hell Wind Pants",
   "type": "Legs",
   "next": "PT_SPO_BTM_022_G",
   "uncapped": false
  },
  "PT_SPO_BTM_022_G": {
-  "name": "PT_SPO_BTM_022_G",
+  "name": "Hell Wind Pants",
   "type": "Legs",
   "next": "",
   "uncapped": true
@@ -7446,13 +7446,13 @@
   "uncapped": true
  },
  "PT_SPO_HEAD_022": {
-  "name": "PT_SPO_HEAD_022",
+  "name": "Hell Wind Head",
   "type": "Head",
   "next": "PT_SPO_HEAD_022_G",
   "uncapped": false
  },
  "PT_SPO_HEAD_022_G": {
-  "name": "PT_SPO_HEAD_022_G",
+  "name": "Hell Wind Head",
   "type": "Head",
   "next": "",
   "uncapped": true
@@ -7800,13 +7800,13 @@
   "uncapped": true
  },
  "PT_SPO_TOPS_022": {
-  "name": "PT_SPO_TOPS_022",
+  "name": "Hell Wind Body",
   "type": "Body",
   "next": "PT_SPO_TOPS_022_G",
   "uncapped": false
  },
  "PT_SPO_TOPS_022_G": {
-  "name": "PT_SPO_TOPS_022_G",
+  "name": "Hell Wind Body",
   "type": "Body",
   "next": "",
   "uncapped": true

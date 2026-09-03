@@ -1,6 +1,6 @@
 {
  "PT_ARM_WP001_001": {
-  "name": "Jungle Machete",
+  "name": "Machete",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -20,7 +20,7 @@
   "acquired": "collab"
  },
  "PT_ARM_WP002_001": {
-  "name": "Butterfly Knife",
+  "name": "Knife",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -40,7 +40,7 @@
   "acquired": "collab"
  },
  "PT_ARM_WP003_001": {
-  "name": "Steel Axe",
+  "name": "Axe",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -50,7 +50,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP004_001": {
-  "name": "Robber Crossbow",
+  "name": "Crossbow",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -60,7 +60,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP005_001": {
-  "name": "Metal Bat",
+  "name": "Bat",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -70,7 +70,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP006_001": {
-  "name": "Buzzsaw Knuckles",
+  "name": "Buzzsaw",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -80,7 +80,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP007_001": {
-  "name": "FFWF-103 Flamethrower",
+  "name": "Flamethrower",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -105,7 +105,7 @@
   "acquired": "collab"
  },
  "PT_ARM_WP011_001": {
-  "name": "Iron Hammer",
+  "name": "Hammer",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -115,12 +115,12 @@
   "acquired": "tower"
  },
  "PT_ARM_WP011_0H4": {
-  "name": "PT_ARM_WP011_0H4",
+  "name": "Lunatic",
   "type": "Weapon",
   "acquired": "uncap"
  },
  "PT_ARM_WP012_001": {
-  "name": "Combat Pickaxe",
+  "name": "Pickaxe",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -130,7 +130,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP013_001": {
-  "name": "Knight’s Lance",
+  "name": "Spear",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -140,7 +140,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP016_001": {
-  "name": "Masamune Blade",
+  "name": "Katana",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -150,7 +150,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP017_001": {
-  "name": "Glinty Magnum",
+  "name": "Magnum",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -170,27 +170,27 @@
   "acquired": "tower"
  },
  "PT_ARM_WP019_001": {
-  "name": "Longsword",
+  "name": "Sword",
   "type": "Weapon",
   "acquired": "tower"
  },
  "PT_ARM_WP019_0H4": {
-  "name": "PT_ARM_WP019_0H4",
+  "name": "Asgard",
   "type": "Weapon",
   "acquired": "uncap"
  },
  "PT_ARM_WP020_001": {
-  "name": "Iron Claw",
+  "name": "Claws",
   "type": "Weapon",
   "acquired": "tower"
  },
  "PT_ARM_WP021_001": {
-  "name": "Pitbull Shotgun",
+  "name": "Shotgun",
   "type": "Weapon",
   "acquired": "tower"
  },
  "PT_ARM_WP024_001": {
-  "name": "Striker Flail",
+  "name": "Flail",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -200,7 +200,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP025_001": {
-  "name": "DUKE-02 Sniper Rifle",
+  "name": "Sniper Rifle",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -215,7 +215,7 @@
   "acquired": "collab"
  },
  "PT_ARM_WP026_001": {
-  "name": "Cleaver Saber",
+  "name": "Saber",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -240,12 +240,12 @@
   "acquired": "collab"
  },
  "PT_ARM_WP026_0H4": {
-  "name": "PT_ARM_WP026_0H4",
+  "name": "Crimson Rose",
   "type": "Weapon",
   "acquired": "uncap"
  },
  "PT_ARM_WP028_001": {
-  "name": "Bloody Pitching Machine",
+  "name": "Pitching Machine",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -270,22 +270,22 @@
   "acquired": "collab"
  },
  "PT_ARM_WP029_001": {
-  "name": "Flame Wand",
+  "name": "Fire Rod",
   "type": "Weapon",
   "acquired": "tower"
  },
  "PT_ARM_WP030_001": {
-  "name": "Loaded Glove",
+  "name": "Boxing Gloves",
   "type": "Weapon",
   "acquired": "tower"
  },
  "PT_ARM_WP030_0H4": {
-  "name": "PT_ARM_WP030_0H4",
+  "name": "Fixed Match",
   "type": "Weapon",
   "acquired": "uncap"
  },
  "PT_ARM_WP031_001": {
-  "name": "KAMAS-A1 Assault Rifle",
+  "name": "Assault Rifle",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -300,7 +300,7 @@
   "acquired": "collab"
  },
  "PT_ARM_WP031_0H4": {
-  "name": "PT_ARM_WP031_0H4",
+  "name": "Mad Police",
   "type": "Weapon",
   "acquired": "uncap"
  },
@@ -310,17 +310,17 @@
   "acquired": "tower"
  },
  "PT_ARM_WP033_001": {
-  "name": "Brutal Yo-Yo",
+  "name": "Yo-yo",
   "type": "Weapon",
   "acquired": "tower"
  },
  "PT_ARM_WP034_001": {
-  "name": "Welding Gun",
+  "name": "Arc Welder",
   "type": "Weapon",
   "acquired": "tower"
  },
  "PT_ARM_WP035_001": {
-  "name": "Bowling Stomper",
+  "name": "Bowling Ball",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -345,7 +345,7 @@
   "acquired": "collab"
  },
  "PT_ARM_WP036_001": {
-  "name": "Drill Arm",
+  "name": "Drill",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -370,7 +370,7 @@
   "acquired": "collab"
  },
  "PT_ARM_WP037_001": {
-  "name": "Red Hot Iron",
+  "name": "Iron",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -380,7 +380,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP038_001": {
-  "name": "Tactical Shovel",
+  "name": "Shovel",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -390,7 +390,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP039_001": {
-  "name": "Cyclone Shuriken",
+  "name": "Shuriken",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -400,17 +400,17 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP040_001": {
-  "name": "Fireball Baton",
+  "name": "Fire Baton",
   "type": "Weapon",
   "acquired": "tower"
  },
  "PT_ARM_WP040_0H4": {
-  "name": "PT_ARM_WP040_0H4",
+  "name": "Midnight Empress",
   "type": "Weapon",
   "acquired": "uncap"
  },
  "PT_ARM_WP041_001": {
-  "name": "Motor Psycho",
+  "name": "Motorcycle",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -445,7 +445,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP042_001": {
-  "name": "Pork Chopper",
+  "name": "Chopper",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -455,7 +455,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP043_001": {
-  "name": "Apocalyptic Hockey Stick",
+  "name": "Hockey Stick",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -465,7 +465,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP044_001": {
-  "name": "Fireworks Launcher",
+  "name": "Fireworks",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -475,7 +475,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP045_001": {
-  "name": "M-404 Rocket Launcher",
+  "name": "Rocket Launcher",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -505,7 +505,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP046_001": {
-  "name": "Hunting Bow",
+  "name": "Archer's Bow",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -515,7 +515,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP047_001": {
-  "name": "Lightning Wand",
+  "name": "Thunder Rod",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -540,7 +540,7 @@
   "acquired": "collab"
  },
  "PT_ARM_WP048_001": {
-  "name": "Chainsaw Viper",
+  "name": "Chainsaw",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -550,7 +550,7 @@
   "acquired": "uncap"
  },
  "PT_ARM_WP050_001": {
-  "name": "Grim Reaper’s Scythe",
+  "name": "Death's Scythe",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -575,7 +575,7 @@
   "acquired": "collab"
  },
  "PT_ARM_WP052_001": {
-  "name": "Jackal Yo-Yo",
+  "name": "Jackal Yo-yo",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -585,7 +585,7 @@
   "acquired": "collab"
  },
  "PT_ARM_WP053_001": {
-  "name": "Jackal Blaster",
+  "name": "Jackal Gun",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -650,7 +650,7 @@
   "acquired": "collab"
  },
  "PT_ARM_WP059_0H1": {
-  "name": "PT_ARM_WP059_0H1",
+  "name": "Immortal Bobslayer",
   "type": "Weapon",
   "acquired": "collab"
  },
@@ -680,17 +680,17 @@
   "acquired": "collab"
  },
  "PT_ARM_WP062_001": {
-  "name": "Lion Knuckles",
+  "name": "Lion Dance Knuckles",
   "type": "Weapon",
   "acquired": "tower"
  },
  "PT_ARM_WP063_001": {
-  "name": "Pulse Stun Gun",
+  "name": "Stun Gun",
   "type": "Weapon",
   "acquired": "tower"
  },
  "PT_ARM_WP064_001": {
-  "name": "Timber Rebellion",
+  "name": "Timber",
   "type": "Weapon",
   "acquired": "tower"
  },
@@ -1520,17 +1520,17 @@
   "acquired": "collab"
  },
  "PT_SPE_BTM_021": {
-  "name": "PT_SPE_BTM_021",
+  "name": "Meijin Greaves 1",
   "type": "Legs",
   "acquired": "collab"
  },
  "PT_SPE_BTM_027": {
-  "name": "PT_SPE_BTM_027",
+  "name": "Momoko Yamada Pants 1",
   "type": "Legs",
   "acquired": "collab"
  },
  "PT_SPE_BTM_029": {
-  "name": "PT_SPE_BTM_029",
+  "name": "Direct Hell Pants 1",
   "type": "Legs",
   "acquired": "collab"
  },
@@ -1605,7 +1605,7 @@
   "acquired": "collab"
  },
  "PT_SPE_HEAD_029": {
-  "name": "PT_SPE_HEAD_029",
+  "name": "Direct Hell Cap 1",
   "type": "Head",
   "acquired": "collab"
  },
@@ -1645,17 +1645,17 @@
   "acquired": "collab"
  },
  "PT_SPE_TOPS_021": {
-  "name": "PT_SPE_TOPS_021",
+  "name": "Meijin Armor 1",
   "type": "Body",
   "acquired": "collab"
  },
  "PT_SPE_TOPS_027": {
-  "name": "PT_SPE_TOPS_027",
+  "name": "Momoko Yamada Body 1",
   "type": "Body",
   "acquired": "collab"
  },
  "PT_SPE_TOPS_029": {
-  "name": "PT_SPE_TOPS_029",
+  "name": "Direct Hell Jacket 1",
   "type": "Body",
   "acquired": "collab"
  },
@@ -1715,7 +1715,7 @@
   "acquired": "collab"
  },
  "PT_SPO_BTM_022": {
-  "name": "PT_SPO_BTM_022",
+  "name": "Hell Wind Pants",
   "type": "Legs",
   "acquired": "collab"
  },
@@ -1780,7 +1780,7 @@
   "acquired": "collab"
  },
  "PT_SPO_HEAD_022": {
-  "name": "PT_SPO_HEAD_022",
+  "name": "Hell Wind Head",
   "type": "Head",
   "acquired": "collab"
  },
@@ -1845,7 +1845,7 @@
   "acquired": "collab"
  },
  "PT_SPO_TOPS_022": {
-  "name": "PT_SPO_TOPS_022",
+  "name": "Hell Wind Body",
   "type": "Body",
   "acquired": "collab"
  },
