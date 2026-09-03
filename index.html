@@ -226,7 +226,7 @@ function render() {
   const main = document.getElementById('main');
   if (!save) { main.innerHTML = ''; return; }
   const u = uid();
-  main.innerHTML = renderCurrencies() + renderPlayLog() + renderFighters(u) + renderResearch() + renderDecals(u) + renderMastery();
+  main.innerHTML = renderCurrencies() + renderVip() + renderPlayLog() + renderFighters(u) + renderResearch() + renderDecals(u) + renderMastery();
   document.getElementById('saveBtn').disabled = false;
 }
 
@@ -310,6 +310,30 @@ function renderCurrencies() {
     Object.keys(rp).map(r => '<option value="' + r + '"' + (curRank === +r ? ' selected' : '') + '>' + r + '</option>').join('') +
     '</select></div>';
   html += '</div></div>';
+  return html;
+}
+
+function renderVip() {
+  const vip = save.soul.vip || (save.soul.vip = {});
+  const now = Math.floor(Date.now() / 1000);
+  const exp = vip.expired_time || 0;
+  const active = vip.flag === 1 && exp > now;
+  const daysLeft = Math.max(0, Math.ceil((exp - now) / 86400));
+  let html = '<div class="panel"><h2>Express Pass (VIP)</h2>';
+  html += '<div class="fighter-meta muted">Status: ' +
+    (active ? 'Active — ' + daysLeft + ' day(s) remaining' : 'Inactive') + '</div>';
+  html += '<div class="grid">';
+  html += '<div class="field"><label>Express Pass count</label>' +
+    '<input class="num" type="number" min="0" step="1" data-vip="pass_num" value="' + num(vip.pass_num) + '"></div>';
+  html += '<div class="field"><label>One-day Pass count</label>' +
+    '<input class="num" type="number" min="0" step="1" data-vip="oneday_pass_num" value="' + num(vip.oneday_pass_num) + '"></div>';
+  html += '<div class="field"><label>Activate for (days)</label>' +
+    '<input class="num" type="number" min="1" max="3650" step="1" id="vipDays" value="30"></div>';
+  html += '</div>';
+  html += '<div class="decals-tools" style="margin-top:10px"><span style="flex:1"></span>';
+  [30, 90, 365, 3650].forEach(d => { html += '<button data-vip-days="' + d + '">' + d + 'd</button>'; });
+  html += '<button class="bulk" data-vip-activate>Activate</button></div>';
+  html += '</div>';
   return html;
 }
 
@@ -725,6 +749,17 @@ function maxCurrencies() {
   render();
   toast('Maxed currencies + bank/tank to level ' + SAFE_LEVEL_MAX);
 }
+function activateVip(days) {
+  if (!save) return;
+  const vip = save.soul.vip || (save.soul.vip = {});
+  const now = Math.floor(Date.now() / 1000);
+  vip.flag = 1;
+  vip.type = 1;
+  vip.expired_time = now + days * 86400;
+  vip.automatic_renewal = 1;
+  render();
+  toast('Express Pass activated for ' + days + ' days');
+}
 function maxFighter(cid) {
   if (!save) return;
   const u = uid();
@@ -866,6 +901,9 @@ document.addEventListener('input', e => {
   } else if (el.matches('input[data-restroom]')) {
     setRestroomSize(parseFloat(el.value) || 0);
     toast('Bathroom stalls set to ' + restroomCapacity());
+  } else if (el.matches('input[data-vip]')) {
+    const vip = save.soul.vip || (save.soul.vip = {});
+    vip[el.dataset.vip] = Math.max(0, Math.floor(parseFloat(el.value) || 0));
   } else if (el.matches('input[data-cnt]')) {
     const id = el.dataset.cnt;
     const rec = asArr(save.soul.skl.psskl).find(r => r.sklid === id);
@@ -1069,6 +1107,15 @@ document.addEventListener('click', e => {
   if (kind === 'research') researchPage += dir;
   else if (kind === 'decals') decalPage += dir;
   render();
+});
+document.addEventListener('click', e => {
+  const daysBtn = e.target.closest('button[data-vip-days]');
+  if (daysBtn && save) { activateVip(parseInt(daysBtn.dataset.vipDays, 10) || 30); return; }
+  if (e.target.closest('button[data-vip-activate]') && save) {
+    const d = document.getElementById('vipDays');
+    const days = Math.max(1, Math.min(3650, parseInt(d && d.value, 10) || 30));
+    activateVip(days);
+  }
 });
 document.getElementById('fileInput').addEventListener('change', e => {
   const file = e.target.files[0]; if (!file) return;
