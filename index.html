@@ -12,6 +12,7 @@
 <script src="class-limits.js"></script>
 <script src="rank-points.js"></script>
 <script src="mastery-catalog.js"></script>
+<script src="tower-map.js"></script>
 <script src="blank-save.js"></script>
 <script src="all-decals.js"></script>
 <style>
@@ -242,6 +243,39 @@ function setStorageSize(target) {
   return newCl.length;
 }
 
+function freezerCapacity() {
+  const u = uid();
+  return asArr(save.soul.chr && save.soul.chr.slots && save.soul.chr.slots[u]).length;
+}
+function setFreezerSize(target) {
+  const u = uid();
+  const arr = asArr(save.soul.chr && save.soul.chr.slots && save.soul.chr.slots[u]);
+  const occ = arr.filter(s => s && s.cid);
+  let size = Math.max(occ.length, Math.min(FREEZER_MAX, Math.floor(target) || 0));
+  const out = [];
+  occ.forEach((s, i) => { s.slot = i; out.push(s); });
+  for (let i = occ.length; i < size; i++) out.push({ uid: u, slot: i, cid: '' });
+  save.soul.chr.slots[u] = out;
+  return out.length;
+}
+function restroomCapacity() {
+  const u = uid();
+  return asArr(save.soul.prison && save.soul.prison[u]).length;
+}
+function setRestroomSize(target) {
+  const u = uid();
+  const arr = asArr(save.soul.prison && save.soul.prison[u]);
+  const occ = arr.filter(s => s && s.abid);
+  let size = Math.max(occ.length, Math.min(RESTROOM_MAX, Math.floor(target) || 0));
+  const out = [];
+  occ.forEach((s, i) => { s.slot = i + 1; out.push(s); });
+  for (let i = occ.length; i < size; i++) {
+    out.push({ uid: u, slot: i + 1, abid: '', log_abid: '', spirit: 0, spirit_fee: 0, log_spirit: 0, log_max_spirit: 0, money_ransom: 0, conciliate_second: 14700, last_collect_time: 0, expire_time: -1 });
+  }
+  save.soul.prison[u] = out;
+  return out.length;
+}
+
 function renderCurrencies() {
   const s = save.soul;
   const rows = [
@@ -255,6 +289,7 @@ function renderCurrencies() {
   ];
   let html = '<div class="panel"><h2>Currencies & Facilities</h2>';
   html += '<div class="decals-tools" style="margin-bottom:10px"><span style="flex:1"></span>' +
+    '<button data-bulk="unlocktower">Unlock Tower</button>' +
     '<button class="bulk" data-bulk="maxcurrencies">Max Currencies</button></div>';
   html += '<div class="grid">';
   rows.forEach(([label, key, max]) => {
@@ -263,6 +298,10 @@ function renderCurrencies() {
   });
   html += '<div class="field"><label>Storage Size <span class="muted">(coin locker)</span></label>' +
     '<input class="num" type="number" min="0" max="' + STORE_MAX + '" step="1" data-storage value="' + storageCapacity() + '"></div>';
+  html += '<div class="field"><label>Freezer Size <span class="muted">(fighter slots)</span></label>' +
+    '<input class="num" type="number" min="0" max="' + FREEZER_MAX + '" step="1" data-freezer value="' + freezerCapacity() + '"></div>';
+  html += '<div class="field"><label>Bathroom Stalls <span class="muted">(capture slots)</span></label>' +
+    '<input class="num" type="number" min="0" max="' + RESTROOM_MAX + '" step="1" data-restroom value="' + restroomCapacity() + '"></div>';
   const rp = window.RANK_POINTS || {};
   const curRank = num(s.rank) || 1;
   html += '<div class="field"><label>Player Rank <span class="muted">(1–' + Object.keys(rp).length + ')</span></label>' +
@@ -293,6 +332,8 @@ const STORE_MAX = 2000;
 const SAFE_LEVEL_MAX = 99;
 const TANK_LEVEL_MAX = 99;
 const MAX_KC_SPL = 2560000;
+const FREEZER_MAX = 10;
+const RESTROOM_MAX = 6;
 
 function classLimits(type, grade, lb) {
   const m = window.CLASS_LIMITS || {};
@@ -312,8 +353,6 @@ function renderFighters(u) {
   const body = asArr(save.bodyuser[u]);
   const byCid = {}; body.forEach(b => byCid[b.cid] = b);
   let html = '<div class="panel"><h2>Fighters <span class="count">(' + chrs.length + ')</span></h2>';
-  html += '<div class="decals-tools" style="margin-bottom:10px"><span style="flex:1"></span>' +
-    '<button class="bulk" data-bulk="maxfighters">Max Fighters</button></div>';
   chrs.forEach(f => {
     const b = byCid[f.cid] || {};
     const cls = FIGHTER_CLASSES[f.type] || f.type;
@@ -324,6 +363,8 @@ function renderFighters(u) {
       '<span class="badge">' + escapeHtml(f.name || '?') + '</span>' +
       '<span class="badge">' + escapeHtml(cls) + '</span>' +
       '<span class="badge">' + escapeHtml(f.body || '') + '</span>' +
+      '<span style="flex:1"></span>' +
+      '<button class="bulk" data-maxfighter="' + f.cid + '">Max Fighter</button>' +
       '</div>';
     html += '<div class="fighter-meta muted">' +
       'Max: ' + lim.skill + ' skill slots · ' + lim.bag + ' bag · ' + lim.rage + ' rage' +
@@ -380,9 +421,11 @@ function renderDecals(u) {
       '<option value="copies">Copies</option>' +
       '<option value="premium">Premium</option>' +
     '</select>' +
+    '<select data-loadout><option value="">Loadout…</option>' +
+      Object.keys(DECAL_LOADOUTS).map(n => '<option value="' + escapeHtml(n) + '">' + escapeHtml(n) + '</option>').join('') +
+    '</select>' +
     '<button class="bulk" data-bulk="decals">100% Decals</button>' +
     '</div><div class="search-results" id="decalResults"></div>';
-  html += '<table><thead><tr><th>Decal</th><th>ID</th><th>Copies</th><th>Equipped</th><th></th></tr></thead><tbody>';
   const sorted = sortDecals(psskl, decalSort);
   const total = sorted.length;
   const pages = Math.max(1, Math.ceil(total / decalPageSize));
@@ -652,6 +695,24 @@ function researchAll() {
   render();
   toast('Researched all ' + roots.length + ' blueprints to max');
 }
+const DECAL_LOADOUTS = {
+  'Tengoku God Climber': ['SKL_FIGHTER_STUP_01_P', 'SKL_ATKUP_NODMG_P', 'SKL_ATKUP_03_P', 'SKL_DRAIN_01_P', 'SKL_HPUP_03_P', 'SKL_ARRNG_STATUP_ALL_P', 'SKL_STRENGTHEN_BODY_01_P', 'SKL_HEADSHOTUP_P'],
+  'KAMAS God Shooter': ['SKL_HEADSHOTUP_P', 'SKL_ATKUP_NODMG_P', 'SKL_FIGHTER_STUP_01_P', 'SKL_ATKUP_03_P', 'SKL_WEP_SPDUP_P', 'SKL_CRIUP_02_P', 'SKL_DRAIN_01_P', 'SKL_SEARCHUP_ITEM_P'],
+  'Melee Striker': ['SKL_FIGHTER_STUP_01_P', 'SKL_ATKUP_03_P', 'SKL_ATKUP_NODMG_P', 'SKL_DRAIN_01_P', 'SKL_HPUP_02_P', 'SKL_DEFUP_02_P', 'SKL_STRENGTHEN_BODY_01_P', 'SKL_RGSPDUP_02_P'],
+  'TDM Defensive Wall': ['SKL_HPUP_03_P', 'SKL_HPUP_02_P', 'SKL_DEFUP_02_P', 'SKL_SNOWWHITE_P', 'SKL_STRENGTHEN_BODY_01_P', 'SKL_ATKDEFUP_HPLOW_01_P', 'SKL_FIGHTER_STUP_01_P', 'SKL_ATKUP_CRIUP_DEFDWN_P'],
+};
+function giveDecals(ids) {
+  if (!save) return;
+  let psskl = save.soul.skl.psskl;
+  if (!Array.isArray(psskl)) psskl = save.soul.skl.psskl = [];
+  const existing = new Set(psskl.map(r => r.sklid));
+  let added = 0;
+  (ids || []).forEach(id => {
+    if (!existing.has(id)) { psskl.push({ sklid: id, cnt: 1, updated: Math.floor(Date.now() / 1000), is_checked: 0 }); existing.add(id); added++; }
+  });
+  render();
+  toast('Added ' + added + ' decals');
+}
 function giveAllDecals() {
   if (!save) return;
   const all = window.ALL_DECALS || [];
@@ -680,31 +741,29 @@ function maxCurrencies() {
   render();
   toast('Maxed currencies + bank/tank to level ' + SAFE_LEVEL_MAX);
 }
-function maxFighters() {
+function maxFighter(cid) {
   if (!save) return;
   const u = uid();
   const chrs = asArr(save.soul.chr.chrs[u]);
+  const f = chrs.find(x => x.cid === cid);
+  if (!f) return;
   const body = asArr(save.bodyuser[u]);
-  if (!confirm('Max out all ' + chrs.length + ' fighters (G6, limit break 4, level 247)?')) return;
-  const byCid = {}; body.forEach(b => byCid[b.cid] = b);
-  chrs.forEach(f => {
-    const b = byCid[f.cid];
-    f.grade = 6;
-    f.limit_break = 4;
-    f.state = 'GUARD';
-    f.escdie = 0;
-    if (!b) return;
-    const lim = classLimits(f.type, 6, 4);
-    b.hp = b.str = b.dex = b.vit = b.stm = b.luk = lim.stat;
-    b.skill = lim.skillExtra;
-    b.bag = lim.bagExtra;
-    b.rage = lim.rageExtra;
-    b.hp_bonus = b.str_bonus = b.dex_bonus = b.vit_bonus = b.stm_bonus = b.luk_bonus = 20;
-    b.lvl = 247;
-    b.die = 0;
-  });
+  const b = body.find(x => x.cid === cid);
+  f.grade = 6;
+  f.limit_break = 4;
+  f.state = 'GUARD';
+  f.escdie = 0;
+  if (!b) return;
+  const lim = classLimits(f.type, 6, 4);
+  b.hp = b.str = b.dex = b.vit = b.stm = b.luk = lim.stat;
+  b.skill = lim.skillExtra;
+  b.bag = lim.bagExtra;
+  b.rage = lim.rageExtra;
+  b.hp_bonus = b.str_bonus = b.dex_bonus = b.vit_bonus = b.stm_bonus = b.luk_bonus = 20;
+  b.lvl = 247;
+  b.die = 0;
   render();
-  toast('Maxed ' + chrs.length + ' fighters');
+  toast('Maxed fighter');
 }
 function maxMastery() {
   if (!save) return;
@@ -714,8 +773,83 @@ function maxMastery() {
   render();
   toast('Maxed weapon mastery for ' + exp.length + ' weapons');
 }
+const ELEVATORS = [
+  'ELV_MAIN_HUB',
+  'ELV_MAIN_AMS_FLR_01', 'ELV_MAIN_AMS_FLR_03', 'ELV_MAIN_AMS_FLR_05', 'ELV_MAIN_AMS_FLR_07', 'ELV_MAIN_AMS_FLR_10',
+  'ELV_MAIN_ARC_FLR_01', 'ELV_MAIN_ARC_FLR_02', 'ELV_MAIN_ARC_FLR_03', 'ELV_MAIN_ARC_FLR_06', 'ELV_MAIN_ARC_FLR_09', 'ELV_MAIN_ARC_FLR_10',
+  'ELV_MAIN_MET_FLR_01', 'ELV_MAIN_MET_FLR_03', 'ELV_MAIN_MET_FLR_04', 'ELV_MAIN_MET_FLR_05', 'ELV_MAIN_MET_FLR_06', 'ELV_MAIN_MET_FLR_08', 'ELV_MAIN_MET_FLR_09', 'ELV_MAIN_MET_FLR_10',
+  'ELV_MAIN_RFT_FLR_01', 'ELV_MAIN_RFT_FLR_03', 'ELV_MAIN_RFT_FLR_06', 'ELV_MAIN_RFT_FLR_07', 'ELV_MAIN_RFT_FLR_09', 'ELV_MAIN_RFT_FLR_10',
+  'ELV_MAIN_HZM_FLR_01', 'ELV_MAIN_HVN_FLR_01',
+  'ELV_SUB01_AMS_FLR_02_A', 'ELV_SUB01_AMS_FLR_05_A', 'ELV_SUB01_AMS_FLR_07_A',
+  'ELV_SUB01_ARC_FLR_05', 'ELV_SUB01_ARC_FLR_10',
+  'ELV_SUB02_AMS_FLR_02_B', 'ELV_SUB02_AMS_FLR_06_B', 'ELV_SUB02_AMS_FLR_09_B', 'ELV_SUB02_AMS_FLR_10_B',
+  'ELV_SUB03_AMS_FLR_02_C', 'ELV_SUB03_AMS_FLR_09_C',
+  'ELV_SUB04_AMS_FLR_02_C', 'ELV_SUB04_AMS_FLR_07_C',
+  'ELV_SUB05_AMS_FLR_02_D', 'ELV_SUB05_AMS_FLR_05_D', 'ELV_SUB05_AMS_FLR_07_D', 'ELV_SUB05_AMS_FLR_09_D',
+  'ELV_SUB1_MET_FLR_02', 'ELV_SUB1_MET_FLR_10',
+  'ELV_SUB2_MET_FLR_03_B', 'ELV_SUB2_MET_FLR_08_B',
+  'ELV_SUB_A01_RFT_FLR_04', 'ELV_SUB_A01_RFT_FLR_08',
+  'ELV_SUB_B01_RFT_FLR_04', 'ELV_SUB_B01_RFT_FLR_09',
+  'ELV_SUB_C01_RFT_FLR_01', 'ELV_SUB_C01_RFT_FLR_08',
+  'ELV_SUB_C02_RFT_FLR_03', 'ELV_SUB_C02_RFT_FLR_10',
+  'ELV_SUB_D01_RFT_FLR_03', 'ELV_SUB_D01_RFT_FLR_06',
+  'ELV_SUB_D02_RFT_FLR_07', 'ELV_SUB_D02_RFT_FLR_09',
+];
+function setGameFlag(varName, value) {
+  const now = Math.floor(Date.now() / 1000);
+  const gf = save.gameflg || (save.gameflg = {});
+  const cl = gf.cl || (gf.cl = []);
+  if (Array.isArray(cl)) {
+    const f = cl.find(x => x && x.var === varName);
+    if (f) { f.value = value; f.modified = now; }
+    else cl.push({ var: varName, value, modified: now });
+  } else {
+    let found = false;
+    for (const k in cl) if (cl[k] && cl[k].var === varName) { cl[k].value = value; cl[k].modified = now; found = true; }
+    if (!found) { const keys = Object.keys(cl); cl[keys.length] = { var: varName, value, modified: now }; }
+  }
+}
+function unlockTower() {
+  if (!save) return;
+  const t = window.TOWER_MAP || {};
+  if (!confirm('Unlock all ' + ELEVATORS.length + ' elevators, ' + (t.room_indices || []).length + ' map rooms, and all gates?')) return;
+  const elv = asArr(save.soul.openelvflr);
+  const haveElv = new Set(elv.map(e => e && e.id));
+  ELEVATORS.forEach(id => { if (!haveElv.has(id)) elv.push({ id }); });
+  save.soul.openelvflr = elv;
+  const areaflag = asArr(save.soul.areaflag);
+  const haveRoom = new Set(areaflag.map(a => a && a.idx));
+  (t.room_indices || []).forEach(idx => {
+    if (haveRoom.has(idx)) { const r = areaflag.find(a => a.idx === idx); r.val = Math.max(r.val & ~64, 33); }
+    else areaflag.push({ idx, val: 33 });
+  });
+  save.soul.areaflag = areaflag;
+  const esc = asArr(save.soul.areaescflag);
+  const haveEsc = new Set(esc.map(a => a && a.idx));
+  (t.escalator_indices || []).forEach(idx => {
+    if (haveEsc.has(idx)) { const r = esc.find(a => a.idx === idx); r.val = Math.max(r.val || 0, 7); }
+    else esc.push({ idx, val: 7 });
+  });
+  save.soul.areaescflag = esc;
+  (t.gate_flags || []).forEach(v => setGameFlag(v, 1));
+  (t.progression_flags || []).forEach(v => setGameFlag(v, 1));
+  const pl = save.playlog || (save.playlog = {});
+  const base = pl.base || (pl.base = {});
+  if ((base.max_floor || 0) < 51) base.max_floor = 51;
+  render();
+  toast('Tower unlocked: ' + ELEVATORS.length + ' elevators, ' + (t.room_indices || []).length + ' rooms');
+}
 
 /* ---------- event wiring (delegation) ---------- */
+document.addEventListener('focusout', e => {
+  const el = e.target;
+  if (!el || el.tagName !== 'INPUT' || el.type !== 'number') return;
+  const min = el.min !== '' ? parseFloat(el.min) : -Infinity;
+  const max = el.max !== '' ? parseFloat(el.max) : Infinity;
+  let v = parseFloat(el.value);
+  if (isNaN(v)) v = 0;
+  el.value = Math.max(min, Math.min(max, v));
+});
 document.addEventListener('input', e => {
   if (!save) return;
   const el = e.target;
@@ -731,6 +865,12 @@ document.addEventListener('input', e => {
   } else if (el.matches('input[data-storage]')) {
     setStorageSize(parseFloat(el.value) || 0);
     toast('Storage size set to ' + storageCapacity());
+  } else if (el.matches('input[data-freezer]')) {
+    setFreezerSize(parseFloat(el.value) || 0);
+    toast('Freezer size set to ' + freezerCapacity());
+  } else if (el.matches('input[data-restroom]')) {
+    setRestroomSize(parseFloat(el.value) || 0);
+    toast('Bathroom stalls set to ' + restroomCapacity());
   } else if (el.matches('input[data-cnt]')) {
     const id = el.dataset.cnt;
     const rec = asArr(save.soul.skl.psskl).find(r => r.sklid === id);
@@ -789,6 +929,10 @@ document.addEventListener('click', e => {
 document.addEventListener('change', e => {
   if (!save) return;
   if (e.target.id === 'decalSort') { decalSort = e.target.value; decalPage = 0; render(); }
+  else if (e.target.matches('select[data-loadout]')) {
+    if (e.target.value && DECAL_LOADOUTS[e.target.value]) giveDecals(DECAL_LOADOUTS[e.target.value]);
+    e.target.value = '';
+  }
   else if (e.target.id === 'researchStatus') { researchStatus = e.target.value; researchPage = 0; render(); }
   else if (e.target.matches('select[data-pagesize]')) {
     const kind = e.target.dataset.pagesize;
@@ -906,8 +1050,14 @@ document.addEventListener('click', e => {
   else if (btn.dataset.bulk === 'sanitize') sanitizeResearch();
   else if (btn.dataset.bulk === 'decals') giveAllDecals();
   else if (btn.dataset.bulk === 'maxcurrencies') maxCurrencies();
-  else if (btn.dataset.bulk === 'maxfighters') maxFighters();
   else if (btn.dataset.bulk === 'maxmastery') maxMastery();
+  else if (btn.dataset.bulk === 'unlocktower') unlockTower();
+});
+document.addEventListener('click', e => {
+  const btn = e.target.closest('button[data-maxfighter]');
+  if (!btn || !save) return;
+  if (!confirm('Max this fighter (G6, limit break 4, level 247)?')) return;
+  maxFighter(btn.dataset.maxfighter);
 });
 document.addEventListener('click', e => {
   const btn = e.target.closest('button[data-page]');
