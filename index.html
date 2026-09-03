@@ -33,6 +33,7 @@
     position: sticky; top: 0; z-index: 10;
   }
   header h1 { font-size: 18px; margin: 0; letter-spacing: 2px; color: var(--accent); }
+  header .version { font-size: 11px; font-weight: 400; letter-spacing: 1px; color: var(--muted); margin-left: 8px; }
   header .status { color: var(--muted); font-size: 12px; }
   header .actions { margin-left: auto; display: flex; gap: 8px; }
   button {
@@ -112,7 +113,7 @@
 </head>
 <body>
 <header>
-  <h1>LET IT DIE — SAVE EDITOR</h1>
+  <h1>LET IT DIE — SAVE EDITOR <span class="version">v1.0.0</span></h1>
   <span class="status" id="status">no file loaded</span>
   <div class="actions">
     <button id="createBtn">Create .sav</button>
